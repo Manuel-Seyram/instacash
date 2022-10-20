@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Manuel\\Downloads\\instacash\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-v31\\values-v31.xml",
+            "outputFile": "C:\\Users\\Manuel\\Downloads\\instacash\\instacash_mobile\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-v31\\values-v31.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Manuel\\Downloads\\instacash\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
+                    "source": "C:\\Users\\Manuel\\Downloads\\instacash\\instacash_mobile\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
                     "from": {
                         "startLines": "3,17",
                         "startColumns": "4,4",
-                        "startOffsets": "173,1055",
+                        "startOffsets": "176,1072",
                         "endLines": "10,19",
                         "endColumns": "12,12",
-                        "endOffsets": "704,1219"
+                        "endOffsets": "714,1238"
                     },
                     "to": {
                         "startLines": "2,10",

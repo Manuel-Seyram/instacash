@@ -16,12 +16,12 @@ class SliderPage2 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
               Image.asset(
-            'assets/instacash.png',
+            'assets/logo.png',
             width: 150,
             height: 90,
           ),
 
-          const  SizedBox(height: 70.0,),
+          const  SizedBox(height: 50.0,),
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 80),
@@ -37,14 +37,14 @@ class SliderPage2 extends StatelessWidget {
           ),
 
            Image.asset(
-            '',
-            height: 300,
-            width: 270,
+            'assets/onboarding.png',
+            height: 200,
+            width: 300,
           ),
 
           
          const SizedBox(
-            height: 60,
+            height: 100,
           ),
         ],
       ),

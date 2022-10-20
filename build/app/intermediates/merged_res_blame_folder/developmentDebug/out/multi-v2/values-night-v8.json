@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Manuel\\Downloads\\instacash\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\Manuel\\Downloads\\instacash\\instacash_mobile\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Manuel\\Downloads\\instacash\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\Manuel\\Downloads\\instacash\\instacash_mobile\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

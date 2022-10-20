@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page1.dart';
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page2.dart';
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page3.dart';
+import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page4.dart';
+import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page5.dart';
 
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -21,6 +23,8 @@ class _LandingState extends State<Landing> {
     const SliderPage1(),
     const SliderPage2(),
     const SliderPage3(),
+    const SliderPage4(),
+    const SliderPage5(),
   ];
 
   _onchanged(int index) {
@@ -68,44 +72,21 @@ class _LandingState extends State<Landing> {
                 //mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   const SizedBox(
-                    width: 80.0,
+                    width: 50.0,
                   ),
                   MaterialButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/login');
-                    },
-                    color: Colors.black,
-                    height: 50.0,
-                    minWidth: 120,
-                    elevation: 10.0,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0)),
-                    child: Text(
-                      'Login',
-                      style: GoogleFonts.poppins(
-                        textStyle: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.w500),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 10.0,
-                  ),
-                  MaterialButton(
-                      onPressed: (() => {}),
+                      onPressed: (() => {Navigator.pushNamed(context, '/')}),
                       color: Colors.white,
                       height: 50.0,
-                      minWidth: 120,
+                      minWidth: 300,
                       elevation: 10.0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0)),
                       child: Text(
-                        'Register',
+                        'Get Started',
                         style: GoogleFonts.poppins(
                           textStyle: const TextStyle(
-                              color: Colors.black,
+                              color: Colors.black45,
                               fontSize: 18.0,
                               fontWeight: FontWeight.w500),
                         ),

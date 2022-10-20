@@ -16,7 +16,7 @@ class SliderPage3 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
               Image.asset(
-            'assets/instacash.png',
+            'assets/logo.png',
             width: 150,
             height: 90,
             

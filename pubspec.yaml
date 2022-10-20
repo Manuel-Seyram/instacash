@@ -32,6 +32,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_flavor: ^3.1.1
+  pin_code_fields: ^7.4.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -51,6 +52,10 @@ dev_dependencies:
   show_up_animation: ^1.0.2
   google_fonts: ^3.0.1
   flutter_native_splash: ^2.2.11
+  intl_phone_field: ^3.1.0
+  flutter_screen_lock: ^7.0.4
+  image_picker: ^0.8.6
+  
 
 flutter_native_splash:
   color: "03163A"
@@ -78,9 +83,16 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/logo.png
+    - assets/logo2.png
     - assets/holding card.png
     - assets/splashbg.png
     - assets/instacash.png
+    - assets/onboarding.png
+    - assets/ghanaflag.png
+    - assets/id.png
+    - assets/selfie.png
+    - assets/saving1.png
+    - assets/investment.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

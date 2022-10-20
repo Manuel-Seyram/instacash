@@ -1,5 +1,8 @@
+// ignore_for_file: import_of_legacy_library_into_null_safe
+
 import 'package:flutter/material.dart';
-import 'package:instacash/screens/Customer%20Onboarding/onboarding/onboarding_screen.dart';
+import 'package:instacash/screens/Customer%20Onboarding/login/login.dart';
+// ignore: depend_on_referenced_packages
 import 'package:show_up_animation/show_up_animation.dart';
 // ignore: depend_on_referenced_packages
 import 'package:google_fonts/google_fonts.dart';
@@ -143,7 +146,7 @@ class _SplashScreen extends State<SplashScreen> {
 
 Route _createRoute() {
   return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => const Landing(),
+    pageBuilder: (context, animation, secondaryAnimation) => const Login(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
       const begin = Offset(0.0, 1.0);
       const end = Offset.zero;
