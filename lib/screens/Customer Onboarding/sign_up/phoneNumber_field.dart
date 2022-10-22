@@ -31,7 +31,7 @@ class PhoneField extends StatelessWidget {
                       child:
                     Text(
                       'Enter your phone number. Well send \nyou a confirmation code.',
-                      style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.grey, fontSize: 16.0, fontWeight: FontWeight.w400),),
+                      style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black54, fontSize: 16.0, fontWeight: FontWeight.w400),),
                     ),
                 ),
 

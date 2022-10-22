@@ -52,7 +52,7 @@ class BasicFormfield extends StatelessWidget {
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'First Name',
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: TextStyle(color: Colors.black54),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,
@@ -72,7 +72,7 @@ class BasicFormfield extends StatelessWidget {
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Last Name',
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: TextStyle(color: Colors.black54),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,
@@ -92,7 +92,7 @@ class BasicFormfield extends StatelessWidget {
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Email',
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: TextStyle(color: Colors.black54),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,
@@ -113,7 +113,7 @@ class BasicFormfield extends StatelessWidget {
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Password',
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: TextStyle(color: Colors.black54),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,
@@ -134,7 +134,7 @@ class BasicFormfield extends StatelessWidget {
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Confirm Password',
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: TextStyle(color: Colors.black54),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,

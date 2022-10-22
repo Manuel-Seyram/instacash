@@ -33,7 +33,7 @@ class Proof extends StatelessWidget {
                 'We need to verify your identity before \nyou can access your account',
                 style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
-                      color: Colors.grey,
+                      color: Colors.black54,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),
@@ -46,7 +46,7 @@ class Proof extends StatelessWidget {
                 'Country',
                 style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
-                      color: Colors.grey,
+                      color: Colors.black54,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),
@@ -75,7 +75,7 @@ class Proof extends StatelessWidget {
                         'Ghana',
                         style: GoogleFonts.poppins(
                           textStyle: const TextStyle(
-                              color: Colors.grey,
+                              color: Colors.black45,
                               fontSize: 14.0,
                               fontWeight: FontWeight.w400),
                         ),
@@ -113,7 +113,7 @@ class Proof extends StatelessWidget {
                 'Select Document',
                 style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
-                      color: Colors.grey,
+                      color: Colors.black54,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),
@@ -123,7 +123,7 @@ class Proof extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 45.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/frontcard');
+                  Navigator.pushNamed(context, '/verifyfront');
                 },
                 child: Container(
                     height: 60.0,
@@ -143,7 +143,7 @@ class Proof extends StatelessWidget {
                           'National Identity Card',
                           style: GoogleFonts.poppins(
                             textStyle: const TextStyle(
-                                color: Colors.grey,
+                                color: Colors.black54,
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.w400),
                           ),
@@ -154,7 +154,7 @@ class Proof extends StatelessWidget {
                         const Icon(
                           Icons.arrow_forward_ios,
                           size: 16.0,
-                          color: Colors.grey,
+                          color: Colors.black54,
                         )
                       ],
                     )),

@@ -291,7 +291,7 @@ class Selfie extends StatelessWidget {
                 const SizedBox(height: 60.0,),
                 MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/selfiecard');
+          Navigator.pushNamed(context, '/selfieverify');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 50.0,

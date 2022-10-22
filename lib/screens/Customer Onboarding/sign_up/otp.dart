@@ -61,7 +61,7 @@ class _OtpState extends State<Otp> {
             'please enter the OTP code sent to \n+233********84',
             style: GoogleFonts.poppins(
               textStyle: const TextStyle(
-                  color: Colors.grey,
+                  color: Colors.black54,
                   fontSize: 16.0,
                   fontWeight: FontWeight.w400),
             ),

@@ -47,7 +47,7 @@ class _BasicInformationState extends State<BasicInformation> {
             'Please set up your profile',
             style: GoogleFonts.poppins(
               textStyle: const TextStyle(
-                  color: Colors.grey,
+                  color: Colors.black54,
                   fontSize: 16.0,
                   fontWeight: FontWeight.w400),
             ),

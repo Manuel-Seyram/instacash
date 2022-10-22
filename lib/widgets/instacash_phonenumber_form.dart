@@ -25,7 +25,7 @@ class Phonebox extends StatelessWidget {
           children: <Widget>[
             Align(
               alignment: const AlignmentDirectional(-0.9, 5.0),
-              child: Text('Phone Number', style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.grey, fontSize: 12.0, fontWeight: FontWeight.w500))),
+              child: Text('Phone Number', style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black45, fontSize: 12.0, fontWeight: FontWeight.w500))),
             ),
             IntlPhoneField(
               showCursor: true,

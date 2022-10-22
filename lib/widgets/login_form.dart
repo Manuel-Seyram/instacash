@@ -38,7 +38,7 @@ class LoginFormfield extends StatelessWidget {
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Phone Number/Email',
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: TextStyle(color: Colors.black54),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,
@@ -58,7 +58,7 @@ class LoginFormfield extends StatelessWidget {
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Password',
-            labelStyle: TextStyle(color: Colors.grey),
+            labelStyle: TextStyle(color: Colors.black54),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,

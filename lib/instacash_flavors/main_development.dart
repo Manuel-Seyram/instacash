@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:flutter_flavor/flutter_flavor.dart';
+import 'package:instacash/screens/Customer%20Onboarding/bank_information.dart';
+import 'package:instacash/screens/Customer%20Onboarding/forgot_password_1.dart';
+import 'package:instacash/screens/Customer%20Onboarding/forgot_password_2.dart';
+import 'package:instacash/screens/Customer%20Onboarding/forgot_password_3.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/front_card.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/front_card_verify.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/instacash_basic_information.dart';
@@ -46,6 +50,10 @@ void main() {
         '/selfie':(context) => const Selfie(),
         '/selfiecard':(context) => const Selfiecard(),
         '/selfieverify':(context) => const Selfieverify(),
+        '/forgotpassword1':(context) => const Forgotpassword1(),
+        '/forgotpassword2':(context) => const Forgotpassword2(),
+        '/forgotpassword3':(context) => const Forgotpassword3(),
+        '/bankinformation':(context) =>  BankInformation(),
       },
   ));
 }
