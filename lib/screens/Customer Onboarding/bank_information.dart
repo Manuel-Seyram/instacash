@@ -190,7 +190,7 @@ class _BankInformationState extends State<BankInformation> {
   style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
                       color: Colors.black54,
-                      fontSize: 16.0,
+                      fontSize: 14.0,
                       fontWeight: FontWeight.w400),
                 ),),
   value: checkedValue,
@@ -220,7 +220,7 @@ Widget _textformfieldbnumber() {
             hintStyle: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black54,
-                fontSize: 16.0,
+                fontSize: 14.0,
                 fontWeight: FontWeight.w500)), 
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
@@ -242,7 +242,7 @@ Widget _textformfieldbnumber() {
             hintStyle: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black54,
-                fontSize: 16.0,
+                fontSize: 14.0,
                 fontWeight: FontWeight.w500)), 
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,

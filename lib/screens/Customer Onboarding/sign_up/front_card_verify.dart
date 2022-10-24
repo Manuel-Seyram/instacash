@@ -129,26 +129,8 @@ class _Frontcard2State extends State<Frontcard2> {
           ),
           Row(
             children: [
-              const SizedBox(width: 80.0,),
-              MaterialButton(
-                   onPressed: (() => {Navigator.pushNamed(context, '/selfie')}),
-                    color: const Color.fromARGB(249, 40, 68, 194),
-                    height: 50.0,
-                    minWidth: 120,
-                    elevation: 10.0,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0)),
-                    child: Text(
-                      'Submit',
-                      style: GoogleFonts.poppins(
-                        textStyle: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.w500),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 10.0,),
+              const SizedBox(width: 70.0,),
+                  
               MaterialButton(
                    onPressed: (() => {openCamera()}),
                     color: Colors.white,
@@ -163,6 +145,25 @@ class _Frontcard2State extends State<Frontcard2> {
                       style: GoogleFonts.poppins(
                         textStyle: const TextStyle(
                             color:  Color.fromARGB(249, 40, 68, 194),
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 10.0,),
+                  MaterialButton(
+                   onPressed: (() => {Navigator.pushNamed(context, '/selfie')}),
+                    color: const Color.fromARGB(249, 40, 68, 194),
+                    height: 50.0,
+                    minWidth: 120,
+                    elevation: 10.0,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0)),
+                    child: Text(
+                      'Submit',
+                      style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                            color: Colors.white,
                             fontSize: 18.0,
                             fontWeight: FontWeight.w500),
                       ),
