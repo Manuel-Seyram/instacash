@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
-// ignore: depend_on_referenced_packages
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/widgets/homepage_card_slider.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(
         children: [
@@ -58,7 +57,7 @@ class Homepage extends StatelessWidget {
                 children:  [
                   const SizedBox(height: 80.0,),
                     Align(
-                  alignment: const AlignmentDirectional(-0.89, 5.0),
+                  alignment: const AlignmentDirectional(-0.87, 5.0),
                   
                     child: Text(
                               'Quick Links',
@@ -74,7 +73,7 @@ class Homepage extends StatelessWidget {
                   const SizedBox(height: 15.0,),
                   Row(
                     children: [
-                      const SizedBox(width: 17.0,),
+                      const SizedBox(width: 16.0,),
                       GestureDetector(
                         onTap: () {
                           Navigator.pushNamed(context, '/loanapplication');
@@ -82,7 +81,7 @@ class Homepage extends StatelessWidget {
                         child:
                   Container(
                     height: 90.0,
-                    width: 90.0,
+                    width: 85.0,
                     color: Colors.white,
                     child: Column(
                       children: [
@@ -102,6 +101,11 @@ class Homepage extends StatelessWidget {
                     ),
                   ),),
                   const SizedBox(width: 5.0,),
+                   GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/repayment'); 
+                        },
+                        child:
                   Container(
                     height: 90.0,
                     width: 90.0,
@@ -123,10 +127,11 @@ class Homepage extends StatelessWidget {
                       ]
                     ),
                   ),
+                   ),
                   const SizedBox(width: 5.0,),
                   Container(
                     height: 90.0,
-                    width: 90.0,
+                    width: 85.0,
                     color: Colors.white,
                     child: Column(
                       children: [
@@ -148,7 +153,7 @@ class Homepage extends StatelessWidget {
                   const SizedBox(width: 5.0,),
                   Container(
                     height: 90.0,
-                    width: 90.0,
+                    width: 85.0,
                     color: Colors.white,
                     child: Column(
                       children: [
@@ -169,7 +174,20 @@ class Homepage extends StatelessWidget {
                   ),
                     ],
                   ),
-                  const SizedBox(height: 30.0,),
+                  const SizedBox(height: 15.0,),
+                  Align(
+                    alignment: const AlignmentDirectional(-0.85, 5.0),
+                    child: Text(
+                              'Transactions History',
+                              style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.black54,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    ),
+                  ),
+                  const SizedBox(height: 15.0,),
                   Row(
                     children: [
                       const SizedBox(width: 17.0,),
@@ -186,10 +204,11 @@ class Homepage extends StatelessWidget {
                     const SizedBox(width: 5.0,),
                     ],
                   ),
-                  const SizedBox(height: 25.0,),
+                  const SizedBox(height: 10.0,),
                   Container(
                     color: Colors.white,
-                    height: 60.0,
+                    height: 75.0,
+                    width: 360.0,
                     child: 
                     Row(
                       children: [
@@ -199,6 +218,7 @@ class Homepage extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            const SizedBox(height: 10.0,),
                             Text('Loan Request', style: 
                             GoogleFonts.poppins(
                       textStyle: const TextStyle(
@@ -216,7 +236,7 @@ class Homepage extends StatelessWidget {
                     ),),
                           ],
                         ),
-                        const SizedBox(width:120.0,),
+                        const SizedBox(width:110.0,),
                         Text('- 15.99', style: 
                         GoogleFonts.poppins(
                       textStyle: const TextStyle(
@@ -230,7 +250,8 @@ class Homepage extends StatelessWidget {
                   const SizedBox(height: 10.0,),
                   Container(
                     color: Colors.white,
-                    height: 60.0,
+                    height: 75.0,
+                    width: 360.0,
                     child: 
                     Row(
                       children: [
@@ -240,6 +261,7 @@ class Homepage extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            const SizedBox(height: 10.0,),
                             Text('Deposit - Stanbic', style: 
                             GoogleFonts.poppins(
                       textStyle: const TextStyle(
@@ -257,7 +279,7 @@ class Homepage extends StatelessWidget {
                     ),),
                           ],
                         ),
-                        const SizedBox(width:70.0,),
+                        const SizedBox(width:50.0,),
                         Text('+ 2,045.00', style: 
                         GoogleFonts.poppins(
                       textStyle: const TextStyle(
@@ -270,7 +292,8 @@ class Homepage extends StatelessWidget {
                   const SizedBox(height: 10.0,),
                   Container(
                     color: Colors.white,
-                    height: 60.0,
+                    height: 75.0,
+                    width: 360.0,
                     child: 
                     Row(
                       children: [
@@ -280,6 +303,7 @@ class Homepage extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            const SizedBox(height: 10.0,),
                             Text('Transfer: John Doe', style: 
                             GoogleFonts.poppins(
                       textStyle: const TextStyle(
@@ -297,7 +321,7 @@ class Homepage extends StatelessWidget {
                     ),),
                           ],
                         ),
-                        const SizedBox(width:80.0,),
+                        const SizedBox(width:60.0,),
                         Text('- 986.00', style: 
                         GoogleFonts.poppins(
                       textStyle: const TextStyle(
@@ -312,137 +336,9 @@ class Homepage extends StatelessWidget {
               ),),)),
             ],
           ),
+         
+           const CardSlider(),
           
-          Align(
-            alignment: const Alignment(0, -0.5),
-            child: SizedBox(
-              width: size.width * 0.9,
-              height: size.height * 0.2,
-                child: Stack(
-      children: <Widget>[
-        Container(
-          alignment: Alignment.center,
-          child: Image.asset(
-            'assets/cardbg.png',
-            height: 350,
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
-        ),
-        Column(
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 10.0,),
-            
-                Row(
-                  //mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  const SizedBox(width: 35.0,),
-                   Align(
-              alignment: const Alignment(-0.7, 5.0),
-              child:
-            Text('Loan Balance', style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500),
-                ),),),
-
-                 const SizedBox(width: 130.0,),
-                  Image.asset('assets/slantedlogo.png', height: 50.0, width: 50.0,)
-                ],
-            ),
-            const SizedBox(height: 5.0,),
-            Align(
-              alignment: const Alignment(-0.7, 5.0),
-              child:
-            Text('GHS 463.00', style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.w500),
-                ),),),
-            const SizedBox(height: 12.0,),
-            Align(
-              alignment: const Alignment(-0.6, 5.0),
-              child:
-            Text('Repayment Date: 22 Dec, 2022', style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.w500),
-                ),),),
-          ],
-        ),
-      ],
-    ),
-            ),
-          ),
-          Align(
-            alignment: const Alignment(0.0, -0.5),
-            child: SizedBox(
-              width: size.width * 0.9,
-              height: size.height * 0.2,
-                child: Stack(
-      children: <Widget>[
-        Container(
-          alignment: Alignment.center,
-          child: Image.asset(
-            'assets/cardbg.png',
-            height: 350,
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
-        ),
-        Column(
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 10.0,),
-            
-                Row(
-                  //mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  const SizedBox(width: 35.0,),
-                   Align(
-              alignment: const Alignment(-0.7, 5.0),
-              child:
-            Text('Loan Balance', style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500),
-                ),),),
-
-                 const SizedBox(width: 130.0,),
-                  Image.asset('assets/slantedlogo.png', height: 50.0, width: 50.0,)
-                ],
-            ),
-            const SizedBox(height: 5.0,),
-            Align(
-              alignment: const Alignment(-0.7, 5.0),
-              child:
-            Text('GHS 463.00', style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.w500),
-                ),),),
-            const SizedBox(height: 12.0,),
-            Align(
-              alignment: const Alignment(-0.6, 5.0),
-              child:
-            Text('Repayment Date: 22 Dec, 2022', style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.w500),
-                ),),),
-          ],
-        ),
-      ],
-    ),
-            ),
-          ),
              ]
           ),
     );
