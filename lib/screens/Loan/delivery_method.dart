@@ -92,6 +92,7 @@ class DeliveryMethod extends StatelessWidget {
                     color: Colors.white,
                     child: Column(
                       children: [
+                        const SizedBox(height: 15.0,),
                         Row(
                           children: [
                         const SizedBox(width: 10.0),
@@ -124,18 +125,6 @@ class DeliveryMethod extends StatelessWidget {
                         ),
                         //const SizedBox(height: 5.0,),
                         Align(
-                          alignment: const AlignmentDirectional(-0.5, 5.0),
-                          child: Text(
-                            'Ghs 5.00 - Fee',
-                            style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
-                                color: Colors.black54,
-                                fontSize: 12.0,
-                                fontWeight: FontWeight.w400),
-                          ),
-                          ),
-                        ),
-                        Align(
                           alignment: const AlignmentDirectional(-0.15, 5.0),
                           child: Text(
                             'Cash in 2 to 3 business days.',
@@ -163,6 +152,7 @@ class DeliveryMethod extends StatelessWidget {
                     color: Colors.white,
                     child: Column(
                       children: [
+                        const SizedBox(height: 15.0,),
                         Row(
                           children: [
                         const SizedBox(width: 10.0),
@@ -197,7 +187,7 @@ class DeliveryMethod extends StatelessWidget {
                         Align(
                           alignment: const AlignmentDirectional(-0.45, 5.0),
                           child: Text(
-                            'Ghs 0.00 - No Fees',
+                            'Instantly Available',
                             style: GoogleFonts.poppins(
                             textStyle: const TextStyle(
                                 color: Colors.black54,
@@ -205,7 +195,56 @@ class DeliveryMethod extends StatelessWidget {
                                 fontWeight: FontWeight.w400),
                           ),
                           ),
+                        )
+                      ],
+                    )),
+              ),
+            ),
+
+            const SizedBox(height: 50.0,),
+             Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 45.0),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/selectcard');
+                },
+                child: Container(
+                    height: 95.0,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(height: 15.0,),
+                        Row(
+                          children: [
+                        const SizedBox(width: 10.0),
+                        Image.asset(
+                          'assets/Card.png',
+                          height: 40.0,
+                          width: 30.0,
                         ),
+                        const SizedBox(
+                          width: 10.0,
+                        ),
+                        Text(
+                          'Via card - Instant',
+                          style: GoogleFonts.poppins(
+                            textStyle: const TextStyle(
+                                color: Colors.black54,
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 75.0,
+                        ),
+                        const Icon(
+                          Icons.arrow_forward_ios,
+                          size: 16.0,
+                          color: Colors.black54,
+                        )
+                          ],
+                        ),
+                        //const SizedBox(height: 5.0,),
                         Align(
                           alignment: const AlignmentDirectional(-0.45, 5.0),
                           child: Text(

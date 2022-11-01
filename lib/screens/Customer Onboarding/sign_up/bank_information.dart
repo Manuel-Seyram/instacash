@@ -34,6 +34,7 @@ class _BankInformationState extends State<BankInformation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: SingleChildScrollView(
         child: Column(
           children: [

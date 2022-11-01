@@ -33,6 +33,12 @@ dependencies:
     sdk: flutter
   flutter_flavor: ^3.1.1
   pin_code_fields: ^7.4.0
+  flutter_phosphor_icons: ^0.0.1+6
+  show_up_animation: ^1.0.2
+  google_fonts: ^3.0.1
+  intl_phone_field: ^3.1.0
+  image_picker: ^0.8.6
+  carousel_slider: ^4.1.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -49,12 +55,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  show_up_animation: ^1.0.2
-  google_fonts: ^3.0.1
   flutter_native_splash: ^2.2.11
-  intl_phone_field: ^3.1.0
-  flutter_screen_lock: ^7.0.4
-  image_picker: ^0.8.6
+  
   
 
 flutter_native_splash:
@@ -93,6 +95,18 @@ flutter:
     - assets/selfie.png
     - assets/saving1.png
     - assets/investment.png
+    - assets/GetLoan.png
+    - assets/more.png
+    - assets/RepayLoan.png
+    - assets/Transfers.png
+    - assets/ArrowCircleUpRight.png
+    - assets/ArrowCircleDownLeft.png
+    - assets/cardbg.png
+    - assets/cardbg2.png
+    - assets/slantedlogo.png
+    - assets/Bank.png
+    - assets/momo.png
+    - assets/Card.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

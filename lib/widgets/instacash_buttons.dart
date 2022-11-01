@@ -1,8 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// ignore: depend_on_referenced_packages
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/widgets/pop_up_mode_of_payment.dart';
 
-//HERE YPU WILL FIND THE BUTTONS USED FOR INSTACASH APP
+//HERE YoU WILL FIND THE BUTTONS USED FOR INSTACASH APP
 
 class RegisterButton extends StatelessWidget {
   const RegisterButton({super.key});
@@ -17,8 +18,7 @@ class RegisterButton extends StatelessWidget {
         height: 50.0,
         minWidth: 300,
         elevation: 10.0,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         child: Text(
           'Register',
           style: GoogleFonts.poppins(
@@ -44,8 +44,7 @@ class ConfirmButton extends StatelessWidget {
         height: 50.0,
         minWidth: 300,
         elevation: 10.0,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         child: Text(
           'Confirm',
           style: GoogleFonts.poppins(
@@ -71,8 +70,7 @@ class ContinueButton extends StatelessWidget {
         height: 50.0,
         minWidth: 300,
         elevation: 10.0,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(
@@ -85,11 +83,10 @@ class ContinueButton extends StatelessWidget {
   }
 }
 
-
 // ignore: must_be_immutable
 class LoginButton extends StatelessWidget {
-    LoginButton({super.key});
-    
+  LoginButton({super.key});
+
   bool phoneFieldEmpty = true;
 
   bool isLoading = false;
@@ -98,16 +95,13 @@ class LoginButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      enableFeedback:  isButtondisabled ? phoneFieldEmpty : !phoneFieldEmpty,
-        onPressed: () {
-         
-        },
+        enableFeedback: isButtondisabled ? phoneFieldEmpty : !phoneFieldEmpty,
+        onPressed: () {},
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 50.0,
         minWidth: 300,
         elevation: 10.0,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         child: Text(
           'login',
           style: GoogleFonts.poppins(
@@ -134,8 +128,7 @@ class Forgotpassword1Button extends StatelessWidget {
         height: 50.0,
         minWidth: 300,
         elevation: 10.0,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         child: Text(
           'Next',
           style: GoogleFonts.poppins(
@@ -161,8 +154,7 @@ class ConfirmButton2 extends StatelessWidget {
         height: 50.0,
         minWidth: 300,
         elevation: 10.0,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         child: Text(
           'Confirm',
           style: GoogleFonts.poppins(
@@ -188,8 +180,7 @@ class ConfirmButton3 extends StatelessWidget {
         height: 50.0,
         minWidth: 300,
         elevation: 10.0,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         child: Text(
           'Confirm',
           style: GoogleFonts.poppins(
@@ -201,8 +192,6 @@ class ConfirmButton3 extends StatelessWidget {
         ));
   }
 }
-
-
 
 //bank account information button
 
@@ -216,17 +205,367 @@ class BankAccountInformationButton extends StatelessWidget {
           Navigator.pushNamed(context, '/idproof');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 50.0,
+        height: 60.0,
         minWidth: 300,
         elevation: 10.0,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
         child: Text(
           'Next',
           style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+//LOAN BUTTONS
+class LoanInformationButton extends StatelessWidget {
+  const LoanInformationButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/loanamount');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 300,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Next',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanAmountButton extends StatelessWidget {
+  const LoanAmountButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/loandeliverymethod');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Next',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanBankSaveButton extends StatelessWidget {
+  const LoanBankSaveButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 80,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Save',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanCardSaveButton extends StatelessWidget {
+  const LoanCardSaveButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 80,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Save',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanMomoSaveButton extends StatelessWidget {
+  const LoanMomoSaveButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 80,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Save',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanCardContinueButton extends StatelessWidget {
+  const LoanCardContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/cardreceipt');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanMomoContinueButton extends StatelessWidget {
+  const LoanMomoContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/momoreceipt');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanBankContinueButton extends StatelessWidget {
+  const LoanBankContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/bankreceipt');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanBankReceiptButton extends StatelessWidget {
+  const LoanBankReceiptButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/homepage');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Submit',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanCardReceiptButton extends StatelessWidget {
+  const LoanCardReceiptButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/homepage');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Submit',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LoanMomoReceiptButton extends StatelessWidget {
+  const LoanMomoReceiptButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/homepage');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Submit',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+//REPAYMENT LOAN
+class RepayButton extends StatelessWidget {
+  const RepayButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          showCupertinoModalPopup(
+              context: context,
+              builder: (BuildContext builder) {
+                return CupertinoPopupSurface(
+                    child: Container(
+                  color: Colors.white,
+                  alignment: Alignment.center,
+                  width: double.infinity,
+                  height: 500,
+                  child: const PopPayment(),
+                ));
+              });
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Repay Loan',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class RepayConfirmButton extends StatelessWidget {
+  const RepayConfirmButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Confirm',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
                 fontWeight: FontWeight.w500),
           ),
         ));

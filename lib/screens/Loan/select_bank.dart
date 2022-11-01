@@ -1,7 +1,6 @@
-// ignore_for_file: depend_on_referenced_packages
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/widgets/add_new_bank_loan.dart';
 import 'package:instacash/widgets/instacash_buttons.dart';
 
 class SelectBank extends StatefulWidget {
@@ -13,22 +12,14 @@ class SelectBank extends StatefulWidget {
 
 class _SelectBankState extends State<SelectBank> {
   final String _selectedValue = '';
-  late String _dropdownvalue;
-   bool checkedValue = false;
-  final List<String> items = [
-    'Select your bank',
-    'Access Bank',
-    'Stanbic Bank',
-    'ABSA Bank',
-    'GT Bank',
-    'Standard Chartered Bank',
-    'Cal Bank'
-  ];
-  @override
-  void initState() {
-    super.initState();
-    _dropdownvalue = items[0];
+  bool _isVisible = false;
+
+  void showToast() {
+    setState(() {
+      _isVisible = !_isVisible;
+    });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -152,19 +143,6 @@ class _SelectBankState extends State<SelectBank> {
                                 }),
                           ],
                         ),
-                        //const SizedBox(height: 5.0,),
-                        Align(
-                          alignment: const AlignmentDirectional(-0.55, 5.0),
-                          child: Text(
-                            'Ghs 5.00 - Fee',
-                            style: GoogleFonts.poppins(
-                              textStyle: const TextStyle(
-                                  color: Colors.grey,
-                                  fontSize: 12.0,
-                                  fontWeight: FontWeight.w400),
-                            ),
-                          ),
-                        ),
                         Align(
                           alignment: const AlignmentDirectional(-0.3, 5.0),
                           child: Text(
@@ -181,150 +159,71 @@ class _SelectBankState extends State<SelectBank> {
                     )),
               ),
             ),
-            const SizedBox(height: 50.0,),
-            Align(
-              alignment: const AlignmentDirectional(-0.63, 5.0),
-              child:
-              Text(
-                'Enter bank account information',
-              style: GoogleFonts.poppins(
-                              textStyle: const TextStyle(
-                                  color: Colors.black87,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.w400),
+            const SizedBox(
+              height: 20.0,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+              child: GestureDetector(
+                onTap: () {
+                  showToast();
+                },
+                child: Container(
+                    height: 50.0,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          children: [
+                            const SizedBox(width: 10.0),
+                            Image.asset(
+                              'assets/Bank.png',
+                              height: 30.0,
+                              width: 20.0,
                             ),
-              )
-            ),
-            const SizedBox(height: 30.0,),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                height: 60.0,
-                color: Colors.white,
-                  child: PopupMenuButton<String>(
-                    itemBuilder: (context) {
-                      return items.map((str) {
-                        return PopupMenuItem(
-                          value: str,
-                          textStyle: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.black54,
-                      fontSize: 14.0,
-                      fontWeight: FontWeight.w400),
-                ),
-                          child: Text(str),
-                        );
-                      }).toList();
-                    },
-                    child: Row(
-                      //mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
-                            child:
-                        Text(_dropdownvalue,
-                        style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.black54,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400),
-                ),),),
-                        const SizedBox(width: 180.0,),
-                        const Icon(Icons.keyboard_arrow_down),
+                            const SizedBox(
+                              width: 15.0,
+                            ),
+                            Text(
+                              'Add new bank',
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    color: Colors.black54,
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 140.0,
+                            ),
+                            const Icon(
+                              Icons.arrow_forward_ios,
+                              size: 16.0,
+                              color: Colors.black54,
+                            )
+                          ],
+                        ),
                       ],
-                    ),
-                    onSelected: (v) {
-                      setState(() {
-                        if (kDebugMode) {
-                          print('!!!===== $v');
-                        }
-                        _dropdownvalue= v;
-                      });
-                    },
-                  ),
-              ),
-            ),
-            const SizedBox(height: 20.0,),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                height: 60.0,
-                color: Colors.white,
-                child: Column(
-                  children: [
-                _textformfieldbnumber(),
-                  ], 
-                ),
+                    )),
               ),
             ),
 
-        const SizedBox(height: 20.0,),
-        Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                height: 60.0,
-                color: Colors.white,
-                child: Column(
-                  children: [
-                _textformfieldbname(),
-                  ], 
-                ),
-              ),
+            const SizedBox(
+              height: 20.0,
             ),
-            const SizedBox(height: 20.0,),
-           const Align(
-              alignment: AlignmentDirectional(-0.83, 5.0),
-              child:
-             BankSavetButton(),
+            Visibility(
+              replacement: const SizedBox(height: 350.0,),
+             visible: _isVisible,
+            child: 
+            const AddNewBank(),
             ),
-            const SizedBox(height: 20.0,),
-            const BankContinueButton(),
+            const LoanBankContinueButton(),
           ],
         ),
       ),
     );
   }
 }
-
-Widget _textformfieldbnumber() {
-    return SizedBox(
-      child: TextFormField(
-        keyboardType: TextInputType.number,
-        decoration:  InputDecoration(
-            hintText: 'Account Number',
-            hintStyle: GoogleFonts.poppins(
-            textStyle: const TextStyle(
-                color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500)), 
-                border: InputBorder.none,
-                focusedBorder: InputBorder.none,
-                enabledBorder: InputBorder.none,
-                errorBorder: InputBorder.none,
-                disabledBorder: InputBorder.none),
-                textAlign: TextAlign.start,
-      ),
-    );
-  }
-
-
-  Widget _textformfieldbname() {
-    return SizedBox(
-      child: TextFormField(
-        keyboardType: TextInputType.name,
-        decoration:  InputDecoration(
-            hintText: 'Account Name',
-            hintStyle: GoogleFonts.poppins(
-            textStyle: const TextStyle(
-                color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500)), 
-                border: InputBorder.none,
-                focusedBorder: InputBorder.none,
-                enabledBorder: InputBorder.none,
-                errorBorder: InputBorder.none,
-                disabledBorder: InputBorder.none),
-                textAlign: TextAlign.start,
-      ),
-    );
-  }

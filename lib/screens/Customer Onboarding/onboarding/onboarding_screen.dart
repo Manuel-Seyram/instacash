@@ -75,7 +75,7 @@ class _LandingState extends State<Landing> {
                     width: 50.0,
                   ),
                   MaterialButton(
-                      onPressed: (() => {Navigator.pushNamed(context, '/')}),
+                      onPressed: (() => {Navigator.pushNamed(context, '/navbar')}),
                       color: Colors.white,
                       height: 50.0,
                       minWidth: 300,

@@ -1,7 +1,6 @@
-// ignore_for_file: depend_on_referenced_packages
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/widgets/add_new_momo_loan.dart';
 import 'package:instacash/widgets/instacash_buttons.dart';
 
 class SelectMomo extends StatefulWidget {
@@ -13,18 +12,12 @@ class SelectMomo extends StatefulWidget {
 
 class _SelectMomoState extends State<SelectMomo> {
   final String _selectedValue = '';
-  late String _dropdownvalue;
-   bool checkedValue = false;
-  final List<String> items = [
-    'Select network',
-    'MTN',
-    'Vodafone',
-    'AirtelTigo',
-  ];
-  @override
-  void initState() {
-    super.initState();
-    _dropdownvalue = items[0];
+  bool _isVisible = false;
+
+  void showToast() {
+    setState(() {
+      _isVisible = !_isVisible;
+    });
   }
   @override
   Widget build(BuildContext context) {
@@ -102,7 +95,7 @@ class _SelectMomoState extends State<SelectMomo> {
             ),
 
             const SizedBox(
-              height: 60.0,
+              height: 50.0,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30.0),
@@ -151,7 +144,7 @@ class _SelectMomoState extends State<SelectMomo> {
                         ),
                         //const SizedBox(height: 5.0,),
                         Align(
-                          alignment: const AlignmentDirectional(-0.55, 5.0),
+                          alignment: const AlignmentDirectional(-0.47, 5.0),
                           child: Text(
                             'Ghs 0.00 - No Fees',
                             style: GoogleFonts.poppins(
@@ -163,7 +156,7 @@ class _SelectMomoState extends State<SelectMomo> {
                           ),
                         ),
                         Align(
-                          alignment: const AlignmentDirectional(-0.3, 5.0),
+                          alignment: const AlignmentDirectional(-0.47, 5.0),
                           child: Text(
                             'Instantly Available',
                             style: GoogleFonts.poppins(
@@ -178,175 +171,66 @@ class _SelectMomoState extends State<SelectMomo> {
                     )),
               ),
             ),
-            const SizedBox(height: 30.0,),
-            Align(
-              alignment: const AlignmentDirectional(-0.7, 5.0),
-              child:
-              Text(
-                'Enter mobile money details',
-              style: GoogleFonts.poppins(
-                              textStyle: const TextStyle(
-                                  color: Colors.black87,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.w500),
+            const SizedBox(height: 20.0,),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+              child: GestureDetector(
+                onTap: () {
+                  showToast();
+                },
+                child: Container(
+                    height: 50.0,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          children: [
+                            const SizedBox(width: 10.0),
+                            Image.asset(
+                              'assets/momo.png',
+                              height: 30.0,
+                              width: 20.0,
                             ),
-              )
-            ),
-            const SizedBox(height: 25.0,),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                height: 60.0,
-                color: Colors.white,
-                  child: PopupMenuButton<String>(
-                    itemBuilder: (context) {
-                      return items.map((str) {
-                        return PopupMenuItem(
-                          value: str,
-                          textStyle: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.black54,
-                      fontSize: 14.0,
-                      fontWeight: FontWeight.w400),
-                ),
-                          child: Text(str),
-                        );
-                      }).toList();
-                    },
-                    child: Row(
-                      //mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
-                            child:
-                        Text(_dropdownvalue,
-                        style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.black54,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400),
-                ),),),
-                        const SizedBox(width: 180.0,),
-                        const Icon(Icons.keyboard_arrow_down),
+                            const SizedBox(
+                              width: 15.0,
+                            ),
+                            Text(
+                              'Add new Momo',
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    color: Colors.black54,
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 140.0,
+                            ),
+                            const Icon(
+                              Icons.arrow_forward_ios,
+                              size: 16.0,
+                              color: Colors.black54,
+                            )
+                          ],
+                        ),
                       ],
-                    ),
-                    onSelected: (v) {
-                      setState(() {
-                        if (kDebugMode) {
-                          print('!!!===== $v');
-                        }
-                        _dropdownvalue= v;
-                      });
-                    },
-                  ),
+                    )),
               ),
             ),
             const SizedBox(height: 20.0,),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                height: 60.0,
-                color: Colors.white,
-                child: Column(
-                  children: [
-                _textformfieldbnumber(),
-                  ], 
-                ),
-              ),
+            Visibility(
+              replacement: const SizedBox(height: 350.0,),
+             visible: _isVisible,
+            child: 
+            const AddNewMomo(),
             ),
-
-        const SizedBox(height: 20.0,),
-        Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                height: 60.0,
-                color: Colors.white,
-                child: Column(
-                  children: [
-                _textformfieldbname(),
-                  ], 
-                ),
-              ),
-            ),
-            const SizedBox(height: 3.0,),
-            Align(
-              alignment: const AlignmentDirectional(-0.63, 5.0),
-              child: Text(
-                'Make sure you confirm the number before',
-              style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.black87,
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.w600),
-                ) 
-              ),
-            ),
-            Align(
-              alignment: const AlignmentDirectional(-0.85, 5.0),
-              child: Text(
-                'you proceed.',
-              style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.black87,
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.w600),
-                ) 
-              ),
-            ),
-            const SizedBox(height: 10.0,),
-           const Align(
-              alignment: AlignmentDirectional(-0.83, 5.0),
-              child:
-             BankSavetButton(),
-            ),
-            const SizedBox(height: 20.0,),
-            const BankContinueButton(),
+            const LoanMomoContinueButton(),
           ],
         ),
       ),
     );
   }
 }
-
-Widget _textformfieldbnumber() {
-    return SizedBox(
-      child: TextFormField(
-        keyboardType: TextInputType.number,
-        decoration:  InputDecoration(
-            hintText: 'Enter mobile money Number',
-            hintStyle: GoogleFonts.poppins(
-            textStyle: const TextStyle(
-                color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500)), 
-                border: InputBorder.none,
-                focusedBorder: InputBorder.none,
-                enabledBorder: InputBorder.none,
-                errorBorder: InputBorder.none,
-                disabledBorder: InputBorder.none),
-                textAlign: TextAlign.start,
-      ),
-    );
-  }
-
-
-  Widget _textformfieldbname() {
-    return SizedBox(
-      child: TextFormField(
-        keyboardType: TextInputType.name,
-        decoration:  InputDecoration(
-            hintText: 'enter full name',
-            hintStyle: GoogleFonts.poppins(
-            textStyle: const TextStyle(
-                color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500)), 
-                border: InputBorder.none,
-                focusedBorder: InputBorder.none,
-                enabledBorder: InputBorder.none,
-                errorBorder: InputBorder.none,
-                disabledBorder: InputBorder.none),
-                textAlign: TextAlign.start,
-      ),
-    );
-  }

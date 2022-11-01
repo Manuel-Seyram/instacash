@@ -7,7 +7,7 @@ packages:
       name: archive
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.3.1"
+    version: "3.3.2"
   args:
     dependency: transitive
     description:
@@ -29,6 +29,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  carousel_slider:
+    dependency: "direct main"
+    description:
+      name: carousel_slider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.1.1"
   characters:
     dependency: transitive
     description:
@@ -124,7 +131,14 @@ packages:
       name: flutter_native_splash
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.11"
+    version: "2.2.12"
+  flutter_phosphor_icons:
+    dependency: "direct main"
+    description:
+      name: flutter_phosphor_icons
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.1+6"
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -132,13 +146,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.7"
-  flutter_screen_lock:
-    dependency: "direct dev"
-    description:
-      name: flutter_screen_lock
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "7.0.4"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -150,7 +157,7 @@ packages:
     source: sdk
     version: "0.0.0"
   google_fonts:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: google_fonts
       url: "https://pub.dartlang.org"
@@ -162,7 +169,7 @@ packages:
       name: html
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.15.0"
+    version: "0.15.1"
   http:
     dependency: transitive
     description:
@@ -183,9 +190,9 @@ packages:
       name: image
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.2.0"
+    version: "3.2.2"
   image_picker:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: image_picker
       url: "https://pub.dartlang.org"
@@ -220,7 +227,7 @@ packages:
     source: hosted
     version: "2.6.2"
   intl_phone_field:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: intl_phone_field
       url: "https://pub.dartlang.org"
@@ -323,7 +330,7 @@ packages:
       name: petitparser
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.0.0"
+    version: "5.1.0"
   pin_code_fields:
     dependency: "direct main"
     description:
@@ -353,7 +360,7 @@ packages:
     source: hosted
     version: "4.2.4"
   show_up_animation:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: show_up_animation
       url: "https://pub.dartlang.org"

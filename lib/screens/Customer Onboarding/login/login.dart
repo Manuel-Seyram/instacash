@@ -1,7 +1,4 @@
-// ignore: file_names
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-// ignore: depend_on_referenced_packages
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/widgets/instacash_buttons.dart';
 import 'package:instacash/widgets/login_form.dart';
@@ -93,9 +90,6 @@ class Login extends StatelessWidget {
                     )),
               ),
             ),
-            RichText(
-                text: TextSpan(
-                    text: 'kwame', recognizer: TapGestureRecognizer()..onTap))
           ],
         ),
       ),

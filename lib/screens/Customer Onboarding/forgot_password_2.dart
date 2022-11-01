@@ -22,6 +22,7 @@ class _Forgotpassword2State extends State<Forgotpassword2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: SingleChildScrollView(
         child:
       Column(

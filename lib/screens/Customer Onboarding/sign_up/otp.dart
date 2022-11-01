@@ -15,12 +15,14 @@ class Otp extends StatefulWidget {
 
 class _OtpState extends State<Otp> {
   final _codeController = TextEditingController();
+  // ignore: unused_field
   bool _codeFilled = false;
   bool pinFieldEmpty = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: SingleChildScrollView(
         child:
       Column(
