@@ -1,4 +1,3 @@
-#
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -33,9 +32,6 @@ class SavingsMethod extends StatelessWidget {
                 const SizedBox(
                   width: 280.0,
                 ),
-                const CircleAvatar(
-                  radius: 18.0,
-                )
               ],
             ),
             const SizedBox(

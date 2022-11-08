@@ -45,9 +45,6 @@ class _BanKReceiptState extends State<BanKReceipt> {
               const SizedBox(
                 width: 280.0,
               ),
-              const CircleAvatar(
-                radius: 18.0,
-              )
             ],
           ),
           const SizedBox(

@@ -23,20 +23,6 @@ class _DigiSaveGoalState extends State<DigiSaveGoal> {
           const SizedBox(
             height: 40.0,
           ),
-          Row(
-            children: const[
-               SizedBox(
-                width: 20.0,
-              ),
-              
-               SizedBox(
-                width: 310.0,
-              ),
-              CircleAvatar(
-                radius: 18.0,
-              )
-            ],
-          ),
           const SizedBox(
             height: 20.0,
           ),
@@ -124,12 +110,14 @@ class _DigiSaveGoalState extends State<DigiSaveGoal> {
               ],
             ),
           ),),
-          const SizedBox(height: 210.0,),
+          const SizedBox(height: 320.0,),
           Row(
             children: [
               const SizedBox(width: 10.0,),
               MaterialButton(
-                 onPressed: () {},
+                 onPressed: () {
+                  Navigator.pushNamed(context, '/savingsmethod');
+                 },
                  color: const Color.fromARGB(249, 40, 68, 194),
                   textColor: Colors.white,
                   padding: const EdgeInsets.all(5.0),
@@ -179,7 +167,7 @@ class _DigiSaveGoalState extends State<DigiSaveGoal> {
             ],
           ),
           const SizedBox(height: 30.0,),
-          const DigiSaveGoalButton (),
+          
         ],
       ),
       ),

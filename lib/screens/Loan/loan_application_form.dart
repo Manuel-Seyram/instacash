@@ -68,9 +68,6 @@ class _LoanApplicationState extends State<LoanApplication> {
               ),
             ),
             const SizedBox(width: 280.0,),
-            const CircleAvatar(
-              radius: 18.0,
-            )
               ],
             ),
             const SizedBox(

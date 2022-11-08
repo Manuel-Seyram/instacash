@@ -48,9 +48,6 @@ class _SelectBankState extends State<SelectBank> {
                 const SizedBox(
                   width: 280.0,
                 ),
-                const CircleAvatar(
-                  radius: 18.0,
-                )
               ],
             ),
             const SizedBox(
