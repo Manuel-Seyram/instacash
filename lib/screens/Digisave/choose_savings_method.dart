@@ -1,4 +1,3 @@
-#
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -66,9 +65,10 @@ class SavingsMethod extends StatelessWidget {
                 ]),
               ),
             ),
-
-            const SizedBox(height: 90.0,),
-             Padding(
+            const SizedBox(
+              height: 90.0,
+            ),
+            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: GestureDetector(
                 onTap: () {
@@ -79,35 +79,37 @@ class SavingsMethod extends StatelessWidget {
                     color: Colors.white,
                     child: Column(
                       children: [
-                        const SizedBox(height: 15.0,),
+                        const SizedBox(
+                          height: 15.0,
+                        ),
                         Row(
                           children: [
-                        const SizedBox(width: 10.0),
-                        Image.asset(
-                          'assets/roundup.png',
-                          height: 40.0,
-                          width: 30.0,
-                        ),
-                        const SizedBox(
-                          width: 30.0,
-                        ),
-                        Text(
-                          'Round Up',
-                          style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
-                                color: Colors.black54,
-                                fontSize: 14.0,
-                                fontWeight: FontWeight.w700),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 160.0,
-                        ),
-                        const Icon(
-                          Icons.arrow_forward_ios,
-                          size: 16.0,
-                          color: Colors.black54,
-                        )
+                            const SizedBox(width: 10.0),
+                            Image.asset(
+                              'assets/roundup.png',
+                              height: 40.0,
+                              width: 30.0,
+                            ),
+                            const SizedBox(
+                              width: 30.0,
+                            ),
+                            Text(
+                              'Round Up',
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    color: Colors.black54,
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 160.0,
+                            ),
+                            const Icon(
+                              Icons.arrow_forward_ios,
+                              size: 16.0,
+                              color: Colors.black54,
+                            )
                           ],
                         ),
                         //const SizedBox(height: 5.0,),
@@ -116,18 +118,20 @@ class SavingsMethod extends StatelessWidget {
                           child: Text(
                             'We will round up change on \nspendings and add it to your \nsavings wallet ',
                             style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
-                                color: Colors.black54,
-                                fontSize: 12.0,
-                                fontWeight: FontWeight.w400),
-                          ),
+                              textStyle: const TextStyle(
+                                  color: Colors.black54,
+                                  fontSize: 12.0,
+                                  fontWeight: FontWeight.w400),
+                            ),
                           ),
                         )
                       ],
                     )),
               ),
             ),
-            const SizedBox(height: 50.0,),
+            const SizedBox(
+              height: 50.0,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: GestureDetector(
@@ -139,35 +143,37 @@ class SavingsMethod extends StatelessWidget {
                     color: Colors.white,
                     child: Column(
                       children: [
-                        const SizedBox(height: 15.0,),
+                        const SizedBox(
+                          height: 15.0,
+                        ),
                         Row(
                           children: [
-                        const SizedBox(width: 10.0),
-                        Image.asset(
-                          'assets/PayCheck.png',
-                          height: 40.0,
-                          width: 30.0,
-                        ),
-                        const SizedBox(
-                          width: 30.0,
-                        ),
-                        Text(
-                          'Pay Check',
-                          style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
-                                color: Colors.black54,
-                                fontSize: 14.0,
-                                fontWeight: FontWeight.w700),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 155.0,
-                        ),
-                        const Icon(
-                          Icons.arrow_forward_ios,
-                          size: 16.0,
-                          color: Colors.black54,
-                        )
+                            const SizedBox(width: 10.0),
+                            Image.asset(
+                              'assets/PayCheck.png',
+                              height: 40.0,
+                              width: 30.0,
+                            ),
+                            const SizedBox(
+                              width: 30.0,
+                            ),
+                            Text(
+                              'Pay Check',
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    color: Colors.black54,
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 155.0,
+                            ),
+                            const Icon(
+                              Icons.arrow_forward_ios,
+                              size: 16.0,
+                              color: Colors.black54,
+                            )
                           ],
                         ),
                         //const SizedBox(height: 5.0,),
@@ -176,18 +182,20 @@ class SavingsMethod extends StatelessWidget {
                           child: Text(
                             'Instanly Available.',
                             style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
-                                color: Colors.black54,
-                                fontSize: 12.0,
-                                fontWeight: FontWeight.w400),
-                          ),
+                              textStyle: const TextStyle(
+                                  color: Colors.black54,
+                                  fontSize: 12.0,
+                                  fontWeight: FontWeight.w400),
+                            ),
                           ),
                         )
                       ],
                     )),
               ),
             ),
-            const SizedBox(height: 50.0,),
+            const SizedBox(
+              height: 50.0,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: GestureDetector(
@@ -199,35 +207,35 @@ class SavingsMethod extends StatelessWidget {
                     color: Colors.white,
                     child: Column(
                       children: [
-                        const SizedBox(height: 15.0,),
+                        const SizedBox(
+                          height: 15.0,
+                        ),
                         Row(
                           children: [
-                        const SizedBox(width: 10.0),
-                        Image.asset(
-                          'assets/lumpsum.png',
-                          height: 40.0,
-                          width: 30.0,
-                        ),
-                        const SizedBox(
-                          width: 30.0,
-                        ),
-                        Text(
-                          'Lump Sum',
-                          style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
-                                color: Colors.black54,
-                                fontSize: 14.0,
-                                fontWeight: FontWeight.w700),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 150.0
-                        ),
-                        const Icon(
-                          Icons.arrow_forward_ios,
-                          size: 16.0,
-                          color: Colors.black54,
-                        )
+                            const SizedBox(width: 10.0),
+                            Image.asset(
+                              'assets/lumpsum.png',
+                              height: 40.0,
+                              width: 30.0,
+                            ),
+                            const SizedBox(
+                              width: 30.0,
+                            ),
+                            Text(
+                              'Lump Sum',
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    color: Colors.black54,
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                            const SizedBox(width: 150.0),
+                            const Icon(
+                              Icons.arrow_forward_ios,
+                              size: 16.0,
+                              color: Colors.black54,
+                            )
                           ],
                         ),
                         //const SizedBox(height: 5.0,),
@@ -236,11 +244,11 @@ class SavingsMethod extends StatelessWidget {
                           child: Text(
                             'Instantly Available.',
                             style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
-                                color: Colors.black54,
-                                fontSize: 12.0,
-                                fontWeight: FontWeight.w400),
-                          ),
+                              textStyle: const TextStyle(
+                                  color: Colors.black54,
+                                  fontSize: 12.0,
+                                  fontWeight: FontWeight.w400),
+                            ),
                           ),
                         )
                       ],
