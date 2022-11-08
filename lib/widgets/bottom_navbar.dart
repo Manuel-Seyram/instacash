@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
+import 'package:instacash/screens/Digisave/digisave_goal_new_user.dart';
 import 'package:instacash/screens/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Loan/loan_application_form.dart';
@@ -16,7 +17,7 @@ class _NavbarState extends State<Navbar> {
   final screens = [
    const Homepage(),
    const Homepage(),
-   const Homepage(),
+   const DigiSaveGoal(),
    const Homepage(),
    const LoanApplication(),
    
@@ -53,17 +54,17 @@ class _NavbarState extends State<Navbar> {
     ),
     BottomNavigationBarItem(
       icon: Icon(PhosphorIcons.wallet),
-      label: 'Wallet',
+      label: 'Vault',
       activeIcon: Icon(PhosphorIcons.wallet_fill),
     ),
     BottomNavigationBarItem(
       icon: Icon(PhosphorIcons.credit_card),
-      label: 'Pay',
+      label: 'DigiSafe',
       activeIcon: Icon(PhosphorIcons.credit_card_fill),
     ),
     BottomNavigationBarItem(
       icon: Icon(PhosphorIcons.activity),
-      label: 'Activity',
+      label: 'Spendings',
       activeIcon: Icon(PhosphorIcons.activity_fill),
     ),
     BottomNavigationBarItem(

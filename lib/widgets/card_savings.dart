@@ -34,7 +34,7 @@ class CardSavings extends StatelessWidget {
                     Align(
                       alignment: const Alignment(-0.9, 5.0),
                       child: Text(
-                        'Savings',
+                        'DigiSave',
                         style: GoogleFonts.poppins(
                           textStyle: const TextStyle(
                               color: Colors.white,
@@ -44,7 +44,7 @@ class CardSavings extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      width: 180.0,
+                      width: 170.0,
                     ),
                     Image.asset(
                       'assets/slantedlogo.png',

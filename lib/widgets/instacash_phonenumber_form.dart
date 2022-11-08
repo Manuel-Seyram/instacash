@@ -1,8 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-// ignore: depend_on_referenced_packages
 import 'package:intl_phone_field/intl_phone_field.dart';
-// ignore: depend_on_referenced_packages
 import 'package:google_fonts/google_fonts.dart';
 
 class Phonebox extends StatelessWidget {
@@ -23,6 +21,7 @@ class Phonebox extends StatelessWidget {
         Column(
           //crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            const SizedBox(height: 10.0,),
             Align(
               alignment: const AlignmentDirectional(-0.9, 5.0),
               child: Text('Phone Number', style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black45, fontSize: 12.0, fontWeight: FontWeight.w500))),
@@ -31,12 +30,13 @@ class Phonebox extends StatelessWidget {
               showCursor: true,
               initialCountryCode: 'GH',
               disableLengthCheck: true,
-              style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black, fontSize: 12.0, fontWeight: FontWeight.w500)),
+              style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black54, fontSize: 14.0, fontWeight: FontWeight.w500)),
               keyboardType: TextInputType.phone,
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.justify,
+              autovalidateMode: AutovalidateMode.onUserInteraction,
               decoration: const InputDecoration(
                 alignLabelWithHint: true,
-                labelStyle: TextStyle(color: Colors.black,),
+                labelStyle: TextStyle(color: Colors.black54,),
               ),
               onChanged: (phone) {
                 if (kDebugMode) {
@@ -50,7 +50,7 @@ class Phonebox extends StatelessWidget {
               },
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             
           ],

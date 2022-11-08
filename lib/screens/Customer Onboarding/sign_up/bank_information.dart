@@ -110,8 +110,10 @@ class _BankInformationState extends State<BankInformation> {
               height: 20.0,
             ),
             Padding(
+              
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: Container(
+                width: MediaQuery.of(context).size.width,
                 height: 60.0,
                 color: Colors.white,
                   child: PopupMenuButton<String>(
@@ -142,7 +144,7 @@ class _BankInformationState extends State<BankInformation> {
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),),),
-                        const SizedBox(width: 180.0,),
+                        const SizedBox(width: 170.0,),
                         const Icon(Icons.keyboard_arrow_down),
                       ],
                     ),

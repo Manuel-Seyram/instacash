@@ -44,15 +44,28 @@ class _Forgotpassword2State extends State<Forgotpassword2> {
         
         Align(
           alignment: const AlignmentDirectional(-0.5, 5.0),
-          child: Text(
-            'Verify your number',
-            style: GoogleFonts.poppins(
-              textStyle: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.w500),
-            ),
-          ),
+          child: RichText(
+                text: TextSpan(children: [
+                  TextSpan(
+                    text: 'Verify your ',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'number',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.blue,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  )
+                ]),
+              ),
         ),
         const SizedBox(height: 20.0),
         Align(

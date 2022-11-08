@@ -51,22 +51,7 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-    }
-
-      flavorDimensions "default"
-    productFlavors { 
-        development {
-            dimension "default"
-            applicationIdSuffix ""
-            manifestPlaceholders = [appName: "instacash"]
-        }
-        production {
-            dimension "default"
-            applicationIdSuffix " "
-            manifestPlaceholders = [appName: "instacash"]
-        }        
-
-    }   
+    } 
 
     buildTypes {
         release {

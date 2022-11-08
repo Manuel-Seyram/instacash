@@ -129,7 +129,7 @@ class _Frontcard2State extends State<Frontcard2> {
           ),
           Row(
             children: [
-              const SizedBox(width: 70.0,),
+              const SizedBox(width: 60.0,),
                   
               MaterialButton(
                    onPressed: (() => {openCamera()}),

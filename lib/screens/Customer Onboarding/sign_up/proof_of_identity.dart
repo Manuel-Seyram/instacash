@@ -16,14 +16,27 @@ class Proof extends StatelessWidget {
             ),
             Align(
               alignment: const AlignmentDirectional(-0.6, 5.0),
-              child: Text(
-                'Proof of Identity',
-                style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.w500),
-                ),
+              child: RichText(
+                text: TextSpan(children: [
+                  TextSpan(
+                    text: 'Proof of ',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'identity',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.blue,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  )
+                ]),
               ),
             ),
             const SizedBox(height: 20.0),
@@ -58,6 +71,7 @@ class Proof extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 45.0),
               child: Container(
+                width: MediaQuery.of(context).size.width,
                   height: 60.0,
                   color: Colors.white,
                   child: Row(
@@ -81,7 +95,7 @@ class Proof extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        width: 90.0,
+                        width: 80.0,
                       ),
                       MaterialButton(
                         onPressed: null,
@@ -127,6 +141,7 @@ class Proof extends StatelessWidget {
                 },
                 child: Container(
                     height: 60.0,
+                    width: MediaQuery.of(context).size.width,
                     color: Colors.white,
                     child: Row(
                       children: [
@@ -149,7 +164,7 @@ class Proof extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          width: 70.0,
+                          width: 60.0,
                         ),
                         const Icon(
                           Icons.arrow_forward_ios,

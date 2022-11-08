@@ -24,6 +24,7 @@ class _AddNewcardState extends State<AddNewcard> {
             child: Text(
               'Enter bank account information',
               style: GoogleFonts.poppins(
+                
                 textStyle: const TextStyle(
                     color: Colors.black87,
                     fontSize: 14.0,

@@ -30,15 +30,28 @@ class _BasicInformationState extends State<BasicInformation> {
         ),
         Align(
           alignment: const AlignmentDirectional(-0.5, 5.0),
-          child: Text(
-            'Basic Information',
-            style: GoogleFonts.poppins(
-              textStyle: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.w500),
-            ),
-          ),
+          child: RichText(
+                text: TextSpan(children: [
+                  TextSpan(
+                    text: 'Basic ',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'information',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.blue,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  )
+                ]),
+              ),
         ),
         const SizedBox(height: 10.0),
         Align(

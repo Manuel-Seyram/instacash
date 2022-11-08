@@ -10,14 +10,14 @@ class LoanCard extends StatelessWidget {
     return Align(
       alignment: const Alignment(-0.35, 5.0),
       child: SizedBox(
-        width: size.width * 0.9,
+        width: size.width * 1.0,
         height: size.height * 0.22,
         child: Stack(
           children: <Widget>[
             Container(
               alignment: Alignment.center,
               child: Image.asset(
-                'assets/cardbg.png',
+                'assets/cardbg2.png',
                 height: 350,
                 width: double.infinity,
                 fit: BoxFit.cover,
@@ -33,10 +33,10 @@ class LoanCard extends StatelessWidget {
                   //mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const SizedBox(
-                      width: 35.0,
+                      width: 50.0,
                     ),
                     Align(
-                      alignment: const Alignment(-0.7, 5.0),
+                      alignment: const Alignment(-0.6, 5.0),
                       child: Text(
                         'Loan Balance',
                         style: GoogleFonts.poppins(
@@ -48,7 +48,7 @@ class LoanCard extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      width: 130.0,
+                      width: 150.0,
                     ),
                     Image.asset(
                       'assets/slantedlogo.png',
@@ -59,7 +59,7 @@ class LoanCard extends StatelessWidget {
                 ),
                 
                 Align(
-                  alignment: const Alignment(-0.7, 5.0),
+                  alignment: const Alignment(-0.65, 5.0),
                   child: Text(
                     'Jane Smith',
                     style: GoogleFonts.poppins(
@@ -76,7 +76,7 @@ class LoanCard extends StatelessWidget {
                 Row(
                      children: [
                       const SizedBox(
-                      width: 35.0,
+                      width: 45.0,
                     ),
                     Align(
                       alignment: const Alignment(-0.7, 5.0),

@@ -21,10 +21,28 @@ class PhoneField extends StatelessWidget {
                              Align(
                       alignment: const AlignmentDirectional(-0.5, 5.0),
                       child:
-                    Text(
-                      'Lets get started!',
-                      style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black, fontSize: 24.0, fontWeight: FontWeight.w500),),
+                    RichText(
+                text: TextSpan(children: [
+                  TextSpan(
+                    text: 'Lets get ',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
                     ),
+                  ),
+                  TextSpan(
+                    text: 'started',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.blue,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  )
+                ]),
+              ),
                 ),
                      const SizedBox(height: 20.0),
                              Align(

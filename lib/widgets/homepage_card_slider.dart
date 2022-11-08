@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:instacash/widgets/card_loan.dart';
 import 'package:instacash/widgets/card_savings.dart';
+import 'package:instacash/widgets/vault_card.dart';
 
 class CardSlider extends StatefulWidget {
   const CardSlider({super.key});
@@ -17,6 +18,7 @@ class _CardSliderState extends State<CardSlider> {
   List cardList = [
     const CardLoan(),
     const CardSavings(),
+    const CardVault(),
   ];
 
   List<T> map<T>(List list, Function handler) {

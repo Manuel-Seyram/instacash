@@ -118,7 +118,7 @@ class _SelfieverifyState extends State<Selfieverify> {
           ),
           Row(
             children: [
-              const SizedBox(width: 70.0,),
+              const SizedBox(width: 52.0,),
                   const SizedBox(width: 10.0,),
               MaterialButton(
                    onPressed: (() => {openCamera()}),

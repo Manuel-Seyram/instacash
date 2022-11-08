@@ -571,3 +571,34 @@ class RepayConfirmButton extends StatelessWidget {
         ));
   }
 }
+
+
+
+
+//DigiSave Section Buttons
+
+class DigiSaveGoalButton extends StatelessWidget {
+  const DigiSaveGoalButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/savingsmethod');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'Next',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
