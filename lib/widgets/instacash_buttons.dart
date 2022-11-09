@@ -1,7 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/screens/Loan/bank_loan_accept_screen.dart';
+import 'package:instacash/screens/Loan/card_loan_accept_screen.dart';
+import 'package:instacash/screens/Loan/choose_loan_amount.dart';
+import 'package:instacash/screens/Loan/delivery_method.dart';
+import 'package:instacash/screens/Loan/momo_loan_accept_screen.dart';
+import 'package:instacash/widgets/bottom_navbar.dart';
 import 'package:instacash/widgets/pop_up_mode_of_payment.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 //HERE YoU WILL FIND THE BUTTONS USED FOR INSTACASH APP
 
@@ -229,7 +236,11 @@ class LoanInformationButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/loanamount');
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const LoanAmount(),
+                              withNavBar: false,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -255,7 +266,11 @@ class LoanAmountButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/loandeliverymethod');
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const DeliveryMethod(),
+                              withNavBar: false,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -359,7 +374,11 @@ class LoanCardContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/cardreceipt');
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const CardReceipt(),
+                              withNavBar: false,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -385,7 +404,11 @@ class LoanMomoContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/momoreceipt');
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen:const MomoReceipt(),
+                              withNavBar: false,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -411,7 +434,11 @@ class LoanBankContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/bankreceipt');
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen:const BanKReceipt(),
+                              withNavBar: false,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -437,7 +464,12 @@ class LoanBankReceiptButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/homepage');
+          PersistentNavBarNavigator.pushNewScreen(
+        context,
+        screen:const Navbar(),
+        withNavBar: true,
+    );
+
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -463,7 +495,14 @@ class LoanCardReceiptButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/homepage');
+         Navigator.of(context).pushAndRemoveUntil(
+        CupertinoPageRoute(
+          builder: (BuildContext context) {
+            return const Navbar();
+          },
+        ),
+        (_) => false,
+      );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -489,7 +528,11 @@ class LoanMomoReceiptButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/homepage');
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const Navbar(),
+                              withNavBar: true,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -576,4 +619,56 @@ class RepayConfirmButton extends StatelessWidget {
 
 
 //DigiSave Section Buttons
+class RoundUpAgreeButton extends StatelessWidget {
+  const RoundUpAgreeButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'I agree to the terms',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+
+class PayCheckAgreeButton extends StatelessWidget {
+  const PayCheckAgreeButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '');
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        child: Text(
+          'I agree to the terms',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
 

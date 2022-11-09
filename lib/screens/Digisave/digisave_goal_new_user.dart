@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:instacash/widgets/instacash_buttons.dart';
+import 'package:instacash/screens/Digisave/choose_savings_method.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+
 
 
 class DigiSaveGoal extends StatefulWidget {
@@ -116,7 +118,11 @@ class _DigiSaveGoalState extends State<DigiSaveGoal> {
               const SizedBox(width: 10.0,),
               MaterialButton(
                  onPressed: () {
-                  Navigator.pushNamed(context, '/savingsmethod');
+                  PersistentNavBarNavigator.pushNewScreen(
+                  context,
+                  screen:const SavingsMethod(),
+                 withNavBar: true,
+                            );
                  },
                  color: const Color.fromARGB(249, 40, 68, 194),
                   textColor: Colors.white,

@@ -4,7 +4,7 @@ import 'package:instacash/screens/Digisave/digisave_goal_new_user.dart';
 import 'package:instacash/screens/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Loan/loan_application_form.dart';
-
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class Navbar extends StatefulWidget {
   const Navbar({Key? key}) : super(key: key);
@@ -13,85 +13,94 @@ class Navbar extends StatefulWidget {
 }
 
 class _NavbarState extends State<Navbar> {
-  int index = 0;
-  final screens = [
-   const Homepage(),
-   const Homepage(),
-   const DigiSaveGoal(),
-   const Homepage(),
-   const LoanApplication(),
-   
-  ];
+ final PersistentTabController _controller = PersistentTabController(initialIndex: 0);
+
+  List<Widget> _buildScreens() {
+    return [
+      const Homepage(),
+      const Homepage(),
+      const Homepage(),
+      const DigiSaveGoal(),
+      const LoanApplication(),
+    ];
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: screens[index],
-      bottomNavigationBar: BottomNavigationBar(
-  type: BottomNavigationBarType.fixed, // Fixed 
-  backgroundColor: Colors.white, // <-- This works for fixed
-  selectedItemColor: const Color.fromARGB(249, 40, 68, 194),
-  unselectedItemColor: Colors.black54,
-  currentIndex: index,
-  iconSize: 24,
-  unselectedLabelStyle: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Colors.black54,
-                          fontSize: 12.0,
-                          fontWeight: FontWeight.w500),
-                    ),
-  selectedLabelStyle: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Colors.black54,
-                          fontSize: 12.0,
-                          fontWeight: FontWeight.w600),
-                    ),
-  onTap: (index) => setState(() => this.index = index),
-  items: const [
-    BottomNavigationBarItem(
-      icon: Icon(PhosphorIcons.house),
-      label: 'Home',
-      activeIcon: Icon(PhosphorIcons.house_fill),
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(PhosphorIcons.wallet),
-      label: 'Vault',
-      activeIcon: Icon(PhosphorIcons.wallet_fill),
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(PhosphorIcons.credit_card),
-      label: 'DigiSafe',
-      activeIcon: Icon(PhosphorIcons.credit_card_fill),
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(PhosphorIcons.activity),
-      label: 'Spendings',
-      activeIcon: Icon(PhosphorIcons.activity_fill),
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.contacts),
-      label: 'Profile',
-      activeIcon: Icon(Icons.contacts)
-    ),
-  ],
-      )
+    return PersistentTabView(
+        context,
+        controller: _controller,
+        screens: _buildScreens(),
+        padding: const NavBarPadding.all(10),
+        items: _navBarsItems(),
+        confineInSafeArea: true,
+        backgroundColor: Colors.white, 
+        handleAndroidBackButtonPress: true, 
+        resizeToAvoidBottomInset: true, 
+        stateManagement: true, 
+        hideNavigationBarWhenKeyboardShows: true, 
+        decoration: NavBarDecoration(
+          //borderRadius: BorderRadius.circular(10.0),
+          colorBehindNavBar: Colors.white,
+          border: Border.all(color: Colors.grey, width: 0.5),
+        ),
+        popAllScreensOnTapOfSelectedTab: true,
+        popActionScreens: PopActionScreensType.all,
+        itemAnimationProperties: const ItemAnimationProperties( 
+          duration: Duration(milliseconds: 200),
+          curve: Curves.ease,
+        ),
+        screenTransitionAnimation: const ScreenTransitionAnimation( 
+          animateTabTransition: true,
+          curve: Curves.ease,
+          duration: Duration(milliseconds: 200),
+        ),
+        navBarStyle: NavBarStyle.style6, 
     );
   }
+  List<PersistentBottomNavBarItem> _navBarsItems() {
+        return [
+            PersistentBottomNavBarItem(
+                inactiveIcon: const Icon(PhosphorIcons.house),
+                icon: const Icon(PhosphorIcons.house_fill),
+                title: ('Home'),
+                activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
+                inactiveColorPrimary: Colors.black54,
+                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
+            ),
+            PersistentBottomNavBarItem(
+              inactiveIcon: const Icon(PhosphorIcons.wallet) ,
+                icon: const Icon(PhosphorIcons.wallet_fill),
+                title: ('Vault'),
+                activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
+                inactiveColorPrimary: Colors.black54,
+                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
+            ),
+            PersistentBottomNavBarItem(
+                inactiveIcon: const Icon(PhosphorIcons.activity) ,
+                icon: const Icon(PhosphorIcons.activity_fill),
+                title: ('Spendings'),
+                activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
+                inactiveColorPrimary: Colors.black54,
+                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
+            ),
+            PersistentBottomNavBarItem(
+                inactiveIcon:const Icon(PhosphorIcons.credit_card) ,
+                icon: const Icon(PhosphorIcons.credit_card_fill),
+                title: ('DigiSave'),
+                activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
+                inactiveColorPrimary: Colors.black54,
+                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
+            ),  
+            PersistentBottomNavBarItem(
+                inactiveIcon: const Icon(Icons.person) ,
+                icon: const Icon(Icons.person),
+                title: ('Profile'),
+                activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
+                inactiveColorPrimary: Colors.black54,
+                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
+            ),
+        ];
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //

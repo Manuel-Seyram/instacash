@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/screens/Digisave/pay_check.dart';
+import 'package:instacash/screens/Digisave/round_up.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class SavingsMethod extends StatelessWidget {
   const SavingsMethod({super.key});
@@ -69,7 +72,11 @@ class SavingsMethod extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '');
+                  PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const RoundUp(),
+                              withNavBar: true,
+                            );
                 },
                 child: Container(
                     height: 120.0,
@@ -133,7 +140,11 @@ class SavingsMethod extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '');
+                  PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const PayCheck(),
+                              withNavBar: true,
+                            );
                 },
                 child: Container(
                     height: 95.0,
