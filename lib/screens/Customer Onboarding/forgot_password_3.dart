@@ -16,7 +16,7 @@ class Forgotpassword3 extends StatelessWidget {
       Column(
         children:  [
                      const SizedBox(
-          height: 30.0,
+          height: 70.0,
         ),
         Align(
           alignment: const AlignmentDirectional(-0.9, 5.0),

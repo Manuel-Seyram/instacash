@@ -212,7 +212,7 @@ class BankAccountInformationButton extends StatelessWidget {
           Navigator.pushNamed(context, '/idproof');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 60.0,
+        height: 40.0,
         minWidth: 300,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -653,13 +653,16 @@ class PayCheckAgreeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
+          
           Navigator.pushNamed(context, '');
+          
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
         child: Text(
           'I agree to the terms',
           style: GoogleFonts.poppins(

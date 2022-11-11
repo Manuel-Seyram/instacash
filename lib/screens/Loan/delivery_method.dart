@@ -12,7 +12,7 @@ class DeliveryMethod extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 40.0,
+              height: 70.0,
             ),
             Row(
               children: [

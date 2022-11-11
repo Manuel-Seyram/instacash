@@ -23,7 +23,7 @@ class _BasicInformationState extends State<BasicInformation> {
           child: Column(
             children: [
         const SizedBox(
-          height: 30.0,
+          height: 70.0,
         ),
         const SizedBox(
           height: 10.0,

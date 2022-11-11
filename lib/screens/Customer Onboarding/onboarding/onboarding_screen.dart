@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// ignore: depend_on_referenced_packages
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page1.dart';
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page2.dart';
@@ -75,7 +74,9 @@ class _LandingState extends State<Landing> {
                     width: 50.0,
                   ),
                   MaterialButton(
-                      onPressed: (() => {Navigator.pushNamed(context, '/navbar')}),
+                      onPressed: () => {
+                            check(context),
+                          },
                       color: Colors.white,
                       height: 50.0,
                       minWidth: 300,
@@ -103,4 +104,8 @@ class _LandingState extends State<Landing> {
       ),
     );
   }
+}
+
+Future check(context) async {
+            Navigator.pushNamed(context, '/navbar');
 }

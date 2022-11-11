@@ -23,7 +23,7 @@ class _RepaymentState extends State<Repayment> {
       Column(
         children: [
           const SizedBox(
-            height: 40.0,
+            height: 70.0,
           ),
           Row(
             children: [

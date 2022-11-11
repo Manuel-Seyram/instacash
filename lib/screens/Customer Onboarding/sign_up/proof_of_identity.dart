@@ -11,7 +11,7 @@ class Proof extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 94,
+              height: 120,
             ),
             Align(
               alignment: const AlignmentDirectional(-0.6, 5.0),

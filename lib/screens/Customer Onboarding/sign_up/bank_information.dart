@@ -39,7 +39,7 @@ class _BankInformationState extends State<BankInformation> {
         child: Column(
           children: [
             const SizedBox(
-              height: 40.0,
+              height: 70.0,
             ),
             Align(
               alignment: const AlignmentDirectional(-0.9, 5.0),
@@ -53,7 +53,7 @@ class _BankInformationState extends State<BankInformation> {
               ),
             ),
             const SizedBox(
-              height: 20.0,
+              height: 40.0,
             ),
             Align(
               alignment: const AlignmentDirectional(-0.6, 5.0),
@@ -205,7 +205,7 @@ class _BankInformationState extends State<BankInformation> {
   controlAffinity: ListTileControlAffinity.leading,  //  <-- leading Checkbox
 ),
 
-        const SizedBox(height: 160.0,),
+        const SizedBox(height: 120.0,),
         const BankAccountInformationButton(),
           ],
         ),

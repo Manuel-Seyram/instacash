@@ -13,7 +13,7 @@ class Login extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 40.0,
+              height: 70.0,
             ),
             Align(
               alignment: const AlignmentDirectional(-0.7, 5.0),

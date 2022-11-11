@@ -27,7 +27,7 @@ class _SelectBankState extends State<SelectBank> {
         child: Column(
           children: [
             const SizedBox(
-              height: 40.0,
+              height: 70.0,
             ),
             Row(
               children: [

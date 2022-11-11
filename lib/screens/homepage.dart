@@ -78,7 +78,7 @@ class Homepage extends StatelessWidget {
                 child: Column(
                   children: [
                     const SizedBox(
-                      height: 80.0,
+                      height: 100.0,
                     ),
                     Align(
                       alignment: const AlignmentDirectional(-0.87, 5.0),

@@ -28,7 +28,7 @@ class _OtpState extends State<Otp> {
       Column(
       children: [
         const SizedBox(
-          height: 30.0,
+          height: 70.0,
         ),
         Align(
           alignment: const AlignmentDirectional(-0.9, 5.0),
@@ -42,7 +42,7 @@ class _OtpState extends State<Otp> {
           ),
         ),
         const SizedBox(
-          height: 10.0,
+          height: 40.0,
         ),
         Align(
           alignment: const AlignmentDirectional(-0.5, 5.0),
@@ -143,7 +143,7 @@ class _OtpState extends State<Otp> {
                      ),
               
               const SizedBox(
-                height: 350,
+                height: 300,
               ),
 
               const ConfirmButton()

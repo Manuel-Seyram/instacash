@@ -16,7 +16,7 @@ class PhoneField extends StatelessWidget {
       child:
       Column(
         children:  [
-                     const SizedBox(height: 94 ,),
+                     const SizedBox(height: 120 ,),
 
                              Align(
                       alignment: const AlignmentDirectional(-0.5, 5.0),
