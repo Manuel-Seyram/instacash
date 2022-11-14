@@ -6,6 +6,10 @@ import 'package:instacash/screens/Loan/card_loan_accept_screen.dart';
 import 'package:instacash/screens/Loan/choose_loan_amount.dart';
 import 'package:instacash/screens/Loan/delivery_method.dart';
 import 'package:instacash/screens/Loan/momo_loan_accept_screen.dart';
+import 'package:instacash/screens/Vault/choose_deposit_method.dart';
+import 'package:instacash/screens/Vault/choose_funding_amount_lump_sum.dart';
+import 'package:instacash/screens/Vault/widgets/pop_up_lump_sum_summary_momo.dart';
+import 'package:instacash/screens/Vault/widgets/pop_up_summary_lumpsum.dart';
 import 'package:instacash/widgets/bottom_navbar.dart';
 import 'package:instacash/widgets/pop_up_mode_of_payment.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -618,7 +622,7 @@ class RepayConfirmButton extends StatelessWidget {
 
 
 
-//DigiSave Section Buttons
+//Vault Section Buttons
 class RoundUpAgreeButton extends StatelessWidget {
   const RoundUpAgreeButton({super.key});
 
@@ -675,3 +679,203 @@ class PayCheckAgreeButton extends StatelessWidget {
   }
 }
 
+class LumpSumAgreeButton extends StatelessWidget {
+  const LumpSumAgreeButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const LumpSumFunding(),
+                              withNavBar: true,
+                            );
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'I agree to the terms',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LumpSumContinueButton extends StatelessWidget {
+  const LumpSumContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const DeliveryMethodVault(),
+                              withNavBar: true,
+                            );
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LumpSumBankContinueButton extends StatelessWidget {
+  const LumpSumBankContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+          showCupertinoModalPopup(
+              context: context,
+              builder: (BuildContext builder) {
+                return CupertinoPopupSurface(
+                    child: Container(
+                  color: Colors.white,
+                  alignment: Alignment.center,
+                  width: double.infinity,
+                  height: 550,
+                  child: const PopSummary(),
+                ));
+              });
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+
+class LumpSumMomoContinueButton extends StatelessWidget {
+  const LumpSumMomoContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+          showCupertinoModalPopup(
+              context: context,
+              builder: (BuildContext builder) {
+                return CupertinoPopupSurface(
+                    child: Container(
+                  color: Colors.white,
+                  alignment: Alignment.center,
+                  width: double.infinity,
+                  height: 550,
+                  child: const PopSummaryMomo(),
+                ));
+              });
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LumpSumBankConfirmButton extends StatelessWidget {
+  const LumpSumBankConfirmButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Confirm',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class LumpSumMomoConfirmButton extends StatelessWidget {
+  const LumpSumMomoConfirmButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Confirm',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}

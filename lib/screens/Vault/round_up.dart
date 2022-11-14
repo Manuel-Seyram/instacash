@@ -35,7 +35,7 @@ class RoundUp extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 20.0,
+              height: 40.0,
             ),
             Align(
               alignment: const AlignmentDirectional(-0.75, 5.0),

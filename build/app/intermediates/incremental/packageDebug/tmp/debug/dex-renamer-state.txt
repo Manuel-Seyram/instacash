@@ -1,4 +1,4 @@
-#Sat Nov 12 23:07:00 GMT 2022
+#Mon Nov 14 16:44:11 GMT 2022
 base.0=C\:\\Users\\Manuel\\Downloads\\instacash\\instacash_mobile\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

@@ -9,7 +9,7 @@ import 'package:instacash/screens/Customer%20Onboarding/sign_up/otp.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/proof_of_identity.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/selfie_onboarding.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/selfie_verify.dart';
-import 'package:instacash/screens/Vault/choose_savings_method.dart';
+import 'package:instacash/screens/Vault/vault.dart';
 import 'package:instacash/screens/Loan/bank_loan_accept_screen.dart';
 import 'package:instacash/screens/Loan/card_loan_accept_screen.dart';
 import 'package:instacash/screens/Loan/choose_loan_amount.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
-import 'package:instacash/screens/Vault/choose_savings_method.dart';
+import 'package:instacash/screens/Vault/vault.dart';
 import 'package:instacash/screens/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Loan/loan_application_form.dart';
