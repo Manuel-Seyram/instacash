@@ -24,7 +24,7 @@ class SavingsMethod extends StatelessWidget {
                 Align(
                   alignment: const AlignmentDirectional(-0.9, 5.0),
                   child: GestureDetector(
-                    onTap: () => Navigator.pop(context, '/navbar'),
+                    onTap: () => Navigator.pop(context),
                     child: const Icon(
                       Icons.arrow_back,
                       size: 30,
