@@ -14,7 +14,7 @@ class SavingsMethod extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 40.0,
+              height: 70.0,
             ),
             Row(
               children: [
@@ -24,7 +24,7 @@ class SavingsMethod extends StatelessWidget {
                 Align(
                   alignment: const AlignmentDirectional(-0.9, 5.0),
                   child: GestureDetector(
-                    onTap: () => Navigator.pop(context),
+                    onTap: () => Navigator.pop(context, '/navbar'),
                     child: const Icon(
                       Icons.arrow_back,
                       size: 30,

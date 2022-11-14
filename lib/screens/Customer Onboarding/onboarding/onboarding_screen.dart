@@ -5,6 +5,7 @@ import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page2.
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page3.dart';
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page4.dart';
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page5.dart';
+import 'package:instacash/screens/loading.dart';
 
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -107,5 +108,5 @@ class _LandingState extends State<Landing> {
 }
 
 Future check(context) async {
-            Navigator.pushNamed(context, '/navbar');
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const Loading()));
 }
