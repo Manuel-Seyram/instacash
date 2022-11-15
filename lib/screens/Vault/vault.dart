@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:instacash/screens/Vault/lump_sum.dart';
-import 'package:instacash/screens/Vault/pay_check.dart';
-import 'package:instacash/screens/Vault/round_up.dart';
+import 'package:instacash/screens/Vault/DigiSave/onboarding_digi_save.dart';
+import 'package:instacash/screens/Vault/Lump%20Sum/lump_sum.dart';
+import 'package:instacash/screens/Vault/Monthly/monthly_terms.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class SavingsMethod extends StatelessWidget {
@@ -176,9 +176,9 @@ class SavingsMethod extends StatelessWidget {
                 onTap: () {
                   PersistentNavBarNavigator.pushNewScreen(
                               context,
-                              screen: const RoundUp(),
+                              screen: const DigiSaveOnboarding(),
                               withNavBar: true,
-                            );
+                            );     
                 },
                 child: Container(
                     height: 70.0,

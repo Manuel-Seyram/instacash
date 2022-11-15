@@ -114,6 +114,9 @@ flutter:
     - assets/roundup.png
     - assets/PayCheck.png
     - assets/lumpsum.png
+    - assets/shop.png
+    - assets/Group.png
+    - assets/payments.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

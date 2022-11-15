@@ -6,8 +6,9 @@ import 'package:instacash/screens/Loan/card_loan_accept_screen.dart';
 import 'package:instacash/screens/Loan/choose_loan_amount.dart';
 import 'package:instacash/screens/Loan/delivery_method.dart';
 import 'package:instacash/screens/Loan/momo_loan_accept_screen.dart';
-import 'package:instacash/screens/Vault/choose_deposit_method.dart';
-import 'package:instacash/screens/Vault/choose_funding_amount_lump_sum.dart';
+import 'package:instacash/screens/Vault/Lump%20Sum/choose_deposit_method.dart';
+import 'package:instacash/screens/Vault/Lump%20Sum/choose_funding_amount_lump_sum.dart';
+import 'package:instacash/screens/Vault/Monthly/monthly.dart';
 import 'package:instacash/screens/Vault/widgets/pop_up_lump_sum_summary_momo.dart';
 import 'package:instacash/screens/Vault/widgets/pop_up_summary_lumpsum.dart';
 import 'package:instacash/widgets/bottom_navbar.dart';
@@ -658,7 +659,11 @@ class PayCheckAgreeButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           
-          Navigator.pushNamed(context, '');
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const Monthly(),
+                              withNavBar: true,
+                            );
           
         },
         color: const Color.fromARGB(249, 40, 68, 194),
