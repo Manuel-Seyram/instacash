@@ -39,7 +39,7 @@ class SavingsMethod extends StatelessWidget {
                     text: 'Vault ',
                     style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
-                          color: Colors.black,
+                          color: Colors.blue,
                           fontSize: 24.0,
                           fontWeight: FontWeight.w500),
                     ),
@@ -61,7 +61,7 @@ class SavingsMethod extends StatelessWidget {
                             );
                 },
                 child: Container(
-                    height: 70.0,
+                    height: 90.0,
                     decoration: BoxDecoration(
                       color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
@@ -102,6 +102,19 @@ class SavingsMethod extends StatelessWidget {
                             )
                           ],
                         ),
+                        Align(
+                          alignment: const AlignmentDirectional(-0.25, 5.0),
+                          child:
+                        Text(
+                              'Invest large amounts at a go.',
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ),
+                        ),
                       ],
                     )),
               ),
@@ -120,7 +133,7 @@ class SavingsMethod extends StatelessWidget {
                             );
                 },
                 child: Container(
-                    height: 70.0,
+                    height: 90.0,
                     decoration: BoxDecoration(
                       color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
@@ -145,7 +158,7 @@ class SavingsMethod extends StatelessWidget {
                               width: 30.0,
                             ),
                             Text(
-                              'Monthly',
+                              'Monthly Savings',
                               style: GoogleFonts.poppins(
                                 textStyle: const TextStyle(
                                     color: Color.fromARGB(249, 40, 68, 194),
@@ -154,7 +167,7 @@ class SavingsMethod extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(
-                              width: 175.0,
+                              width: 115.0,
                             ),
                             const Icon(
                               Icons.arrow_forward_ios,
@@ -162,6 +175,19 @@ class SavingsMethod extends StatelessWidget {
                               color: Colors.black54,
                             )
                           ],
+                        ),
+                        Align(
+                          alignment: const AlignmentDirectional(-0.25, 5.0),
+                          child:
+                        Text(
+                              'Set a goal and start saving.',
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ),
                         ),
                       ],
                     )),
@@ -181,7 +207,7 @@ class SavingsMethod extends StatelessWidget {
                             );     
                 },
                 child: Container(
-                    height: 70.0,
+                    height: 130.0,
                     decoration: BoxDecoration(
                       color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
@@ -223,6 +249,19 @@ class SavingsMethod extends StatelessWidget {
                               color: Colors.black54,
                             )
                           ],
+                        ),
+                        Align(
+                          alignment: const AlignmentDirectional(-0.25, 5.0),
+                          child:
+                        Text(
+                              ' We will round up change on\n purchases and add it to your\n Digisave wallet automatically.',
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ),
                         ),
                       ],
                     )),

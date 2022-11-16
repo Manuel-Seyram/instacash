@@ -6,6 +6,7 @@ import 'package:instacash/screens/Loan/card_loan_accept_screen.dart';
 import 'package:instacash/screens/Loan/choose_loan_amount.dart';
 import 'package:instacash/screens/Loan/delivery_method.dart';
 import 'package:instacash/screens/Loan/momo_loan_accept_screen.dart';
+import 'package:instacash/screens/Vault/DigiSave/digi_save_deposit_method.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/choose_deposit_method.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/choose_funding_amount_lump_sum.dart';
 import 'package:instacash/screens/Vault/Monthly/monthly.dart';
@@ -27,7 +28,7 @@ class RegisterButton extends StatelessWidget {
           Navigator.pushNamed(context, '/otp');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 50.0,
+        height: 40.0,
         minWidth: 300,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -53,7 +54,7 @@ class ConfirmButton extends StatelessWidget {
           Navigator.pushNamed(context, '/basicinformation');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 50.0,
+        height: 40.0,
         minWidth: 300,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -79,7 +80,7 @@ class ContinueButton extends StatelessWidget {
           Navigator.pushNamed(context, '/bankinformation');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 50.0,
+        height: 40.0,
         minWidth: 300,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -110,7 +111,7 @@ class LoginButton extends StatelessWidget {
         enableFeedback: isButtondisabled ? phoneFieldEmpty : !phoneFieldEmpty,
         onPressed: () {},
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 50.0,
+        height: 40.0,
         minWidth: 300,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -137,7 +138,7 @@ class Forgotpassword1Button extends StatelessWidget {
           Navigator.pushNamed(context, '/forgotpassword2');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 50.0,
+        height: 40.0,
         minWidth: 300,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -163,7 +164,7 @@ class ConfirmButton2 extends StatelessWidget {
           Navigator.pushNamed(context, '/forgotpassword3');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 50.0,
+        height: 40.0,
         minWidth: 300,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -189,7 +190,7 @@ class ConfirmButton3 extends StatelessWidget {
           Navigator.pushNamed(context, '');
         },
         color: const Color.fromARGB(249, 40, 68, 194),
-        height: 50.0,
+        height: 40.0,
         minWidth: 300,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -631,7 +632,11 @@ class RoundUpAgreeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          Navigator.pushNamed(context, '');
+           PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const DeliveryMethodDigiSave(),
+                              withNavBar: true,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -875,6 +880,61 @@ class LumpSumMomoConfirmButton extends StatelessWidget {
         
         child: Text(
           'Confirm',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+
+class DigiSaveBankContinueButton extends StatelessWidget {
+  const DigiSaveBankContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class DigiSaveMomoContinueButton extends StatelessWidget {
+  const DigiSaveMomoContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Continue',
           style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.white,

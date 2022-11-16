@@ -164,13 +164,13 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.grey.shade200),
+                  side: BorderSide(color: Colors.grey.shade300),
                 ))),
                 child: const Text(
                   '15 days',
                   style: TextStyle(
                       color: Color.fromARGB(249, 40, 68, 194),
-                      fontSize: 12.0,
+                      fontSize: 16.0,
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -186,13 +186,13 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.grey.shade200),
+                  side: BorderSide(color: Colors.grey.shade300),
                 ))),
                 child: const Text(
                   '30 days',
                   style: TextStyle(
                       color: Color.fromARGB(249, 40, 68, 194),
-                      fontSize: 12.0,
+                      fontSize: 16.0,
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -208,13 +208,13 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.grey.shade200),
+                  side: BorderSide(color: Colors.grey.shade300),
                 ))),
                 child: const Text(
                   '60 days',
                   style: TextStyle(
                       color: Color.fromARGB(249, 40, 68, 194),
-                      fontSize: 12.0,
+                      fontSize: 16.0,
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -230,13 +230,13 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.grey.shade200),
+                  side: BorderSide(color: Colors.grey.shade300),
                 ))),
                 child: const Text(
                   '1 year',
                   style: TextStyle(
                       color: Color.fromARGB(249, 40, 68, 194),
-                      fontSize: 12.0,
+                      fontSize: 16.0,
                       fontWeight: FontWeight.w500),
                 ),
               ),
@@ -245,7 +245,29 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
           const SizedBox(
             height: 20.0,
           ),
-          showVisibilty()??const SizedBox(),
+          Visibility(
+        //replacement: const SizedBox(height: 50.0,),
+        visible: _isVisible,
+        child: const Days15(),
+      ),
+    
+      Visibility(
+        //replacement: const SizedBox(height: 50.0,),
+        visible: _isVisible1,
+        child: const Days30(),
+      ),
+
+      Visibility(
+        // replacement: const SizedBox(height: 50.0,),
+        visible: _isVisible2,
+        child: const Days60(),
+      ),
+
+      Visibility(
+        //replacement: const SizedBox(height: 50.0,),
+        visible: _isVisible3,
+        child: const Days15(),
+      ),
           const SizedBox(
             height: 200.0,
           ),
@@ -255,31 +277,4 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
     );
   }
 
-    showVisibilty() {
-    if (showToast()==_isVisible) {
-      Visibility(
-        //replacement: const SizedBox(height: 50.0,),
-        visible: _isVisible,
-        child: const Days15(),
-      );
-    } else if (showToast1()==_isVisible1) {
-      Visibility(
-        //replacement: const SizedBox(height: 50.0,),
-        visible: _isVisible1,
-        child: const Days30(),
-      );
-    } else if (showToast2()==_isVisible2) {
-      Visibility(
-        // replacement: const SizedBox(height: 50.0,),
-        visible: _isVisible2,
-        child: const Days60(),
-      );
-    } else if (showToast3()==_isVisible3) {
-      Visibility(
-        //replacement: const SizedBox(height: 50.0,),
-        visible: _isVisible3,
-        child: const Days15(),
-      );
-    }
   }
-}

@@ -109,8 +109,7 @@ class _AddNewBankState extends State<AddNewBank> {
               child: Row(
                 //mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  Align(
-                    // alignment: const AlignmentDirectional(-0.1, 5.0),
+                  Padding(padding: const EdgeInsets.only(left: 25.0),
                     child: Text(
                       _dropdownvalue,
                       style: GoogleFonts.poppins(
@@ -122,7 +121,7 @@ class _AddNewBankState extends State<AddNewBank> {
                     ),
                   ),
                   const SizedBox(
-                    width: 50.0,
+                    width: 150.0,
                   ),
                   const Icon(Icons.keyboard_arrow_down),
                 ],
@@ -182,6 +181,8 @@ class _AddNewBankState extends State<AddNewBank> {
 
 Widget _textformfieldbnumber() {
   return SizedBox(
+    child: 
+      Padding(padding: const EdgeInsets.only(left: 25.0),
     child: TextFormField(
       keyboardType: TextInputType.number,
       decoration: InputDecoration(
@@ -189,8 +190,8 @@ Widget _textformfieldbnumber() {
           hintStyle: GoogleFonts.poppins(
               textStyle: const TextStyle(
                   color: Colors.black54,
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.w500)),
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.w400)),
           border: InputBorder.none,
           focusedBorder: InputBorder.none,
           enabledBorder: InputBorder.none,
@@ -198,11 +199,14 @@ Widget _textformfieldbnumber() {
           disabledBorder: InputBorder.none),
       textAlign: TextAlign.start,
     ),
+      ),
   );
 }
 
 Widget _textformfieldbname() {
   return SizedBox(
+    child: 
+      Padding(padding: const EdgeInsets.only(left: 25.0),
     child: TextFormField(
       keyboardType: TextInputType.name,
       decoration: InputDecoration(
@@ -210,8 +214,8 @@ Widget _textformfieldbname() {
           hintStyle: GoogleFonts.poppins(
               textStyle: const TextStyle(
                   color: Colors.black54,
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.w500)),
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.w400)),
           border: InputBorder.none,
           focusedBorder: InputBorder.none,
           enabledBorder: InputBorder.none,
@@ -219,6 +223,7 @@ Widget _textformfieldbname() {
           disabledBorder: InputBorder.none),
       textAlign: TextAlign.start,
     ),
+      ),
   );
 }
 

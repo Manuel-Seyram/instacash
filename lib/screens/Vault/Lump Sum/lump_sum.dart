@@ -96,10 +96,10 @@ class LumpSum extends StatelessWidget {
                               width: 30.0,
                             ),
                             Text(
-                              'Terms and conditions',
+                              'Lump Sum',
                               style: GoogleFonts.poppins(
                                 textStyle: const TextStyle(
-                                    color: Colors.black,
+                                    color: Colors.black54,
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.w700),
                               ),
@@ -110,7 +110,7 @@ class LumpSum extends StatelessWidget {
                           ],
                         ),
                         Align(
-                          alignment: const AlignmentDirectional(-0.15, 5.0),
+                          alignment: const AlignmentDirectional(-0.25, 5.0),
                           child: Text(
                             'We will round up change on \nspendings and add it to your \nsavings wallet ',
                             style: GoogleFonts.poppins(

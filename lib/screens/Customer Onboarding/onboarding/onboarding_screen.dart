@@ -78,7 +78,7 @@ class _LandingState extends State<Landing> {
                             check(context),
                           },
                       color: Colors.white,
-                      height: 50.0,
+                      height: 40.0,
                       minWidth: 300,
                       elevation: 10.0,
                       shape: RoundedRectangleBorder(

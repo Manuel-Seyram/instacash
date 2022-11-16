@@ -54,7 +54,7 @@ class PopAddPayment extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                   border: Border.all(
                     color: Colors.grey,
-                    width: 0.4,
+                    width: 0.7,
                   )),
               child: Column(
                 children: [
@@ -120,7 +120,7 @@ class PopAddPayment extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                   border: Border.all(
                     color: Colors.grey,
-                    width: 0.4,
+                    width: 0.7,
                   )),
               child: Column(
                 children: [
@@ -186,7 +186,7 @@ class PopAddPayment extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                   border: Border.all(
                     color: Colors.grey,
-                    width: 0.4,
+                    width: 0.9,
                   )),
               child: Column(
                 children: [

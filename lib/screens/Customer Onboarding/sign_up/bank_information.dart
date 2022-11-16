@@ -17,7 +17,7 @@ class _BankInformationState extends State<BankInformation> {
    late String _dropdownvalue;
    bool checkedValue = false;
   final List<String> items = [
-    'Select your bank',
+    '  Select your bank',
     'Access Bank',
     'Stanbic Bank',
     'ABSA Bank',
@@ -134,8 +134,8 @@ class _BankInformationState extends State<BankInformation> {
                     child: Row(
                       //mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20.0),
                             child:
                         Text(_dropdownvalue,
                         style: GoogleFonts.poppins(
@@ -144,7 +144,7 @@ class _BankInformationState extends State<BankInformation> {
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),),),
-                        const SizedBox(width: 170.0,),
+                        const SizedBox(width: 150.0,),
                         const Icon(Icons.keyboard_arrow_down),
                       ],
                     ),
@@ -167,6 +167,7 @@ class _BankInformationState extends State<BankInformation> {
                 color: Colors.white,
                 child: Column(
                   children: [
+                    const SizedBox(height: 7.0,),
                 _textformfieldbnumber(),
                   ], 
                 ),
@@ -181,6 +182,7 @@ class _BankInformationState extends State<BankInformation> {
                 color: Colors.white,
                 child: Column(
                   children: [
+                    const SizedBox(height: 7.0,),
                 _textformfieldbname(),
                   ], 
                 ),
@@ -216,15 +218,18 @@ class _BankInformationState extends State<BankInformation> {
 
 Widget _textformfieldbnumber() {
     return SizedBox(
-      child: TextFormField(
+      child: 
+      Padding(padding: const EdgeInsets.only(left: 25.0),
+      child:
+      TextFormField(
         keyboardType: TextInputType.number,
         decoration:  InputDecoration(
             hintText: 'Account Number',
             hintStyle: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500)), 
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400)), 
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
                 enabledBorder: InputBorder.none,
@@ -232,27 +237,32 @@ Widget _textformfieldbnumber() {
                 disabledBorder: InputBorder.none),
                 textAlign: TextAlign.start,
       ),
+      ),
     );
   }
 
 
   Widget _textformfieldbname() {
     return SizedBox(
-      child: TextFormField(
+      child: 
+      Padding(padding: const EdgeInsets.only(left: 25.0),
+      child:
+       TextFormField(
         keyboardType: TextInputType.name,
         decoration:  InputDecoration(
             hintText: 'Account Name',
             hintStyle: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500)), 
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400)), 
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
                 enabledBorder: InputBorder.none,
                 errorBorder: InputBorder.none,
                 disabledBorder: InputBorder.none),
                 textAlign: TextAlign.start,
+      ),
       ),
     );
   }
