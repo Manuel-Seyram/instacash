@@ -99,18 +99,21 @@ class _CreateGoalState extends State<CreateGoal> {
             width: 360.0,
             child: 
              Center(
-              child:
+              child: 
+           Padding(padding: const EdgeInsets.only(left: 25.0),
+            child:
             TextField(
                   keyboardType: TextInputType.text,
                   textAlign: TextAlign.justify,
                   style: TextStyle(
-                      fontSize: 14.0, color: Colors.black87,
+                      fontSize: 16.0, color: Colors.black87,
                       fontFamily: GoogleFonts.poppins().fontFamily),
                       
                   decoration: const InputDecoration.collapsed(
-                    hintText: '   enter your goal name',
+                    hintText: 'Enter your goal name',
                   ),
                 ),
+           ),
           ),
           ),),
 
@@ -137,17 +140,20 @@ class _CreateGoalState extends State<CreateGoal> {
             child: 
              Center(
               child:
+            Padding(padding: const EdgeInsets.only(left: 25.0),
+      child:
             TextField(
                   keyboardType: TextInputType.text,
                   textAlign: TextAlign.justify,
                   style: TextStyle(
-                      fontSize: 14.0, color: Colors.black87,
+                      fontSize: 16.0, color: Colors.black87,
                       fontFamily: GoogleFonts.poppins().fontFamily),
                       
                   decoration: const InputDecoration.collapsed(
-                    hintText: '   GHS 0.00',
+                    hintText: 'GHS 0.00',
                   ),
                 ),
+            ),
           ),
           ),), 
           const SizedBox(height: 20.0,),
@@ -173,17 +179,20 @@ class _CreateGoalState extends State<CreateGoal> {
             child: 
              Center(
               child:
+      Padding(padding: const EdgeInsets.only(left: 25.0),
+      child:
             TextField(
                   keyboardType: TextInputType.text,
                   textAlign: TextAlign.justify,
                   style: TextStyle(
-                      fontSize: 14.0, color: Colors.black87,
+                      fontSize: 16.0, color: Colors.black87,
                       fontFamily: GoogleFonts.poppins().fontFamily),
                       
                   decoration: const InputDecoration.collapsed(
-                    hintText: '   GHS 0.00',
+                    hintText: 'GHS 0.00',
                   ),
                 ),
+      )
           ),
           ),),
           const SizedBox(height: 30.0,),

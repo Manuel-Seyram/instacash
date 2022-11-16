@@ -288,7 +288,7 @@ class Selfie extends StatelessWidget {
                   ),
                 ),
 
-                const SizedBox(height: 60.0,),
+                const SizedBox(height: 80.0,),
                 MaterialButton(
         onPressed: () {
           Navigator.pushNamed(context, '/selfieverify');

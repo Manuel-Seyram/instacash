@@ -105,7 +105,7 @@ class PayCheck extends StatelessWidget {
                         ),
                         //const SizedBox(height: 5.0,),
                         Align(
-                          alignment: const AlignmentDirectional(-0.15, 5.0),
+                          alignment: const AlignmentDirectional(-0.25, 5.0),
                           child: Text(
                             'We will round up change on \nspendings and add it to your \nsavings wallet ',
                             style: GoogleFonts.poppins(

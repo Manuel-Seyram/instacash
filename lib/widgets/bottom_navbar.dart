@@ -82,15 +82,15 @@ class _NavbarState extends State<Navbar> {
                 title: ('Spendings'),
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,
-                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
+                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 14),
             ),
             PersistentBottomNavBarItem(
                 inactiveIcon:const Icon(PhosphorIcons.credit_card) ,
                 icon: const Icon(PhosphorIcons.credit_card_fill),
-                title: ('DigiSave'),
+                title: ('Loan'),
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,
-                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
+                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 14),
             ),  
             PersistentBottomNavBarItem(
                 inactiveIcon: const Icon(Icons.person) ,
@@ -98,7 +98,7 @@ class _NavbarState extends State<Navbar> {
                 title: ('Profile'),
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,
-                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
+                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 14),
             ),
         ];
     }

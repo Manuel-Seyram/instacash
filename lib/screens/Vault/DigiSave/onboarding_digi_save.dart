@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Vault/DigiSave/onboarding_page_2.dart';
 import 'package:instacash/screens/Vault/DigiSave/onboarding_page1.dart';
 import 'package:instacash/screens/Vault/DigiSave/onboarding_page_3.dart';
-import 'package:instacash/screens/Vault/round_up.dart';
+import 'package:instacash/screens/Vault/DigiSave/round_up.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 
@@ -104,7 +104,7 @@ class _DigiSaveOnboardingState extends State<DigiSaveOnboarding> {
                             );     
                           },
                       color: const Color.fromARGB(249, 40, 68, 194),
-                      height: 50.0,
+                      height: 40.0,
                       minWidth: 350,
                       elevation: 10.0,
                       shape: RoundedRectangleBorder(

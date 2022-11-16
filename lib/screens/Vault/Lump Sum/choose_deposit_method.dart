@@ -83,7 +83,7 @@ class DeliveryMethodVault extends StatelessWidget {
                     decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
                      border: Border.all(
-                    color: Colors.grey.shade200,
+                    color: Colors.grey,
                     width: 0.7,
                   )),
                     child: Column(
@@ -152,7 +152,7 @@ class DeliveryMethodVault extends StatelessWidget {
                     decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
                     border: Border.all(
-                    color: Colors.grey.shade200,
+                    color: Colors.grey,
                     width: 0.7,
                   )),
                     child: Column(

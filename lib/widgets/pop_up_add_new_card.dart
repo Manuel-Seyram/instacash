@@ -91,7 +91,7 @@ class _AddNewcardState extends State<AddNewcard> {
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Container(
             height: 50.0,
-            width: 100,
+            width: 140,
             color: Colors.white,
             child: Column(
               children: [
@@ -147,15 +147,16 @@ class _AddNewcardState extends State<AddNewcard> {
 
 Widget _textformfieldbnumber() {
   return SizedBox(
+    child: 
+      Padding(padding: const EdgeInsets.only(left: 25.0),
     child: TextFormField(
-      //textAlign: 
       keyboardType: TextInputType.number,
       decoration: InputDecoration(
           hintText: 'Card Number',
           hintStyle: GoogleFonts.poppins(
               textStyle: const TextStyle(
                   color: Colors.grey,
-                  fontSize: 14.0,
+                  fontSize: 16.0,
                   fontWeight: FontWeight.w400)),
           border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
@@ -166,11 +167,14 @@ Widget _textformfieldbnumber() {
           errorBorder: InputBorder.none,
           disabledBorder: InputBorder.none),
     ),
+      ),
   );
 }
 
 Widget _textformfieldbname() {
   return SizedBox(
+    child: 
+      Padding(padding: const EdgeInsets.only(left: 25.0),
     child: TextFormField(
       keyboardType: TextInputType.name,
       decoration: InputDecoration(
@@ -178,7 +182,7 @@ Widget _textformfieldbname() {
           hintStyle: GoogleFonts.poppins(
               textStyle: const TextStyle(
                   color: Colors.grey,
-                  fontSize: 14.0,
+                  fontSize: 16.0,
                   fontWeight: FontWeight.w400)),
           border: InputBorder.none,
           focusedBorder: InputBorder.none,
@@ -187,6 +191,7 @@ Widget _textformfieldbname() {
           disabledBorder: InputBorder.none),
       textAlign: TextAlign.start,
     ),
+      ),
   );
 }
 
@@ -199,7 +204,7 @@ Widget _textformfielddate() {
           hintStyle: GoogleFonts.poppins(
               textStyle: const TextStyle(
                   color: Colors.grey,
-                  fontSize: 14.0,
+                  fontSize: 16.0,
                   fontWeight: FontWeight.w400)),
           border: InputBorder.none,
           focusedBorder: InputBorder.none,
@@ -220,7 +225,7 @@ Widget _textformfieldcvv() {
           hintStyle: GoogleFonts.poppins(
               textStyle: const TextStyle(
                   color: Colors.grey,
-                  fontSize: 14.0,
+                  fontSize: 16.0,
                   fontWeight: FontWeight.w400)),
           border: InputBorder.none,
           focusedBorder: InputBorder.none,

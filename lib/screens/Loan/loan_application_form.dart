@@ -150,8 +150,7 @@ class _LoanApplicationState extends State<LoanApplication> {
                     child: Row(
                       //mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
+                           Padding(padding: const EdgeInsets.only(left: 25.0),
                             child:
                         Text(_dropdownvalue,
                         style: GoogleFonts.poppins(
@@ -160,7 +159,7 @@ class _LoanApplicationState extends State<LoanApplication> {
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),),),
-                        const SizedBox(width: 90.0,),
+                        const SizedBox(width: 60.0,),
                         const Icon(Icons.keyboard_arrow_down),
                       ],
                     ),
@@ -212,10 +211,8 @@ class _LoanApplicationState extends State<LoanApplication> {
                       }).toList();
                     },
                     child: Row(
-                      //mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
+                       Padding(padding: const EdgeInsets.only(left: 25.0),
                             child:
                         Text(_dropdownvalue1,
                         style: GoogleFonts.poppins(
@@ -224,7 +221,7 @@ class _LoanApplicationState extends State<LoanApplication> {
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),),),
-                        const SizedBox(width: 50.0,),
+                        const SizedBox(width: 25.0,),
                         const Icon(Icons.keyboard_arrow_down),
                       ],
                     ),
@@ -278,8 +275,7 @@ class _LoanApplicationState extends State<LoanApplication> {
                     child: Row(
                       //mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
+                         Padding(padding: const EdgeInsets.only(left: 25.0),
                             child:
                         Text(_dropdownvalue2,
                         style: GoogleFonts.poppins(
@@ -288,7 +284,7 @@ class _LoanApplicationState extends State<LoanApplication> {
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),),),
-                        const SizedBox(width: 120.0,),
+                        const SizedBox(width: 100.0,),
                         const Icon(Icons.keyboard_arrow_down),
                       ],
                     ),
@@ -341,9 +337,8 @@ class _LoanApplicationState extends State<LoanApplication> {
                     },
                     child: Row(
                       //mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
+                      children: <Widget>[ 
+                       Padding(padding: const EdgeInsets.only(left: 25.0),
                             child:
                         Text(_dropdownvalue3,
                         style: GoogleFonts.poppins(
@@ -352,7 +347,7 @@ class _LoanApplicationState extends State<LoanApplication> {
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),),),
-                        const SizedBox(width: 160.0,),
+                        const SizedBox(width: 140.0,),
                         const Icon(Icons.keyboard_arrow_down),
                       ],
                     ),
@@ -406,8 +401,7 @@ class _LoanApplicationState extends State<LoanApplication> {
                     child: Row(
                       //mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
+                         Padding(padding: const EdgeInsets.only(left: 25.0),
                             child:
                         Text(_dropdownvalue4,
                         style: GoogleFonts.poppins(
@@ -416,7 +410,7 @@ class _LoanApplicationState extends State<LoanApplication> {
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),),),
-                        const SizedBox(width: 180.0,),
+                        const SizedBox(width: 160.0,),
                         const Icon(Icons.keyboard_arrow_down),
                       ],
                     ),

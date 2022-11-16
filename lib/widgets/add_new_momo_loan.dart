@@ -66,8 +66,7 @@ class _AddNewMomoState extends State<AddNewMomo> {
                     child: Row(
                       //mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                          Align(
-                           // alignment: const AlignmentDirectional(-0.1, 5.0),
+                     Padding(padding: const EdgeInsets.only(left: 25.0),
                             child:
                         Text(_dropdownvalue,
                         style: GoogleFonts.poppins(
@@ -76,7 +75,7 @@ class _AddNewMomoState extends State<AddNewMomo> {
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400),
                 ),),),
-                        const SizedBox(width: 180.0,),
+                        const SizedBox(width: 160.0,),
                         const Icon(Icons.keyboard_arrow_down),
                       ],
                     ),
@@ -99,6 +98,7 @@ class _AddNewMomoState extends State<AddNewMomo> {
                 color: Colors.white,
                 child: Column(
                   children: [
+                    const SizedBox(height: 7.0,),
                 _textformfieldbnumber(),
                   ], 
                 ),
@@ -113,6 +113,7 @@ class _AddNewMomoState extends State<AddNewMomo> {
                 color: Colors.white,
                 child: Column(
                   children: [
+                    const SizedBox(height: 7.0,),
                 _textformfieldbname(),
                   ], 
                 ),
@@ -156,6 +157,8 @@ class _AddNewMomoState extends State<AddNewMomo> {
 
 Widget _textformfieldbnumber() {
     return SizedBox(
+      child: 
+      Padding(padding: const EdgeInsets.only(left: 25.0),
       child: TextFormField(
         keyboardType: TextInputType.number,
         decoration:  InputDecoration(
@@ -163,14 +166,15 @@ Widget _textformfieldbnumber() {
             hintStyle: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500)), 
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400)), 
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
                 enabledBorder: InputBorder.none,
                 errorBorder: InputBorder.none,
                 disabledBorder: InputBorder.none),
                 textAlign: TextAlign.start,
+      ),
       ),
     );
   }
@@ -178,15 +182,17 @@ Widget _textformfieldbnumber() {
 
   Widget _textformfieldbname() {
     return SizedBox(
+      child: 
+      Padding(padding: const EdgeInsets.only(left: 25.0),
       child: TextFormField(
         keyboardType: TextInputType.name,
         decoration:  InputDecoration(
-            hintText: 'enter full name',
+            hintText: 'Enter full name',
             hintStyle: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500)), 
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400)), 
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
                 enabledBorder: InputBorder.none,
@@ -194,5 +200,6 @@ Widget _textformfieldbnumber() {
                 disabledBorder: InputBorder.none),
                 textAlign: TextAlign.start,
       ),
+    ),
     );
   }
