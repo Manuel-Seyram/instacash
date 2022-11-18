@@ -19,7 +19,7 @@ class _LoanAmountState extends State<LoanAmount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -92,13 +92,13 @@ class _LoanAmountState extends State<LoanAmount> {
             const SizedBox(
               height: 60.0,
             ),
-            SizedBox(
-              //color: Colors.white,
+            Container(
+              color: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
               height: 400,
               width: 400,
               child:
             CupertinoPicker(
-              backgroundColor: Colors.white,
+              backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
               itemExtent: 30,
               scrollController: FixedExtentScrollController(
                 initialItem: 5,

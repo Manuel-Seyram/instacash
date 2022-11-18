@@ -10,7 +10,7 @@ class CardLoan extends StatelessWidget {
      Stack(
           children: <Widget>[
             Container(
-              width: 500,
+              //width: 400,
               alignment: Alignment.center,
               child: Image.asset(
                 'assets/cardbg.png',

@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:instacash/widgets/card_loan.dart';
-import 'package:instacash/widgets/card_savings.dart';
 import 'package:instacash/widgets/vault_card.dart';
 
 class CardSlider extends StatefulWidget {
@@ -17,7 +16,6 @@ class _CardSliderState extends State<CardSlider> {
 
   List cardList = [
     const CardLoan(),
-    const CardSavings(),
     const CardVault(),
   ];
 
@@ -56,8 +54,8 @@ class _CardSliderState extends State<CardSlider> {
           ),
           items: cardList.map((card) {
             return Builder(builder: (BuildContext context) {
-              return Align(
-                alignment: const Alignment(0, -0.5),
+              return Padding(
+                padding: const EdgeInsets.all(10.0),
                 child: SizedBox(
                     width: size.width * 1.0,
                     height: size.height * 0.3,

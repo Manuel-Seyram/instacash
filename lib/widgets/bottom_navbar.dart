@@ -31,7 +31,7 @@ class _NavbarState extends State<Navbar> {
         context,
         controller: _controller,
         screens: _buildScreens(),
-        padding: const NavBarPadding.all(10),
+        padding: const NavBarPadding.all(6.0),
         items: _navBarsItems(),
         confineInSafeArea: true,
         backgroundColor: Colors.white, 
@@ -42,7 +42,7 @@ class _NavbarState extends State<Navbar> {
         decoration: NavBarDecoration(
           //borderRadius: BorderRadius.circular(10.0),
           colorBehindNavBar: Colors.white,
-          border: Border.all(color: Colors.grey, width: 0.5),
+          border: Border.all(color: Colors.grey, width: 1.0),
         ),
         popAllScreensOnTapOfSelectedTab: true,
         popActionScreens: PopActionScreensType.all,

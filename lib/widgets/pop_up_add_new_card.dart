@@ -14,6 +14,7 @@ class _PopPaymentAddCardState extends State<PopPaymentAddCard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: Column(
         children: [
           const SizedBox(

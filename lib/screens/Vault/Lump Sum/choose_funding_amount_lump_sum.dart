@@ -45,6 +45,7 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: Column(
         children: [
           const SizedBox(
@@ -175,7 +176,7 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                 ),
               ),
               const SizedBox(
-                width: 5.0,
+                width: 10.0,
               ),
               TextButton(
                 onHover: (value) => const Color.fromARGB(249, 40, 68, 194),
@@ -197,7 +198,7 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                 ),
               ),
               const SizedBox(
-                width: 5.0,
+                width: 10.0,
               ),
               TextButton(
                 onHover: (value) => const Color.fromARGB(249, 40, 68, 194),
@@ -219,7 +220,7 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                 ),
               ),
               const SizedBox(
-                width: 5.0,
+                width: 10.0,
               ),
               TextButton(
                 onHover: (value) => const Color.fromARGB(249, 40, 68, 194),

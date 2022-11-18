@@ -16,7 +16,7 @@ class Days30 extends StatelessWidget {
                style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
                       color: Colors.black54,
-                      fontSize: 20.0,
+                      fontSize: 12.0,
                       fontWeight: FontWeight.w400),
                 ),),),
                 const SizedBox(height: 10.0,),
@@ -31,7 +31,7 @@ class Days30 extends StatelessWidget {
                       style: GoogleFonts.poppins(
                         textStyle: const TextStyle(
                             color: Colors.black,
-                            fontSize: 20.0,
+                            fontSize: 12.0,
                             fontWeight: FontWeight.w500),
                       ),
                     ),
@@ -40,7 +40,7 @@ class Days30 extends StatelessWidget {
                       style: GoogleFonts.poppins(
                         textStyle: const TextStyle(
                             color: Colors.green,
-                            fontSize: 20.0,
+                            fontSize: 12.0,
                             fontWeight: FontWeight.w500),
                       ),
                     )

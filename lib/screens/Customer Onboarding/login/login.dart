@@ -9,6 +9,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -95,4 +96,8 @@ class Login extends StatelessWidget {
       ),
     );
   }
+}
+
+Future check(context) async {
+           Navigator.pushNamed(context, '/navbar');
 }

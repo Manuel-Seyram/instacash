@@ -11,6 +11,7 @@ class DeliveryMethodVault extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -67,7 +68,7 @@ class DeliveryMethodVault extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 50.0,),
+            const SizedBox(height: 55.0,),
              Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: GestureDetector(
@@ -79,12 +80,13 @@ class DeliveryMethodVault extends StatelessWidget {
                             );
                 },
                 child: Container(
-                    height: 95.0,
+                    height: 90.0,
                     decoration: BoxDecoration(
+                      color: Colors.white,
                     borderRadius: BorderRadius.circular(10.0),
                      border: Border.all(
                     color: Colors.grey,
-                    width: 0.7,
+                    width: 0.5,
                   )),
                     child: Column(
                       children: [
@@ -136,7 +138,7 @@ class DeliveryMethodVault extends StatelessWidget {
                     )),
               ),
             ),
-            const SizedBox(height: 50.0,),
+            const SizedBox(height: 60.0,),
              Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: GestureDetector(
@@ -148,12 +150,13 @@ class DeliveryMethodVault extends StatelessWidget {
                             );
                 },
                 child: Container(
-                    height: 95.0,
+                    height: 94.0,
                     decoration: BoxDecoration(
+                      color: Colors.white,
                     borderRadius: BorderRadius.circular(10.0),
                     border: Border.all(
                     color: Colors.grey,
-                    width: 0.7,
+                    width: 0.5,
                   )),
                     child: Column(
                       children: [

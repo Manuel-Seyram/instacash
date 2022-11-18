@@ -8,6 +8,7 @@ class DeliveryMethod extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -79,7 +80,7 @@ class DeliveryMethod extends StatelessWidget {
 
             const SizedBox(height: 90.0,),
              Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 45.0),
+              padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/selectbank');
@@ -99,7 +100,7 @@ class DeliveryMethod extends StatelessWidget {
                           width: 30.0,
                         ),
                         const SizedBox(
-                          width: 10.0,
+                          width: 20.0,
                         ),
                         Text(
                           'Via bank - Standard',
@@ -111,7 +112,7 @@ class DeliveryMethod extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          width: 70.0,
+                          width: 90.0,
                         ),
                         const Icon(
                           Icons.arrow_forward_ios,
@@ -122,7 +123,7 @@ class DeliveryMethod extends StatelessWidget {
                         ),
                         //const SizedBox(height: 5.0,),
                         Align(
-                          alignment: const AlignmentDirectional(-0.15, 5.0),
+                          alignment: const AlignmentDirectional(-0.3, 5.0),
                           child: Text(
                             'Cash in 2 to 3 business days.',
                             style: GoogleFonts.poppins(
@@ -139,7 +140,7 @@ class DeliveryMethod extends StatelessWidget {
             ),
             const SizedBox(height: 50.0,),
              Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 45.0),
+              padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/selectmomo');
@@ -159,7 +160,7 @@ class DeliveryMethod extends StatelessWidget {
                           width: 30.0,
                         ),
                         const SizedBox(
-                          width: 10.0,
+                          width: 20.0,
                         ),
                         Text(
                           'Via momo - Instant',
@@ -171,7 +172,7 @@ class DeliveryMethod extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          width: 70.0,
+                          width: 90.0,
                         ),
                         const Icon(
                           Icons.arrow_forward_ios,
@@ -182,7 +183,7 @@ class DeliveryMethod extends StatelessWidget {
                         ),
                         //const SizedBox(height: 5.0,),
                         Align(
-                          alignment: const AlignmentDirectional(-0.45, 5.0),
+                          alignment: const AlignmentDirectional(-0.49, 5.0),
                           child: Text(
                             'Instantly Available',
                             style: GoogleFonts.poppins(
@@ -200,7 +201,7 @@ class DeliveryMethod extends StatelessWidget {
 
             const SizedBox(height: 50.0,),
              Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 45.0),
+              padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/selectcard');
@@ -220,7 +221,7 @@ class DeliveryMethod extends StatelessWidget {
                           width: 30.0,
                         ),
                         const SizedBox(
-                          width: 10.0,
+                          width: 20.0,
                         ),
                         Text(
                           'Via card - Instant',
@@ -232,7 +233,7 @@ class DeliveryMethod extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          width: 75.0,
+                          width: 100.0,
                         ),
                         const Icon(
                           Icons.arrow_forward_ios,
@@ -243,7 +244,7 @@ class DeliveryMethod extends StatelessWidget {
                         ),
                         //const SizedBox(height: 5.0,),
                         Align(
-                          alignment: const AlignmentDirectional(-0.45, 5.0),
+                          alignment: const AlignmentDirectional(-0.49, 5.0),
                           child: Text(
                             'Instantly Available',
                             style: GoogleFonts.poppins(

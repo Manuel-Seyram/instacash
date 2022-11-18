@@ -81,7 +81,7 @@ class Homepage extends StatelessWidget {
                       height: 100.0,
                     ),
                     Align(
-                      alignment: const AlignmentDirectional(-0.87, 5.0),
+                      alignment: const AlignmentDirectional(-0.83, 5.0),
                       child: Text(
                         'Quick Links',
                         style: GoogleFonts.poppins(
@@ -98,7 +98,7 @@ class Homepage extends StatelessWidget {
                     Row(
                       children: [
                         const SizedBox(
-                          width: 16.0,
+                          width: 25.0,
                         ),
                         GestureDetector(
                           onTap: () {
@@ -178,62 +178,9 @@ class Homepage extends StatelessWidget {
                         const SizedBox(
                           width: 5.0,
                         ),
-                        Container(
-                          height: 90.0,
-                          width: 85.0,
-                          color: Colors.white,
-                          child: Column(children: [
-                            const SizedBox(
-                              height: 15.0,
-                            ),
-                            Image.asset(
-                              'assets/Transfers.png',
-                              height: 35.0,
-                              width: 35.0,
-                            ),
-                            const SizedBox(
-                              height: 10.0,
-                            ),
-                            Text(
-                              'Transfers',
-                              style: GoogleFonts.poppins(
-                                textStyle: const TextStyle(
-                                    color: Color.fromARGB(249, 40, 68, 194),
-                                    fontSize: 14.0,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                            ),
-                          ]),
-                        ),
+                        
                         const SizedBox(
                           width: 5.0,
-                        ),
-                        Container(
-                          height: 90.0,
-                          width: 85.0,
-                          color: Colors.white,
-                          child: Column(children: [
-                            const SizedBox(
-                              height: 15.0,
-                            ),
-                            Image.asset(
-                              'assets/more.png',
-                              height: 35.0,
-                              width: 35.0,
-                            ),
-                            const SizedBox(
-                              height: 10.0,
-                            ),
-                            Text(
-                              'More',
-                              style: GoogleFonts.poppins(
-                                textStyle: const TextStyle(
-                                    color: Color.fromARGB(249, 40, 68, 194),
-                                    fontSize: 14.0,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                            ),
-                          ]),
                         ),
                       ],
                     ),
@@ -241,7 +188,7 @@ class Homepage extends StatelessWidget {
                       height: 15.0,
                     ),
                     Align(
-                      alignment: const AlignmentDirectional(-0.85, 5.0),
+                      alignment: const AlignmentDirectional(-0.8, 5.0),
                       child: Text(
                         'Transactions History',
                         style: GoogleFonts.poppins(
@@ -258,7 +205,7 @@ class Homepage extends StatelessWidget {
                     Row(
                       children: [
                         const SizedBox(
-                          width: 17.0,
+                          width: 25.0,
                         ),
                         Text(
                           'Today, Oct 22',

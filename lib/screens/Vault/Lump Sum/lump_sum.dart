@@ -8,6 +8,7 @@ class LumpSum extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body:  Column(
           children: [
             const SizedBox(
@@ -74,7 +75,7 @@ class LumpSum extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                   border: Border.all(
                     color: Colors.grey,
-                    width: 0.7,
+                    width: 0.4,
                   )),
                     child: 
                     SingleChildScrollView(

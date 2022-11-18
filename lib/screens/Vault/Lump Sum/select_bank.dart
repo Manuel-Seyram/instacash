@@ -23,6 +23,7 @@ class _SelectBankVaultState extends State<SelectBankVault> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -157,7 +158,7 @@ class _SelectBankVaultState extends State<SelectBankVault> {
               ),
             ),
             const SizedBox(
-              height: 20.0,
+              height: 30.0,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30.0),

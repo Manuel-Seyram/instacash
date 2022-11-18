@@ -10,6 +10,7 @@ class PopPayment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: Column(
         children: [
           const SizedBox(
@@ -34,6 +35,7 @@ class PopPayment extends StatelessWidget {
               height: 85.0,
               width: 340.0,
               decoration: BoxDecoration(
+                color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
                   border: Border.all(
                     color: Colors.grey,
@@ -97,6 +99,7 @@ class PopPayment extends StatelessWidget {
               height: 85.0,
               width: 340.0,
               decoration: BoxDecoration(
+                color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
                   border: Border.all(
                     color: Colors.grey,
@@ -160,6 +163,7 @@ class PopPayment extends StatelessWidget {
               height: 85.0,
               width: 340.0,
               decoration: BoxDecoration(
+                color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
                   border: Border.all(
                     color: Colors.grey,
