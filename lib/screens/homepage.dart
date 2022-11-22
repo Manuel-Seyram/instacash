@@ -98,20 +98,24 @@ class Homepage extends StatelessWidget {
                     Row(
                       children: [
                         const SizedBox(
-                          width: 25.0,
+                          width: 20.0,
                         ),
                         GestureDetector(
                           onTap: () {
                             PersistentNavBarNavigator.pushNewScreen(
                               context,
                               screen: const LoanApplication(),
-                              withNavBar: true,
+                              withNavBar: false,
                             );
                           },
                           child: Container(
                             height: 90.0,
-                            width: 85.0,
-                            color: Colors.white,
+                            width: 180.0,
+                            decoration: const BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20.0),
+                                    bottomLeft: Radius.circular(20.0))),
                             child: Column(children: [
                               const SizedBox(
                                 height: 15.0,
@@ -137,7 +141,7 @@ class Homepage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          width: 5.0,
+                          width: 10.0,
                         ),
                         GestureDetector(
                           onTap: () {
@@ -149,8 +153,12 @@ class Homepage extends StatelessWidget {
                           },
                           child: Container(
                             height: 90.0,
-                            width: 90.0,
-                            color: Colors.white,
+                            width: 180.0,
+                            decoration: const BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0))),
                             child: Column(children: [
                               const SizedBox(
                                 height: 15.0,

@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
+//import 'package:instacash/screens/Vault/Lump%20Sum/home_lump_sum.dart';
 import 'package:instacash/screens/Vault/vault.dart';
 import 'package:instacash/screens/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -69,32 +71,32 @@ class _NavbarState extends State<Navbar> {
                 textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
             ),
             PersistentBottomNavBarItem(
-              inactiveIcon: const Icon(PhosphorIcons.wallet) ,
-                icon: const Icon(PhosphorIcons.wallet_fill),
+              inactiveIcon: const Icon(Icons.savings_outlined) ,
+                icon: const Icon(Icons.savings_rounded),
                 title: ('Vault'),
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,
                 textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
             ),
             PersistentBottomNavBarItem(
-                inactiveIcon: const Icon(PhosphorIcons.activity) ,
-                icon: const Icon(PhosphorIcons.activity_fill),
+                inactiveIcon: const Icon(CupertinoIcons.graph_square) ,
+                icon: const Icon(CupertinoIcons.graph_square_fill),
                 title: ('Spendings'),
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,
                 textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 14),
             ),
             PersistentBottomNavBarItem(
-                inactiveIcon:const Icon(PhosphorIcons.credit_card) ,
-                icon: const Icon(PhosphorIcons.credit_card_fill),
+                inactiveIcon:const Icon(PhosphorIcons.money) ,
+                icon: const Icon(PhosphorIcons.money_fill),
                 title: ('Loan'),
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,
                 textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 14),
             ),  
             PersistentBottomNavBarItem(
-                inactiveIcon: const Icon(Icons.person) ,
-                icon: const Icon(Icons.person),
+                inactiveIcon: const Icon(CupertinoIcons.person) ,
+                icon: const Icon(CupertinoIcons.person_fill),
                 title: ('Profile'),
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,

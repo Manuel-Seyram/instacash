@@ -10,11 +10,11 @@ class CardLoan extends StatelessWidget {
      Stack(
           children: <Widget>[
             Container(
-              //width: 400,
+              //width: 500,
               alignment: Alignment.center,
               child: Image.asset(
-                'assets/cardbg.png',
-                height: 350,
+                'assets/cardbg3.png',
+                height: 360,
                 width: double.infinity,
                 fit: BoxFit.cover,
               ),
@@ -23,18 +23,18 @@ class CardLoan extends StatelessWidget {
               //crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 10.0,
+                  height: 15.0,
                 ),
                 Row(
                   //mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const SizedBox(
-                      width: 40.0,
+                      width: 60.0,
                     ),
                     Align(
-                      alignment: const Alignment(-0.7, 5.0),
+                      alignment: const Alignment(-0.9, 5.0),
                       child: Text(
-                        'Loan Balance',
+                        'Vault',
                         style: GoogleFonts.poppins(
                           textStyle: const TextStyle(
                               color: Colors.white,
@@ -44,7 +44,7 @@ class CardLoan extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      width: 170.0,
+                      width: 200.0,
                     ),
                     Image.asset(
                       'assets/slantedlogo.png',
@@ -57,9 +57,9 @@ class CardLoan extends StatelessWidget {
                   height: 5.0,
                 ),
                 Align(
-                  alignment: const Alignment(-0.7, 5.0),
+                  alignment: const Alignment(-0.55, 5.0),
                   child: Text(
-                    'GHS 463.00',
+                    'GHS 985.00',
                     style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
                           color: Colors.white,
@@ -68,24 +68,17 @@ class CardLoan extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 12.0,
-                ),
-                Align(
-                  alignment: const Alignment(-0.6, 5.0),
-                  child: Text(
-                    'Repayment Date: 22 Dec, 2022',
-                    style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 12.0,
-                          fontWeight: FontWeight.w500),
-                    ),
-                  ),
-                ),
+                Row(
+                  
+                  children: [
+                    const SizedBox(width: 310,),
+                    Image.asset('assets/padlock.png', height: 30.0, width: 30.0,)
+                  ],
+                )
               ],
             ),
           ],
     );
   }
 }
+

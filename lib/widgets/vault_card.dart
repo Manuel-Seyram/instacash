@@ -23,7 +23,7 @@ class CardVault extends StatelessWidget {
               //crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 10.0,
+                  height: 15.0,
                 ),
                 Row(
                   //mainAxisAlignment: MainAxisAlignment.end,

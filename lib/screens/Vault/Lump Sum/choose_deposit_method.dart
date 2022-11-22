@@ -76,7 +76,7 @@ class DeliveryMethodVault extends StatelessWidget {
                   PersistentNavBarNavigator.pushNewScreen(
                               context,
                               screen: const SelectBankVault(),
-                              withNavBar: false,
+                              withNavBar: true,
                             );
                 },
                 child: Container(
@@ -146,7 +146,7 @@ class DeliveryMethodVault extends StatelessWidget {
                   PersistentNavBarNavigator.pushNewScreen(
                               context,
                               screen: const SelectMomoVault(),
-                              withNavBar: false,
+                              withNavBar: true,
                             );
                 },
                 child: Container(

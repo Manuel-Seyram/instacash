@@ -11,26 +11,17 @@ class SavingsMethod extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(245, 246, 250, 100),
-      body: SingleChildScrollView(
-        child: Column(
+      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
+      body:  Column(
           children: [
+            Container(
+              height: 250,
+              color: const Color.fromARGB(249, 40, 68, 194) ,
+             child:
+             Column(
+              children : [
             const SizedBox(
-              height: 70.0,
-            ),
-            Row(
-              children: const [
-                SizedBox(
-                  width: 20.0,
-                ),
-                
-                SizedBox(
-                  width: 280.0,
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 20.0,
+              height: 90.0,
             ),
             Align(
               alignment: const AlignmentDirectional(-0.85, 5.0),
@@ -40,7 +31,7 @@ class SavingsMethod extends StatelessWidget {
                     text: 'Vault ',
                     style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
-                          color: Colors.blue,
+                          color: Colors.white,
                           fontSize: 24.0,
                           fontWeight: FontWeight.w500),
                     ),
@@ -49,8 +40,34 @@ class SavingsMethod extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 90.0,
+              height: 20.0,
             ),
+            Align(
+              alignment: const AlignmentDirectional(-0.38, 5.0),
+              child: RichText(
+                text: TextSpan(children: [
+                  TextSpan(
+                    text: 'Please select your investment or savings type\nfrom the options below to proceed',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ]),
+              ),
+            ),
+          ],
+            ),
+      ),
+            const SizedBox(
+              height: 60.0,
+            ),
+            SingleChildScrollView(
+              child:
+              Column(
+                children:[
            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: GestureDetector(
@@ -268,9 +285,11 @@ class SavingsMethod extends StatelessWidget {
                     )),
               ),
             ),
+                ],
+              ),
+            ),
           ],
         ),
-      ),
     );
   }
 }

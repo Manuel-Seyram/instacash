@@ -9,9 +9,10 @@ import 'package:instacash/screens/Loan/momo_loan_accept_screen.dart';
 import 'package:instacash/screens/Vault/DigiSave/digi_save_deposit_method.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/choose_deposit_method.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/choose_funding_amount_lump_sum.dart';
+import 'package:instacash/screens/Vault/home_vault.dart';
 import 'package:instacash/screens/Vault/Monthly/monthly.dart';
-import 'package:instacash/screens/Vault/widgets/pop_up_lump_sum_summary_momo.dart';
-import 'package:instacash/screens/Vault/widgets/pop_up_summary_lumpsum.dart';
+import 'package:instacash/screens/Vault/widgets/summary_momo.dart';
+import 'package:instacash/screens/Vault/widgets/summary_lumpsum.dart';
 import 'package:instacash/widgets/bottom_navbar.dart';
 import 'package:instacash/widgets/pop_up_mode_of_payment.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -764,18 +765,13 @@ class LumpSumBankContinueButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           
-          showCupertinoModalPopup(
-              context: context,
-              builder: (BuildContext builder) {
-                return CupertinoPopupSurface(
-                    child: Container(
-                  color: Colors.white,
-                  alignment: Alignment.center,
-                  width: double.infinity,
-                  height: 550,
-                  child: const PopSummary(),
-                ));
-              });
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const PageSummary(),
+                              withNavBar: true,
+                            );
+          
+        
           
         },
         color: const Color.fromARGB(249, 40, 68, 194),
@@ -805,18 +801,12 @@ class LumpSumMomoContinueButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           
-          showCupertinoModalPopup(
-              context: context,
-              builder: (BuildContext builder) {
-                return CupertinoPopupSurface(
-                    child: Container(
-                  color: Colors.white,
-                  alignment: Alignment.center,
-                  width: double.infinity,
-                  height: 550,
-                  child: const PopSummaryMomo(),
-                ));
-              });
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const SummaryMomo(),
+                              withNavBar: true,
+                            );
+          
           
         },
         color: const Color.fromARGB(249, 40, 68, 194),
@@ -844,7 +834,11 @@ class LumpSumBankConfirmButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const LumpHome(),
+                              withNavBar: true,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -871,7 +865,11 @@ class LumpSumMomoConfirmButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const LumpHome(),
+                              withNavBar: true,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,

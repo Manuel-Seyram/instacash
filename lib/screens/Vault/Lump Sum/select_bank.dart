@@ -100,7 +100,7 @@ class _SelectBankVaultState extends State<SelectBankVault> {
               padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/verifyfront');
+                  
                 },
                 child: Container(
                     height: 95.0,

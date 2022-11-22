@@ -100,7 +100,7 @@ class _SelectBankDigiSaveState extends State<SelectBankDigiSave> {
               padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/verifyfront');
+                  Navigator.pushNamed(context, '');
                 },
                 child: Container(
                     height: 95.0,

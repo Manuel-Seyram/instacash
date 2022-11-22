@@ -15,8 +15,8 @@ class _CardSliderState extends State<CardSlider> {
   int _currentIndex = 0;
 
   List cardList = [
-    const CardLoan(),
     const CardVault(),
+    const CardLoan(), 
   ];
 
   List<T> map<T>(List list, Function handler) {
@@ -33,8 +33,8 @@ class _CardSliderState extends State<CardSlider> {
     return Align(
       alignment: const Alignment(0.0, -0.5),
       child: SizedBox(
-        width: size.width * 0.9,
-        height: size.height * 0.2,
+        width: size.width * 1.0,
+        height: size.height * 0.25,
         child: CarouselSlider(
           options: CarouselOptions(
             viewportFraction: 1.1,
@@ -57,8 +57,8 @@ class _CardSliderState extends State<CardSlider> {
               return Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: SizedBox(
-                    width: size.width * 1.0,
-                    height: size.height * 0.3,
+                    width: size.width * 1.3,
+                    height: size.height * 0.2,
                     child: card),
               );
             });

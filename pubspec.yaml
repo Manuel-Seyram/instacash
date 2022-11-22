@@ -41,6 +41,8 @@ dependencies:
   carousel_slider: ^4.1.1
   persistent_bottom_nav_bar: ^5.0.2
   flutter_spinkit: ^5.1.0
+  dotted_border: ^2.0.0+3
+  step_progress_indicator: ^1.0.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -117,6 +119,7 @@ flutter:
     - assets/shop.png
     - assets/Group.png
     - assets/payments.png
+    - assets/bulb.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
