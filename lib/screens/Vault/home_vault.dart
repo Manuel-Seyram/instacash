@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/select_lump_sum.dart';
+import 'package:instacash/screens/Vault/Monthly/goal_screen.dart';
 import 'package:instacash/screens/Vault/vault.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
@@ -167,6 +168,13 @@ class _LumpHomeState extends State<LumpHome> {
             ),
                     ),
             const SizedBox(width: 20.0,),
+            GestureDetector(
+              onTap: () {
+                PersistentNavBarNavigator.pushNewScreen(
+                          context, screen: const GoalScreen(), 
+                          withNavBar: true);
+              },
+              child:
             Container(
               width: 150.0,
               decoration: const BoxDecoration(
@@ -218,6 +226,7 @@ class _LumpHomeState extends State<LumpHome> {
               ),
                 ]
               ),
+            ),
             ),
             const SizedBox(width: 20.0,),
             GestureDetector(
