@@ -14,27 +14,6 @@ class RoundUp extends StatelessWidget {
             const SizedBox(
               height: 70.0,
             ),
-            Row(
-              children: [
-                const SizedBox(
-                  width: 20.0,
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(-0.9, 5.0),
-                  child: GestureDetector(
-                    onTap: () => Navigator.pop(context),
-                    child: const Icon(
-                      Icons.arrow_back,
-                      size: 30,
-                      color: Color.fromARGB(249, 40, 68, 194),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  width: 280.0,
-                ),
-              ],
-            ),
             const SizedBox(
               height: 40.0,
             ),
@@ -134,6 +113,7 @@ class RoundUp extends StatelessWidget {
               height: 50.0,
             ),
             const RoundUpAgreeButton(),
+           
           ],
         ),
     );

@@ -1,6 +1,8 @@
+// ignore_for_file: unnecessary_const
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:instacash/screens/Vault/Lump%20Sum/choose_deposit_method.dart';
+import 'package:instacash/screens/Vault/Monthly/monthly_delivery_method.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 
@@ -197,20 +199,19 @@ class _CreateGoalState extends State<CreateGoal> {
           ),
           ),),
           const SizedBox(height: 30.0,),
-          SizedBox(
-           height: 200,
-           width: 380.0,
-           child: Card(
-            color: const Color.fromARGB(249, 40, 68, 194),
-           clipBehavior: Clip.antiAliasWithSaveLayer,
-             shape: RoundedRectangleBorder(
-             borderRadius: BorderRadius.circular(10.0),
+          Container(
+            height: 270,
+           width: double.infinity,
+           decoration: const BoxDecoration(
+             color: Colors.green,
+             borderRadius: const BorderRadius.only(
+               topLeft: Radius.circular(20.0),
+               topRight: Radius.circular(20.0),
              ),
-           elevation: 5,
-             margin: const EdgeInsets.all(10),
-             child: Column(
+           ),
+           child:  Column(
               children: [
-                  const SizedBox(height: 20.0,),
+                  const SizedBox(height: 40.0,),
                   Align(
                     alignment: const AlignmentDirectional(-0.0, 5.0),
                     child:
@@ -249,7 +250,7 @@ class _CreateGoalState extends State<CreateGoal> {
                           ),
                     ),
                   ),
-                  const SizedBox(height: 15.0,),
+                  const SizedBox(height: 20.0,),
                   Align(
                     alignment: const AlignmentDirectional(-0.0, 5.0),
                     child:
@@ -262,25 +263,32 @@ class _CreateGoalState extends State<CreateGoal> {
                           ),
                     ),
                   ),
-                  const SizedBox(height: 10.0,),
-                  
+                  const SizedBox(height: 20.0,),
+                  Container(
+                    height: 40.0,
+                    width: 350,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                    child:
                   TextButton(
                     onPressed: (){
                       PersistentNavBarNavigator.pushNewScreen(
                               context,
-                              screen: const DeliveryMethodVault(),
-                              withNavBar: false,
+                              screen: const DeliveryMethodVaultMonth(),
+                              withNavBar: true,
                             );
                     }, 
                     child: Row(
                       children: [
-                        const SizedBox(width: 100.0,),
-                        const Icon(Icons.add, color: Colors.white, size: 20.0,),
+                        const SizedBox(width: 95.0,),
+                        const Icon(Icons.add, color: Colors.green, size: 20.0,),
                         const SizedBox(width: 5.0,),
                         Text('Create a goal',
                         style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
-                                color: Colors.white,
+                            textStyle:  const TextStyle(
+                                color: Colors.green,
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400),
                           ),
@@ -288,10 +296,10 @@ class _CreateGoalState extends State<CreateGoal> {
                       ],
                     ),
                     ),
+                  ),
              ]
              ),
                ),
-              ),
         ],
       ),
       ),

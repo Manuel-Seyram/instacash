@@ -9,6 +9,7 @@ import 'package:instacash/screens/Customer%20Onboarding/sign_up/otp.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/proof_of_identity.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/selfie_onboarding.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/selfie_verify.dart';
+import 'package:instacash/screens/Vault/DigiSave/round_up.dart';
 import 'package:instacash/screens/Vault/vault.dart';
 import 'package:instacash/screens/Loan/bank_loan_accept_screen.dart';
 import 'package:instacash/screens/Loan/card_loan_accept_screen.dart';
@@ -67,6 +68,7 @@ void main() {
         '/momoreceipt':(context) => const MomoReceipt(),
         '/repayment':(context) => const Repayment(),
         '/savingsmethod':(context) => const SavingsMethod(),
+        '/roundup':(context) => const RoundUp(),
         
       },
   ));

@@ -101,8 +101,6 @@ class Proof extends StatelessWidget {
                         onPressed: null,
                         disabledColor: const Color.fromARGB(249, 40, 68, 194)
                             .withOpacity(0.5),
-                        // disabledColor: Colors.grey,
-                        //color: const Color.fromARGB(249, 40, 68, 194),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5.0)),
                         child: Text(

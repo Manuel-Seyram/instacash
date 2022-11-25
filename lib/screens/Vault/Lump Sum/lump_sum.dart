@@ -89,7 +89,7 @@ class LumpSum extends StatelessWidget {
                           children: [
                             const SizedBox(width: 10.0),
                             Image.asset(
-                              'assets/Bank.png',
+                              'assets/lumpsum.png',
                               height: 40.0,
                               width: 30.0,
                             ),

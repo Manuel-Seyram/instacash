@@ -76,7 +76,7 @@ class DeliveryMethodDigiSave extends StatelessWidget {
                   PersistentNavBarNavigator.pushNewScreen(
                               context,
                               screen: const SelectBankDigiSave(),
-                              withNavBar: false,
+                              withNavBar: true,
                             );
                 },
                 child: Container(
@@ -146,7 +146,7 @@ class DeliveryMethodDigiSave extends StatelessWidget {
                   PersistentNavBarNavigator.pushNewScreen(
                               context,
                               screen: const SelectMomoDigiSave(),
-                              withNavBar: false,
+                              withNavBar: true,
                             );
                 },
                 child: Container(

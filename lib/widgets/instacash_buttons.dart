@@ -897,7 +897,11 @@ class DigiSaveBankContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const LumpHome(),
+                              withNavBar: true,
+                            );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -924,6 +928,80 @@ class DigiSaveMomoContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const LumpHome(),
+                              withNavBar: true,
+                            );
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+class MonthlyBankContinueButton extends StatelessWidget {
+  const MonthlyBankContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const PageSummary(),
+                              withNavBar: true,
+                            );
+          
+        
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+
+class MonthlyMomoContinueButton extends StatelessWidget {
+  const MonthlyMomoContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const SummaryMomo(),
+                              withNavBar: true,
+                            );
+          
           
         },
         color: const Color.fromARGB(249, 40, 68, 194),

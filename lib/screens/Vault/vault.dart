@@ -221,8 +221,8 @@ class SavingsMethod extends StatelessWidget {
                   PersistentNavBarNavigator.pushNewScreen(
                               context,
                               screen: const DigiSaveOnboarding(),
-                              withNavBar: true,
-                            );     
+                              withNavBar: false,
+                            );
                 },
                 child: Container(
                     height: 130.0,

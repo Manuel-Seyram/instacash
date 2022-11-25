@@ -97,7 +97,7 @@ class _LumpHomeState extends State<LumpHome> {
                     ),
               ),
             ),
-            const SizedBox(height: 30.0,),    
+            const SizedBox(height: 10.0,),    
             SizedBox(
               height: 200.0,
               child:
@@ -123,7 +123,7 @@ class _LumpHomeState extends State<LumpHome> {
               child: Column(
                 children:[
                const SizedBox(height: 15.0,),
-                Image.asset('assets/lumpsum.png', height: 60.0, width: 60.0, color: Colors.white,),
+                Image.asset('assets/lumpsum.png', height: 60.0, width: 60.0),
                 const SizedBox(height: 12.0,),
                 Align(
                   alignment: const AlignmentDirectional(-0.5, 5.0),
@@ -184,7 +184,7 @@ class _LumpHomeState extends State<LumpHome> {
               child: Column(
                 children:[
                const SizedBox(height: 15.0,),
-                Image.asset('assets/PayCheck.png', height: 60.0, width: 60.0, color: Colors.white,),
+                Image.asset('assets/PayCheck.png', height: 60.0, width: 60.0),
                 const SizedBox(height: 12.0,),
                 Align(
                   alignment: const AlignmentDirectional(-0.65, 5.0),
@@ -285,8 +285,8 @@ class _LumpHomeState extends State<LumpHome> {
             ),
             const SizedBox(height: 30.0,),
             Align(
-              alignment: const AlignmentDirectional(-0.7, 5.0),
-              child: Text('Savings',
+              alignment: const AlignmentDirectional(-0.55, 5.0),
+              child: Text('RoundUp/DigiSave',
               style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
                           color: Color.fromARGB(249, 40, 68, 194),
@@ -295,9 +295,9 @@ class _LumpHomeState extends State<LumpHome> {
                     ),
               ),
             ),
-            const SizedBox(height: 30.0,),
+            const SizedBox(height: 10.0,),
             Container(
-              height: 70.0,
+              height: 90.0,
               width: 310.0,
               decoration:  BoxDecoration(
                 color: Colors.white,
@@ -310,33 +310,34 @@ class _LumpHomeState extends State<LumpHome> {
               Row(
                 children: [
                   const SizedBox(width: 20.0,),
-                  Image.asset('assets/roundup.png', height: 40.0, width: 40.0, color: const Color.fromARGB(249, 40, 68, 194),),
+                  Image.asset('assets/roundup.png', height: 40.0, width: 40.0),
                   const SizedBox(width: 20.0,),
                   Column(
                     children: [
                       const SizedBox(height: 15.0,),
                       Align(
                         alignment: const AlignmentDirectional(-0.7, 5.0),
-                        child: Text('GHS 0.57 out of GHS 5.00',
+                        child: Text('GHS 25.50',
                         style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
                           color: Color.fromARGB(249, 40, 68, 194),
-                          fontSize: 14.0,
+                          fontSize: 20.0,
                           fontWeight: FontWeight.w600),
                     ),
                         ),
                       ),
                       const SizedBox(height: 5.0,),
-              StepProgressIndicator(
-                totalSteps: 30000,
-                currentStep: 20000,
-                padding: 0,
-                fallbackLength: 170.0,
-                roundedEdges: const Radius.circular(10),
-                 size: 6,
-                 selectedColor: const Color.fromARGB(249, 40, 68, 194),
-                 unselectedColor: Colors.grey.shade300,
-                   )  
+              Align(
+                        alignment: const AlignmentDirectional(-0.65, 5.0),
+                        child: Text('Total savings',
+                        style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.black54,
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w400),
+                    ),
+                        ),
+                      ),
                     ],
                   ),
                 ],

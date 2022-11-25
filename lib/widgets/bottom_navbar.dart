@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
+import 'package:instacash/screens/Loan/loan_current.dart';
 //import 'package:instacash/screens/Vault/Lump%20Sum/home_lump_sum.dart';
 import 'package:instacash/screens/Vault/vault.dart';
 import 'package:instacash/screens/homepage.dart';
@@ -22,7 +23,7 @@ class _NavbarState extends State<Navbar> {
       const Homepage(),
       const SavingsMethod(),
       const Homepage(),
-      const LoanApplication(),
+      const LoanTabScreen(),
       const LoanApplication(),
     ];
   }

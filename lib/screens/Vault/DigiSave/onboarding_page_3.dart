@@ -9,22 +9,23 @@ class OnboardingPage3 extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Container(
-      color: Colors.white,
+      color: const Color.fromRGBO(9,	133,	255, 1),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          const SizedBox(height: 160,),
               Image.asset(
-            'assets/payments.png',
+            'assets/market.png',
           ),
 
           const SizedBox(
-            height: 20.0,
+            height: 140.0,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 80),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text(
-              'Smart savings to automatically save\n GHS 50 to GHS 200 every week',
-              style: GoogleFonts.poppins(textStyle: const TextStyle(color:   Colors.grey, fontSize: 16.0)),
+              'Saving money has never been easier.\n After a purchase of GHS 15.50, GHS 0.50 is\n automatically transfered to your DigiSave wallet.',
+              style: GoogleFonts.poppins(textStyle: const TextStyle(color:   Colors.white, fontSize: 16.0)),
               textAlign: TextAlign.center,
             ),
           ),
