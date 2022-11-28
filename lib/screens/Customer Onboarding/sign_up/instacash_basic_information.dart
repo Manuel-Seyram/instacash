@@ -27,10 +27,10 @@ class _BasicInformationState extends State<BasicInformation> {
           height: 70.0,
         ),
         const SizedBox(
-          height: 10.0,
+          height: 20.0,
         ),
         Align(
-          alignment: const AlignmentDirectional(-0.5, 5.0),
+          alignment: const AlignmentDirectional(-0.55, 5.0),
           child: RichText(
                 text: TextSpan(children: [
                   TextSpan(
@@ -56,7 +56,7 @@ class _BasicInformationState extends State<BasicInformation> {
         ),
         const SizedBox(height: 10.0),
         Align(
-          alignment: const AlignmentDirectional(-0.5, 5.0),
+          alignment: const AlignmentDirectional(-0.59, 5.0),
           child: Text(
             'Please set up your profile',
             style: GoogleFonts.poppins(

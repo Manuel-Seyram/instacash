@@ -30,7 +30,7 @@ class Forgotpassword1 extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          height: 10.0,
+          height: 70.0,
         ),
 
                              Align(
@@ -61,7 +61,7 @@ class Forgotpassword1 extends StatelessWidget {
                 ),
                      const SizedBox(height: 20.0),
                              Align(
-                      alignment: const AlignmentDirectional(-0.1, 5.0),
+                      alignment: const AlignmentDirectional(-0.18, 5.0),
                       child:
                     Text(
                       'Please enter your phone number or\nemail address',
@@ -77,7 +77,7 @@ class Forgotpassword1 extends StatelessWidget {
                 ),
 
 
-                const SizedBox(height: 400.0,),
+                const SizedBox(height: 300.0,),
 
                const Forgotpassword1Button(),
 
@@ -94,11 +94,11 @@ class Forgotpassword1 extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 14.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
-            labelText: 'Phone Number/Email',
-            labelStyle: TextStyle(color: Colors.black54),
+            labelText: 'Phone Number / Email',
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,

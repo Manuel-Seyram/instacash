@@ -83,7 +83,7 @@ class _LandingState extends State<Landing> {
                       elevation: 10.0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0)),
-                      child: Text(
+                      child: Center( child: Text(
                         'Get Started',
                         style: GoogleFonts.poppins(
                           textStyle: const TextStyle(
@@ -91,7 +91,7 @@ class _LandingState extends State<Landing> {
                               fontSize: 18.0,
                               fontWeight: FontWeight.w500),
                         ),
-                      )),
+                      ))),
                   //const SizedBox(height: 50.0,)
                 ],
               ),

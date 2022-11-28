@@ -19,7 +19,7 @@ class PhoneField extends StatelessWidget {
                      const SizedBox(height: 120 ,),
 
                              Align(
-                      alignment: const AlignmentDirectional(-0.5, 5.0),
+                      alignment: const AlignmentDirectional(-0.48, 5.0),
                       child:
                     RichText(
                 text: TextSpan(children: [
@@ -46,7 +46,7 @@ class PhoneField extends StatelessWidget {
                 ),
                      const SizedBox(height: 20.0),
                              Align(
-                      alignment: const AlignmentDirectional(0.0, 5.0),
+                      alignment: const AlignmentDirectional(0.00, 5.0),
                       child:
                     Text(
                       'Enter your phone number. Well send \nyou a confirmation code.',

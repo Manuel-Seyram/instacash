@@ -15,7 +15,7 @@ class Proof extends StatelessWidget {
               height: 120,
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.6, 5.0),
+              alignment: const AlignmentDirectional(-0.5, 5.0),
               child: RichText(
                 text: TextSpan(children: [
                   TextSpan(
@@ -90,7 +90,7 @@ class Proof extends StatelessWidget {
                         style: GoogleFonts.poppins(
                           textStyle: const TextStyle(
                               color: Colors.black45,
-                              fontSize: 14.0,
+                              fontSize: 16.0,
                               fontWeight: FontWeight.w400),
                         ),
                       ),
@@ -157,12 +157,12 @@ class Proof extends StatelessWidget {
                           style: GoogleFonts.poppins(
                             textStyle: const TextStyle(
                                 color: Colors.black54,
-                                fontSize: 14.0,
+                                fontSize: 16.0,
                                 fontWeight: FontWeight.w400),
                           ),
                         ),
                         const SizedBox(
-                          width: 60.0,
+                          width: 40.0,
                         ),
                         const Icon(
                           Icons.arrow_forward_ios,

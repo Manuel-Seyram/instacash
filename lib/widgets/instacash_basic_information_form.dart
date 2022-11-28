@@ -48,12 +48,11 @@ class BasicFormfield extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 12.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'First Name',
-            labelStyle: TextStyle(color: Colors.black54),
-            //border: OutlineInputBorder(borderSide: BorderSide())
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             suffixIcon: Icon(
               Icons.check_circle_rounded,
             )),
@@ -68,12 +67,11 @@ class BasicFormfield extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 12.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Last Name',
-            labelStyle: TextStyle(color: Colors.black54),
-            //border: OutlineInputBorder(borderSide: BorderSide())
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             suffixIcon: Icon(
               Icons.check_circle_rounded,
             )),
@@ -88,15 +86,14 @@ class BasicFormfield extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 12.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Email',
-            labelStyle: TextStyle(color: Colors.black54),
-            //border: OutlineInputBorder(borderSide: BorderSide())
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             suffixIcon: Icon(
               Icons.check_circle_rounded,
-            ) //color:Color.fromARGB(249, 40, 68, 194) ,)
+            ) 
             ),
       ),
     );
@@ -109,12 +106,11 @@ class BasicFormfield extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 12.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Password',
-            labelStyle: TextStyle(color: Colors.black54),
-            //border: OutlineInputBorder(borderSide: BorderSide())
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             suffixIcon: Icon(
               Icons.check_circle_rounded,
             )),
@@ -130,12 +126,11 @@ class BasicFormfield extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 12.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Confirm Password',
-            labelStyle: TextStyle(color: Colors.black54),
-            //border: OutlineInputBorder(borderSide: BorderSide())
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             suffixIcon: Icon(
               Icons.check_circle_rounded,
             )),

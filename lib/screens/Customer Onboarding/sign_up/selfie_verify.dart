@@ -22,7 +22,7 @@ class _SelfieverifyState extends State<Selfieverify> {
       body: Column(
         children: [
           const SizedBox(
-            height: 60.0,
+            height: 80.0,
           ),
           Row(
             children: [
@@ -41,7 +41,7 @@ class _SelfieverifyState extends State<Selfieverify> {
                 ),
               ),
               const SizedBox(
-                width: 80.0,
+                width: 120.0,
               ),
               Align(
                 alignment: const AlignmentDirectional(-0.5, 5.0),

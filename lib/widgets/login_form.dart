@@ -34,12 +34,11 @@ class LoginFormfield extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 12.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
-            labelText: 'Phone Number/Email',
-            labelStyle: TextStyle(color: Colors.black54),
-            //border: OutlineInputBorder(borderSide: BorderSide())
+            labelText: 'Phone Number / Email',
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             suffixIcon: Icon(
               Icons.check_circle_rounded,
             )),
@@ -54,11 +53,11 @@ class LoginFormfield extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 12.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Password',
-            labelStyle: TextStyle(color: Colors.black54),
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,

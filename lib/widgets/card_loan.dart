@@ -10,10 +10,9 @@ class CardLoan extends StatelessWidget {
      Stack(
           children: <Widget>[
             Container(
-              //width: 500,
               alignment: Alignment.center,
               child: Image.asset(
-                'assets/cardbg3.png',
+                'assets/cardbg2.png',
                 height: 360,
                 width: double.infinity,
                 fit: BoxFit.cover,
@@ -26,7 +25,6 @@ class CardLoan extends StatelessWidget {
                   height: 15.0,
                 ),
                 Row(
-                  //mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const SizedBox(
                       width: 60.0,
@@ -34,7 +32,7 @@ class CardLoan extends StatelessWidget {
                     Align(
                       alignment: const Alignment(-0.9, 5.0),
                       child: Text(
-                        'Vault',
+                        'Loan Balance', 
                         style: GoogleFonts.poppins(
                           textStyle: const TextStyle(
                               color: Colors.white,
@@ -44,7 +42,7 @@ class CardLoan extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      width: 200.0,
+                      width: 180.0,
                     ),
                     Image.asset(
                       'assets/slantedlogo.png',
@@ -57,7 +55,7 @@ class CardLoan extends StatelessWidget {
                   height: 5.0,
                 ),
                 Align(
-                  alignment: const Alignment(-0.55, 5.0),
+                  alignment: const Alignment(-0.6, 5.0),
                   child: Text(
                     'GHS 985.00',
                     style: GoogleFonts.poppins(
@@ -68,11 +66,22 @@ class CardLoan extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 30.0,
+                ),
                 Row(
                   
                   children: [
-                    const SizedBox(width: 310,),
-                    Image.asset('assets/padlock.png', height: 30.0, width: 30.0,)
+                    const SizedBox(width: 60,),
+                    Text(
+                    'Repayment Date: 22 Dec 2022',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 12.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
                   ],
                 )
               ],

@@ -20,19 +20,17 @@ class CardVault extends StatelessWidget {
               ),
             ),
             Column(
-              //crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
                   height: 15.0,
                 ),
                 Row(
-                  //mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const SizedBox(
                       width: 60.0,
                     ),
                     Align(
-                      alignment: const Alignment(-0.9, 5.0),
+                      alignment: const Alignment(-0.8, 5.0),
                       child: Text(
                         'Vault',
                         style: GoogleFonts.poppins(
@@ -44,7 +42,7 @@ class CardVault extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      width: 200.0,
+                      width: 240.0,
                     ),
                     Image.asset(
                       'assets/slantedlogo.png',
@@ -57,7 +55,7 @@ class CardVault extends StatelessWidget {
                   height: 5.0,
                 ),
                 Align(
-                  alignment: const Alignment(-0.55, 5.0),
+                  alignment: const Alignment(-0.6, 5.0),
                   child: Text(
                     'GHS 985.00',
                     style: GoogleFonts.poppins(
@@ -68,10 +66,13 @@ class CardVault extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 10.0,
+                ),
                 Row(
                   
                   children: [
-                    const SizedBox(width: 310,),
+                    const SizedBox(width: 350,),
                     Image.asset('assets/padlock.png', height: 30.0, width: 30.0,)
                   ],
                 )

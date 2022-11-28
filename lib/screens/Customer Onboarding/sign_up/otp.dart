@@ -42,7 +42,7 @@ class _OtpState extends State<Otp> {
           ),
         ),
         const SizedBox(
-          height: 40.0,
+          height: 70.0,
         ),
         Align(
           alignment: const AlignmentDirectional(-0.5, 5.0),
@@ -108,6 +108,7 @@ class _OtpState extends State<Otp> {
                       keyboardType: TextInputType.number,
                       appContext: context,
                       length: 6,
+                      autoFocus: true,
                       animationType: AnimationType.scale,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       pinTheme: PinTheme(
@@ -143,7 +144,7 @@ class _OtpState extends State<Otp> {
                      ),
               
               const SizedBox(
-                height: 300,
+                height: 250,
               ),
 
               const ConfirmButton()

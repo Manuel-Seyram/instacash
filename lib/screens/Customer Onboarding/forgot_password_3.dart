@@ -30,7 +30,7 @@ class Forgotpassword3 extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          height: 10.0,
+          height: 70.0,
         ),
 
                              Align(
@@ -86,7 +86,7 @@ class Forgotpassword3 extends StatelessWidget {
 
                 const SizedBox(height: 20.0),
 
-                const SizedBox(height: 290.0,),
+                const SizedBox(height: 200.0,),
 
                const ConfirmButton3(),
 
@@ -103,12 +103,11 @@ class Forgotpassword3 extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 14.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'New Password',
-            labelStyle: TextStyle(color: Colors.black54),
-            //border: OutlineInputBorder(borderSide: BorderSide())
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             suffixIcon: Icon(
               Icons.check_circle_rounded,
             )),
@@ -124,11 +123,11 @@ class Forgotpassword3 extends StatelessWidget {
         style: GoogleFonts.poppins(
             textStyle: const TextStyle(
                 color: Colors.black,
-                fontSize: 14.0,
+                fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
         decoration: const InputDecoration(
             labelText: 'Confirm Password',
-            labelStyle: TextStyle(color: Colors.black54),
+            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
             //border: OutlineInputBorder(borderSide: BorderSide())
             suffixIcon: Icon(
               Icons.check_circle_rounded,

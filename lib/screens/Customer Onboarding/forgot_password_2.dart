@@ -41,7 +41,9 @@ class _Forgotpassword2State extends State<Forgotpassword2> {
             ),
           ),
         ),
-        
+        const SizedBox(
+          height: 70.0,
+        ),
         Align(
           alignment: const AlignmentDirectional(-0.5, 5.0),
           child: RichText(
@@ -106,6 +108,7 @@ class _Forgotpassword2State extends State<Forgotpassword2> {
                       keyboardType: TextInputType.number,
                       appContext: context,
                       length: 6,
+                      autoFocus: true,
                       animationType: AnimationType.scale,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       pinTheme: PinTheme(
@@ -141,7 +144,7 @@ class _Forgotpassword2State extends State<Forgotpassword2> {
                      ),
               
               const SizedBox(
-                height: 350,
+                height: 250,
               ),
 
               const ConfirmButton2()

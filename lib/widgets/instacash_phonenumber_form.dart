@@ -16,7 +16,11 @@ class Phonebox extends StatelessWidget {
         key: _formKey,
         child: 
             Container(
-              color: Colors.white,
+              height: 99,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
               child:
         Column(
           //crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,18 +28,20 @@ class Phonebox extends StatelessWidget {
             const SizedBox(height: 10.0,),
             Align(
               alignment: const AlignmentDirectional(-0.9, 5.0),
-              child: Text('Phone Number', style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black45, fontSize: 12.0, fontWeight: FontWeight.w500))),
+              child: Text('Phone Number', style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black45, fontSize: 14.0, fontWeight: FontWeight.w500))),
             ),
             IntlPhoneField(
               showCursor: true,
               initialCountryCode: 'GH',
               disableLengthCheck: true,
-              style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black54, fontSize: 14.0, fontWeight: FontWeight.w500)),
+              flagsButtonPadding: const EdgeInsets.only(bottom: 5.0, right: 5.0, top: 5.0),
+              style: GoogleFonts.poppins(textStyle: const TextStyle(color: Colors.black54, fontSize: 16.0, fontWeight: FontWeight.w500)),
               keyboardType: TextInputType.phone,
+              autofocus: true,
               textAlign: TextAlign.justify,
               autovalidateMode: AutovalidateMode.onUserInteraction,
               decoration: const InputDecoration(
-                alignLabelWithHint: true,
+                alignLabelWithHint:true,
                 labelStyle: TextStyle(color: Colors.black54,),
               ),
               onChanged: (phone) {
