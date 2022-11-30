@@ -6,6 +6,9 @@ import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page3.
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page4.dart';
 import 'package:instacash/screens/Customer%20Onboarding/onboarding/slider_page5.dart';
 
+import '../../../widgets/bottom_navbar2.dart';
+import '../../../widgets/show_dialog.dart';
+
 class Landing extends StatefulWidget {
   const Landing({super.key});
 
@@ -75,7 +78,7 @@ class _LandingState extends State<Landing> {
                   ),
                   MaterialButton(
                       onPressed: () => {
-                            check(context),
+                            _popUp(),
                           },
                       color: Colors.white,
                       height: 40.0,
@@ -104,8 +107,16 @@ class _LandingState extends State<Landing> {
       ),
     );
   }
+  void _popUp() {
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (c) => const Navbar3()
+    ));
+    showDialog(context: context, 
+      builder: (c) =>  AlertDialogBox(content: Stack(),),
+    );
+  }
 }
 
 Future check(context) async {
-           Navigator.pushNamed(context, '/navbar');
+           Navigator.pushNamed(context, '/navbar3');
 }

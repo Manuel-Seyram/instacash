@@ -124,6 +124,11 @@ flutter:
     - assets/walletgirl.png
     - assets/guyshop.png
     - assets/market.png
+    - assets/emptyfield.png
+    - assets/new user homepage onboarding.png
+    - assets/new user homepage onboarding2.png
+    - assets/new user homepage onboarding3.png
+    - assets/new user homepage onboarding4.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

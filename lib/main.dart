@@ -23,6 +23,7 @@ import 'package:instacash/screens/Repayment%20Loan/repayment_loan.dart';
 import 'package:instacash/screens/homepage.dart';
 import 'package:instacash/screens/Loan/loan_application_form.dart';
 import 'package:instacash/widgets/bottom_navbar.dart';
+import 'package:instacash/widgets/bottom_navbar2.dart';
 import '../screens/Customer Onboarding/login/login.dart';
 import '../screens/Customer Onboarding/onboarding/onboarding_screen.dart';
 import '../screens/Customer Onboarding/sign_up/phone_number_field.dart';
@@ -69,6 +70,7 @@ void main() {
         '/repayment':(context) => const Repayment(),
         '/savingsmethod':(context) => const SavingsMethod(),
         '/roundup':(context) => const RoundUp(),
+        '/navbar3':(context) => const Navbar3(),
         
       },
   ));
