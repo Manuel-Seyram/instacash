@@ -83,10 +83,14 @@ class SavingsMethod extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
-                  border: Border.all(
-                    color: Colors.grey.shade200,
-                    width: 2.0,
-                  )),
+                  boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 5.0,
+                                        offset: Offset(0.0, 0.0),
+                                      )
+                                    ],),
                     child: Column(
                       children: [
                         const SizedBox(
@@ -155,10 +159,14 @@ class SavingsMethod extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
-                  border: Border.all(
-                    color: Colors.grey.shade200,
-                    width: 2.0,
-                  )),
+                  boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 5.0,
+                                        offset: Offset(0.0, 0.0),
+                                      )
+                                    ],),
                     child: Column(
                       children: [
                         const SizedBox(
@@ -229,10 +237,14 @@ class SavingsMethod extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.white,
                   borderRadius: BorderRadius.circular(10.0),
-                  border: Border.all(
-                    color: Colors.grey.shade200,
-                    width: 2.0,
-                  )),
+                  boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 5.0,
+                                        offset: Offset(0.0, 0.0),
+                                      )
+                                    ]),
                     child: Column(
                       children: [
                         const SizedBox(

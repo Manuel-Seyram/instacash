@@ -114,8 +114,18 @@ class Homepage extends StatelessWidget {
                             decoration: const BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(20.0),
                                     topLeft: Radius.circular(20.0),
-                                    bottomLeft: Radius.circular(20.0))),
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0)),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 5.0,
+                                        offset: Offset(0.0, 0.0),
+                                      )
+                                    ],),
                             child: Column(children: [
                               const SizedBox(
                                 height: 15.0,
@@ -158,7 +168,17 @@ class Homepage extends StatelessWidget {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(20.0),
-                                    bottomRight: Radius.circular(20.0))),
+                                    topLeft: Radius.circular(20.0),
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0)),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 5.0,
+                                        offset: Offset(0.0, 0.0),
+                                      )
+                                    ],),
                             child: Column(children: [
                               const SizedBox(
                                 height: 15.0,

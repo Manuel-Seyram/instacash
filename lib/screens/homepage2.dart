@@ -45,7 +45,7 @@ class Homepage2 extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          width: 170,
+                          width: 200,
                         ),
                         const Icon(
                           PhosphorIcons.bell,
@@ -117,7 +117,15 @@ class Homepage2 extends StatelessWidget {
                                     topRight: Radius.circular(20.0),
                                     topLeft: Radius.circular(20.0),
                                     bottomLeft: Radius.circular(20.0),
-                                    bottomRight: Radius.circular(20.0))),
+                                    bottomRight: Radius.circular(20.0)),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 5.0,
+                                        offset: Offset(0.0, 0.0),
+                                      )
+                                    ],),
                             child: Column(children: [
                               const SizedBox(
                                 height: 15.0,
@@ -162,7 +170,16 @@ class Homepage2 extends StatelessWidget {
                                     topRight: Radius.circular(20.0),
                                     topLeft: Radius.circular(20.0),
                                     bottomLeft: Radius.circular(20.0),
-                                    bottomRight: Radius.circular(20.0))),
+                                    bottomRight: Radius.circular(20.0)),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black12,
+                                        blurRadius: 10.0,
+                                        spreadRadius: 5.0,
+                                        offset: Offset(0.0, 0.0),
+                                      )
+                                    ],
+                            ),
                             child: Column(children: [
                               const SizedBox(
                                 height: 15.0,

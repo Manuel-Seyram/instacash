@@ -2,10 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 import 'package:instacash/screens/Loan/loan_current.dart';
+import 'package:instacash/screens/Profile/profile_home.dart';
 import 'package:instacash/screens/Vault/vault.dart';
-import 'package:instacash/screens/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:instacash/screens/Loan/loan_application_form.dart';
 import 'package:instacash/screens/homepage2.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
@@ -22,9 +21,8 @@ class _Navbar3State extends State<Navbar3> {
     return [
       const Homepage2(),
       const SavingsMethod(),
-      const Homepage(),
       const LoanTabScreen(),
-      const LoanApplication(),
+      const ProfileHome(),
     ];
   }
 
@@ -78,14 +76,6 @@ class _Navbar3State extends State<Navbar3> {
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,
                 textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
-            ),
-            PersistentBottomNavBarItem(
-                inactiveIcon: const Icon(CupertinoIcons.graph_square) ,
-                icon: const Icon(CupertinoIcons.graph_square_fill),
-                title: ('Spendings'),
-                activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
-                inactiveColorPrimary: Colors.black54,
-                textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 14),
             ),
             PersistentBottomNavBarItem(
                 inactiveIcon:const Icon(PhosphorIcons.money) ,

@@ -129,6 +129,17 @@ flutter:
     - assets/new user homepage onboarding2.png
     - assets/new user homepage onboarding3.png
     - assets/new user homepage onboarding4.png
+    - assets/account_profile.png
+    - assets/language.png
+    - assets/profile_payments.png
+    - assets/home_icon.png
+    - assets/vault_locker.png
+    - assets/loan_icon.png
+    - assets/profile_icon.png
+    - assets/Faqs.png
+    - assets/logout.png
+    - assets/questionmark.png
+    - assets/security.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

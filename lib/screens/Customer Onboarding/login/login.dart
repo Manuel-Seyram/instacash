@@ -98,6 +98,3 @@ class Login extends StatelessWidget {
   }
 }
 
-Future check(context) async {
-           Navigator.pushNamed(context, '/navbar');
-}

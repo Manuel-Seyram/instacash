@@ -38,7 +38,7 @@ class _LoanTabScreenState extends State<LoanTabScreen> with TickerProviderStateM
              Column(
               children : [
             const SizedBox(
-              height: 40.0,
+              height: 30.0,
             ),
             Align(
               alignment: const AlignmentDirectional(-0.8, 5.0),
@@ -50,6 +50,25 @@ class _LoanTabScreenState extends State<LoanTabScreen> with TickerProviderStateM
                       textStyle: const TextStyle(
                           color: Colors.white,
                           fontSize: 24.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                ]),
+              ),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            Align(
+              alignment: const AlignmentDirectional(-0.8, 5.0),
+              child: RichText(
+                text: TextSpan(children: [
+                  TextSpan(
+                    text: '',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 18.0,
                           fontWeight: FontWeight.w500),
                     ),
                   ),

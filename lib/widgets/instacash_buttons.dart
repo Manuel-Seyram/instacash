@@ -17,7 +17,6 @@ import 'package:instacash/widgets/bottom_navbar.dart';
 import 'package:instacash/widgets/pop_up_mode_of_payment.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
-import '../screens/Customer Onboarding/onboarding/onboarding_screen.dart';
 
 //HERE YoU WILL FIND THE BUTTONS USED FOR INSTACASH APP
 
@@ -113,7 +112,7 @@ class LoginButton extends StatelessWidget {
     return MaterialButton(
         enableFeedback: isButtondisabled ? phoneFieldEmpty : !phoneFieldEmpty,
          onPressed: () => {
-                            check(context),
+                            Navigator.pushNamed(context, '/navbar')
                           },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
