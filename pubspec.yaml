@@ -136,10 +136,13 @@ flutter:
     - assets/vault_locker.png
     - assets/loan_icon.png
     - assets/profile_icon.png
-    - assets/Faqs.png
     - assets/logout.png
     - assets/questionmark.png
     - assets/security.png
+    - assets/creditscore.png
+    - assets/contactsupport.png
+    - assets/thumbs.png
+    - assets/creditreport.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

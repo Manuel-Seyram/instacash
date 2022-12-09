@@ -1,6 +1,7 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/screens/Vault/DigiSave/digisave_current.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/select_lump_sum.dart';
 import 'package:instacash/screens/Vault/Monthly/goal_screen.dart';
 import 'package:instacash/screens/Vault/vault.dart';
@@ -296,53 +297,62 @@ class _LumpHomeState extends State<LumpHome> {
               ),
             ),
             const SizedBox(height: 10.0,),
-            Container(
-              height: 90.0,
-              width: 310.0,
-              decoration:  BoxDecoration(
-                color: Colors.white,
-                borderRadius: const BorderRadius.all(Radius.circular(7.0)),
-                border: Border.all(
-                  color: Colors.grey.shade300,
-                ),
-              ),
-              child: 
-              Row(
-                children: [
-                  const SizedBox(width: 20.0,),
-                  Image.asset('assets/roundup.png', height: 40.0, width: 40.0),
-                  const SizedBox(width: 20.0,),
-                  Column(
-                    children: [
-                      const SizedBox(height: 15.0,),
-                      Align(
-                        alignment: const AlignmentDirectional(-0.7, 5.0),
-                        child: Text('GHS 25.50',
-                        style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Color.fromARGB(249, 40, 68, 194),
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.w600),
-                    ),
-                        ),
-                      ),
-                      const SizedBox(height: 5.0,),
-              Align(
-                        alignment: const AlignmentDirectional(-0.65, 5.0),
-                        child: Text('Total savings',
-                        style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Colors.black54,
-                          fontSize: 14.0,
-                          fontWeight: FontWeight.w400),
-                    ),
-                        ),
-                      ),
-                    ],
+            GestureDetector(
+              onTap: (){
+                PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const SelectDigiSave(),
+                              withNavBar: true,
+                            );
+              },
+              child: Container(
+                height: 90.0,
+                width: 310.0,
+                decoration:  BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: const BorderRadius.all(Radius.circular(7.0)),
+                  border: Border.all(
+                    color: Colors.grey.shade300,
                   ),
-                ],
-
-              )
+                ),
+                child: 
+                Row(
+                  children: [
+                    const SizedBox(width: 20.0,),
+                    Image.asset('assets/roundup.png', height: 40.0, width: 40.0),
+                    const SizedBox(width: 20.0,),
+                    Column(
+                      children: [
+                        const SizedBox(height: 15.0,),
+                        Align(
+                          alignment: const AlignmentDirectional(-0.7, 5.0),
+                          child: Text('GHS 25.50',
+                          style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                            color: Color.fromARGB(249, 40, 68, 194),
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.w600),
+                      ),
+                          ),
+                        ),
+                        const SizedBox(height: 5.0,),
+                Align(
+                          alignment: const AlignmentDirectional(-0.65, 5.0),
+                          child: Text('Total savings',
+                          style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                            color: Colors.black54,
+                            fontSize: 14.0,
+                            fontWeight: FontWeight.w400),
+                      ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+            
+                )
+              ),
             )
           ],
         )

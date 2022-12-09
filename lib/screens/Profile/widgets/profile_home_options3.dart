@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/screens/Profile/Credit%20Score/credit_score.dart';
+import 'package:instacash/screens/Profile/FAQs/faqs.dart';
+import 'package:instacash/screens/Profile/contact%20support/contact_support.dart';
 
 class ProfileHomeOptions3 extends StatelessWidget {
   const ProfileHomeOptions3({super.key});
@@ -9,7 +12,9 @@ class ProfileHomeOptions3 extends StatelessWidget {
     return Column(
       children: [
         GestureDetector(
-          onTap: (){},
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const CreditScore()));
+          },
           child: Container(
             height: 50.0,
             width: 350.0,
@@ -20,7 +25,7 @@ class ProfileHomeOptions3 extends StatelessWidget {
             child: Row(
               children:[
                 const SizedBox(width: 5.0,),
-                Image.asset('assets/questionmark.png', height: 40.0, width: 40.0,),
+                Image.asset('assets/creditscore.png', height: 40.0, width: 40.0,),
                 const SizedBox(width: 20.0,),
                 Text('Credit Score',
                 style: GoogleFonts.poppins(
@@ -37,7 +42,9 @@ class ProfileHomeOptions3 extends StatelessWidget {
         ),
         const SizedBox(height: 10.0,),
         GestureDetector(
-          onTap: (){},
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const Faqs()));
+          },
           child: Container(
             height: 50.0,
             width: 350.0,
@@ -65,7 +72,9 @@ class ProfileHomeOptions3 extends StatelessWidget {
         ),
         const SizedBox(height: 10.0,),
         GestureDetector(
-          onTap: (){},
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const ContactSupport()));
+          },
           child: Container(
             height: 50.0,
             width: 350.0,
@@ -76,7 +85,7 @@ class ProfileHomeOptions3 extends StatelessWidget {
             child: Row(
               children:[
                 const SizedBox(width: 5.0,),
-                Image.asset('assets/Faqs.png', height: 40.0, width: 40.0,),
+                Image.asset('assets/contactsupport.png', height: 40.0, width: 40.0,),
                 const SizedBox(width: 20.0,),
                 Text('Contact Support',
                 style: GoogleFonts.poppins(
