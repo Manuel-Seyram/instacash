@@ -40,9 +40,13 @@ class ProfileHome extends StatelessWidget {
               const SizedBox(height: 60.0,),
               const Center(
                 child: CircleAvatar(
-                  radius: 50.0,
-                  backgroundImage:AssetImage('assets/profile.png'),
-                  foregroundImage: NetworkImage('https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg?w=2000'),
+                  radius: 60,
+                  backgroundColor: Colors.white,
+                  child: CircleAvatar(
+                    radius: 50.0,
+                    backgroundImage:AssetImage('assets/profile.png'),
+                    foregroundImage: NetworkImage('https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg?w=2000'),
+                  ),
                 ),
               ),
               const SizedBox(height: 40.0,),

@@ -21,7 +21,7 @@ class Faqs extends StatelessWidget{
             onTap: () => Navigator.pop(context),
             child: const Icon(
               Icons.arrow_back,
-              size: 30,
+              size: 25,
               color: Color.fromARGB(249, 40, 68, 194),
             ),
           ),

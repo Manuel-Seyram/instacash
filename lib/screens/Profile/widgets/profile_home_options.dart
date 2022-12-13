@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:instacash/screens/Profile/Account%20info/view_account.dart';
+import 'package:instacash/screens/Profile/Payment%20modes/payment_mode.dart';
 
 class ProfileHomeOptions extends StatelessWidget {
   const ProfileHomeOptions({super.key});
@@ -9,7 +11,9 @@ class ProfileHomeOptions extends StatelessWidget {
     return Column(
       children: [
         GestureDetector(
-          onTap: (){},
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewAccount()));
+          },
           child: Container(
             height: 50.0,
             width: 350.0,
@@ -65,7 +69,9 @@ class ProfileHomeOptions extends StatelessWidget {
         ),
         const SizedBox(height: 10.0,),
         GestureDetector(
-          onTap: (){},
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const PaymentMode()));
+          },
           child: Container(
             height: 50.0,
             width: 350.0,
