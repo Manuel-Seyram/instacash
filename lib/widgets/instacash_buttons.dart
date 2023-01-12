@@ -9,6 +9,7 @@ import 'package:instacash/screens/Loan/momo_loan_accept_screen.dart';
 import 'package:instacash/screens/Vault/DigiSave/digi_save_deposit_method.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/choose_deposit_method.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/choose_funding_amount_lump_sum.dart';
+import 'package:instacash/screens/Vault/Monthly/monthly_delivery_method.dart';
 import 'package:instacash/screens/Vault/home_vault.dart';
 import 'package:instacash/screens/Vault/Monthly/monthly.dart';
 import 'package:instacash/screens/Vault/widgets/summary_momo.dart';
@@ -1001,6 +1002,41 @@ class MonthlyMomoContinueButton extends StatelessWidget {
           PersistentNavBarNavigator.pushNewScreen(
                               context,
                               screen: const SummaryMomo(),
+                              withNavBar: true,
+                            );
+          
+          
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        height: 40.0,
+        minWidth: 350,
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+        
+        child: Text(
+          'Continue',
+          style: GoogleFonts.poppins(
+            textStyle: const TextStyle(
+                color: Colors.white,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w500),
+          ),
+        ));
+  }
+}
+
+// SAVINGS SUSU BUTTONS
+class SusuContinueButton extends StatelessWidget {
+  const SusuContinueButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+        onPressed: () {
+          
+          PersistentNavBarNavigator.pushNewScreen(
+                              context,
+                              screen: const DeliveryMethodVaultMonth(),
                               withNavBar: true,
                             );
           

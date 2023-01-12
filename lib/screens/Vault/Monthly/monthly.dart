@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Vault/Monthly/create_goal.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
+import '../Savings/susu_amount.dart';
+
 
 
 class Monthly extends StatefulWidget {
@@ -64,7 +66,7 @@ class _MonthlyState extends State<Monthly> {
                   ),
                 ),
                 TextSpan(
-                  text: 'Saving goal',
+                  text: 'Savings type',
                   style: GoogleFonts.poppins(
                     textStyle: const TextStyle(
                         color: Colors.blue,
@@ -78,92 +80,90 @@ class _MonthlyState extends State<Monthly> {
           const SizedBox(
             height: 20.0,
           ),
-          Align(
-            alignment: const AlignmentDirectional(-0.76, 5.0),
-            child: Text('no savings goal recorded.',
-             style: GoogleFonts.poppins(
-                    textStyle: const TextStyle(
-                        color: Colors.grey,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w400),
-                  ),),
+          SizedBox(
+            height: 300,
+            width: 400,
+            child: Image.asset('assets/savingssusu.png', fit: BoxFit.fill,),
           ),
-          const SizedBox(height: 60.0,),
-          Align(
-            alignment: const AlignmentDirectional(-0.84, 5.0),
-            child:
-            Text('Goals',
-            style: GoogleFonts.poppins(
-                    textStyle: const TextStyle(
-                        color: Colors.black87,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w400),
-                  ),
-            ),
-          ),
-          const SizedBox(height: 10.0,),
-          Align(
-            alignment: const AlignmentDirectional(-0.33, 5.0),
-          child: Container(
-            color: Colors.white,
-            height: 40.0,
-            width: 320.0,
-            child: Column(
-              children : [
-                const SizedBox(height: 10.0,),
-            Align(
-              alignment: const AlignmentDirectional(-0.8, 5.0),
-              child: Text('you dont have a savings goal.',
-              style: GoogleFonts.poppins(
-                    textStyle: const TextStyle(
-                        color: Colors.grey,
-                        fontSize: 12.0,
-                        fontWeight: FontWeight.w400,
-                        )
-                  ),
-              ),
-            ),
-              ],
-            ),
-          ),),
-          const SizedBox(height: 350.0,),
-          Row(
+          const SizedBox(height: 80.0,),
+          SizedBox(
+            height: 60.0,
+            width: 350.0,
+            child: MaterialButton(
+        onPressed: () {
+            PersistentNavBarNavigator.pushNewScreen(
+                                context,
+                                screen: const CreateGoal(),
+                                withNavBar: true,
+                              );   
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+        
+        child: Row(
             children: [
-              const SizedBox(width: 10.0,),
-              MaterialButton(
-                 onPressed: () {
-                  PersistentNavBarNavigator.pushNewScreen(
-                    context, 
-                    screen: const CreateGoal(),
-                    withNavBar: true,);
-                 },
-                 color: const Color.fromARGB(249, 40, 68, 194),
-                  textColor: Colors.white,
-                  padding: const EdgeInsets.all(5.0),
-                  shape: const CircleBorder(),
-                  child: const Icon(
-                  Icons.add_rounded,
-                  size: 30,
-                    ),
-                      ),
-              const SizedBox(width: 10.0,),
-              Text('Add new savings goal',
-              style: GoogleFonts.poppins(
-                    textStyle: const TextStyle(
-                        color: Colors.grey,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w400,
-                        ),   
-                  ),
-              )
-            ],
+                   Text('start saving', style: 
+                   GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w400,
+                          ),   
+                    ),),
+                    const SizedBox(width: 160,),
+                    Text('Goals', style: 
+                   GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w400,
+                          ),   
+                    ),),
+
+        ],)),
           ),
           const SizedBox(height: 30.0,),
-          
+          SizedBox(
+            height: 60.0,
+            width: 350.0,
+            child: MaterialButton(
+        onPressed: () {
+            PersistentNavBarNavigator.pushNewScreen(
+                                context,
+                                screen: const SusuAmount(),
+                                withNavBar: true,
+                              );   
+        },
+        color: const Color.fromARGB(249, 40, 68, 194),
+        elevation: 10.0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+        
+        child: Row(
+            children: [
+                   Text('start saving', style: 
+                   GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w400,
+                          ),   
+                    ),),
+                    const SizedBox(width: 180,),
+                    Text('Susu', style: 
+                   GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w400,
+                          ),   
+                    ),),
+
+        ],)),
+          ),
         ],
       ),
       ),
     );
   }
-  
 }

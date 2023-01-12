@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:instacash/screens/Customer%20Onboarding/sign_up/bank_information.dart';
 import 'package:instacash/screens/Customer%20Onboarding/forgot_password_1.dart';
 import 'package:instacash/screens/Customer%20Onboarding/forgot_password_2.dart';
@@ -31,6 +33,7 @@ import '../screens/Customer Onboarding/splash screen/splash_screen.dart';
 
 
 void main() {
+  initializeDateFormatting().then((_)=>
    runApp(MaterialApp(
     theme: ThemeData(
       colorScheme: const ColorScheme.light(
@@ -73,5 +76,5 @@ void main() {
         '/navbar3':(context) => const Navbar3(),
         
       },
-  ));
+  ),),);
 }

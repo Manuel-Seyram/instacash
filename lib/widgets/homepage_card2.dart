@@ -16,7 +16,7 @@ class _CardSlider2State extends State<CardSlider2> {
 
   List cardList = [
     const CardVault2(),
-    const CardLoan2(), 
+    const CardLoan2(),  
   ];
 
   List<T> map<T>(List list, Function handler) {
@@ -38,13 +38,13 @@ class _CardSlider2State extends State<CardSlider2> {
         child: CarouselSlider(
           options: CarouselOptions(
             viewportFraction: 1.1,
-            enlargeCenterPage: true,
-            autoPlay: true,
+            enlargeCenterPage: false,
+            autoPlay: false,
             autoPlayInterval: const Duration(seconds: 5),
             autoPlayAnimationDuration: const Duration(milliseconds: 950),
             autoPlayCurve: Curves.easeInOut,
             pauseAutoPlayOnTouch: true,
-            aspectRatio: 1.3,
+            aspectRatio: 1.0,
             onPageChanged: (index, reason) {
               setState(() {
 

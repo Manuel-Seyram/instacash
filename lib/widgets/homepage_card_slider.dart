@@ -38,13 +38,13 @@ class _CardSliderState extends State<CardSlider> {
         child: CarouselSlider(
           options: CarouselOptions(
             viewportFraction: 1.1,
-            enlargeCenterPage: true,
-            autoPlay: true,
+            enlargeCenterPage: false,
+            autoPlay: false,
             autoPlayInterval: const Duration(seconds: 5),
             autoPlayAnimationDuration: const Duration(milliseconds: 950),
             autoPlayCurve: Curves.easeInOut,
             pauseAutoPlayOnTouch: true,
-            aspectRatio: 1.3,
+            aspectRatio: 1.0,
             onPageChanged: (index, reason) {
               setState(() {
 

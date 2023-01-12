@@ -182,7 +182,7 @@ class PastScreen extends StatelessWidget {
                     ),
                       ),
               const SizedBox(width: 5.0,),
-              Text('Add new lumpsum investment',
+              Text('Reinvest',
               style: GoogleFonts.poppins(
                     textStyle: const TextStyle(
                         color: Colors.black54,

@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Vault/DigiSave/digisave_current.dart';
 import 'package:instacash/screens/Vault/Lump%20Sum/select_lump_sum.dart';
 import 'package:instacash/screens/Vault/Monthly/goal_screen.dart';
+import 'package:instacash/screens/Vault/Savings/susu.dart';
 import 'package:instacash/screens/Vault/vault.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
@@ -229,6 +230,67 @@ class _LumpHomeState extends State<LumpHome> {
               ),
             ),
             ),
+            const SizedBox(width: 20.0,),
+            GestureDetector(
+                      onTap: () {
+                        PersistentNavBarNavigator.pushNewScreen(
+                          context, screen: const SelectSusu(), 
+                          withNavBar: true);
+                      },
+                      child:
+            Container(
+              width: 150.0,
+              decoration: const BoxDecoration(
+                color: Colors.blueAccent,
+                borderRadius: BorderRadius.all(Radius.circular(10.0)),
+              ),
+              child: Column(
+                children:[
+               const SizedBox(height: 15.0,),
+                Image.asset('assets/lumpsum.png', height: 60.0, width: 60.0),
+                const SizedBox(height: 12.0,),
+                Align(
+                  alignment: const AlignmentDirectional(-0.65, 5.0),
+                  child: Text('Susu\nSavings',
+                  style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10.0,),
+                Align(
+                  alignment: const AlignmentDirectional(-0.35, 5.0),
+                  child: Text('GHS 12,256.00',
+                  style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+                const SizedBox(height:5.0,),
+                Padding(
+                padding: const EdgeInsets.only(top: 5.0, left: 15.0, right: 15.0, bottom: 12.0),
+                child:
+              StepProgressIndicator(
+                totalSteps: 3,
+                currentStep: 2,
+                padding: 0,
+                fallbackLength: 10.0,
+                roundedEdges: const Radius.circular(10),
+                 size: 6,
+                 selectedColor: const Color.fromARGB(249, 40, 68, 194),
+                 unselectedColor: Colors.grey.shade300,
+                   )
+              ),
+                ]
+              ),
+            ),
+                    ),
             const SizedBox(width: 20.0,),
             GestureDetector(
               onTap: () {

@@ -100,20 +100,39 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
               ]),
             ),
           ),
-          const SizedBox(
-            height: 20.0,
+          Row(
+            children: [
+              const SizedBox(width: 30.0,),
+              Text('Enter Amount to invest:', style:GoogleFonts.poppins(
+                    textStyle: const TextStyle(
+                        color: Colors.black45,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w500),
+                  ),),
+                  const SizedBox(width: 20.0,),
+                  RichText(
+                    text: TextSpan(
+                      children:[
+                        TextSpan(
+                          text:
+                    'Min: ', style:GoogleFonts.poppins(
+                    textStyle: const TextStyle(
+                        color: Colors.black45,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w500),
+                  ),),
+                  
+                  TextSpan(
+                          text:
+                    'GHS 5,000.00', style:GoogleFonts.poppins(
+                    textStyle: const TextStyle(
+                        color: Colors.green,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w500),
+                  ),),
+                  ])),
+            ],
           ),
-          Align(
-              alignment: const AlignmentDirectional(-0.8, 5.0),
-              child: Text(
-                'Enter amount to save',
-                style: GoogleFonts.poppins(
-                  textStyle: const TextStyle(
-                      color: Colors.black54,
-                      fontSize: 14.0,
-                      fontWeight: FontWeight.w400),
-                ),
-              )),
           const SizedBox(
             height: 40.0,
           ),
@@ -121,7 +140,7 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Container(
               height: 80.0,
-              color: Colors.white,
+              color: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
               child: const Center(
                 child: TextField(
                   keyboardType: TextInputType.number,
@@ -130,6 +149,9 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                       fontSize: 40.0, color: Color.fromARGB(249, 40, 68, 194)),
                   decoration: InputDecoration.collapsed(
                     hintText: '₵ 0.00',
+                    hintStyle: TextStyle(
+                      color: Color.fromARGB(249, 40, 68, 194),
+                    )
                   ),
                 ),
               ),
