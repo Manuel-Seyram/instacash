@@ -12,7 +12,7 @@ class Days60 extends StatelessWidget {
             Align(
               alignment: const AlignmentDirectional(-0.85, 5.0),
               child:
-               Text('interest rate: 20%',
+               Text('interest rate: 30%',
                style: GoogleFonts.poppins(
                   textStyle: const TextStyle(
                       color: Colors.black54,
@@ -36,7 +36,7 @@ class Days60 extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: ' ₵ 5250',
+                      text: ' ₵ 8250',
                       style: GoogleFonts.poppins(
                         textStyle: const TextStyle(
                             color: Colors.green,

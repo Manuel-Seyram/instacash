@@ -12,6 +12,8 @@ class Security extends StatefulWidget {
 
 class _SecurityState extends State<Security> {
  bool _switchValue = false;
+ bool _switchValue1 = false;
+ bool _switchValue2 = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,10 +92,10 @@ class _SecurityState extends State<Security> {
                         fontWeight: FontWeight.w400),
                   )),
                   const SizedBox(width: 120.0,),
-                  CupertinoSwitch(value: _switchValue, 
+                  CupertinoSwitch(value: _switchValue1, 
                   onChanged: (value) {
                 setState(() {
-                  _switchValue = value;
+                  _switchValue1 = value;
                 });
               },)
             ]
@@ -118,10 +120,10 @@ class _SecurityState extends State<Security> {
                         fontWeight: FontWeight.w400),
                   )),
                   const SizedBox(width: 110.0,),
-                  CupertinoSwitch(value: _switchValue, 
+                  CupertinoSwitch(value: _switchValue2, 
                   onChanged: (value) {
                 setState(() {
-                  _switchValue = value;
+                  _switchValue2 = value;
                 });
               },)
             ]

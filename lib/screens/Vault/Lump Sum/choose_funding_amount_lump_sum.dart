@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Vault/widgets/days30.dart';
 import 'package:instacash/screens/Vault/widgets/days60.dart';
 import 'package:instacash/screens/Vault/widgets/days_15.dart';
 import 'package:instacash/widgets/instacash_buttons.dart';
+
 
 class LumpSumFunding extends StatefulWidget {
   const LumpSumFunding({super.key});
@@ -13,34 +15,22 @@ class LumpSumFunding extends StatefulWidget {
 }
 
 class _LumpSumFundingState extends State<LumpSumFunding> {
-  bool _isVisible = false;
-  bool _isVisible1 = false;
-  bool _isVisible2 = false;
-  bool _isVisible3 = false;
 
-    showToast() {
-    setState(() {
-      _isVisible = !_isVisible;
-    });
-  }
+final Map<int, Widget> tenor = const <int, Widget>{
+    0: Text('15 days'),
+    1: Text('30 days'),
+    2: Text('60 days'),
+    3: Text('1 year'),
+  };
 
-   showToast1() {
-    setState(() {
-      _isVisible1 = !_isVisible1;
-    });
-  }
+  final Map<int, Widget> data = const <int, Widget>{
+    0: Days15(),
+    1: Days30(),
+    2: Days60(),
+    3: Days60(),
+  };
 
-   showToast2() {
-    setState(() {
-      _isVisible2 = !_isVisible2;
-    });
-  }
-
-  showToast3() {
-    setState(() {
-      _isVisible3 = !_isVisible3;
-    });
-  }
+  int? sharedValue;
 
   @override
   Widget build(BuildContext context) {
@@ -117,7 +107,7 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
                           text:
                     'Min: ', style:GoogleFonts.poppins(
                     textStyle: const TextStyle(
-                        color: Colors.black45,
+                        color: Colors.black54,
                         fontSize: 14.0,
                         fontWeight: FontWeight.w500),
                   ),),
@@ -134,12 +124,12 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
             ],
           ),
           const SizedBox(
-            height: 40.0,
+            height: 60.0,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Container(
-              height: 80.0,
+              height: 90.0,
               color: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
               child: const Center(
                 child: TextField(
@@ -174,123 +164,25 @@ class _LumpSumFundingState extends State<LumpSumFunding> {
           const SizedBox(
             height: 20.0,
           ),
-          Row(
-            children: [
-              const SizedBox(
-                width: 20.0,
-              ),
-              TextButton(
-                onPressed: () {
-                  showToast();
+            SizedBox(
+              width: 390.0,
+              child: CupertinoSegmentedControl<int>(
+                selectedColor: const Color.fromARGB(249, 40, 68, 194),
+                children: tenor,
+                onValueChanged: (int val) {
+                  setState(() {
+                    sharedValue = val;
+                  });
                 },
-                style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.grey.shade300),
-                ))),
-                child: const Text(
-                  '15 days',
-                  style: TextStyle(
-                      color: Color.fromARGB(249, 40, 68, 194),
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500),
-                ),
+                groupValue: sharedValue,
               ),
-              const SizedBox(
-                width: 10.0,
-              ),
-              TextButton(
-                onHover: (value) => const Color.fromARGB(249, 40, 68, 194),
-                onPressed: () {
-                  showToast1();
-                },
-                style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.grey.shade300),
-                ))),
-                child: const Text(
-                  '30 days',
-                  style: TextStyle(
-                      color: Color.fromARGB(249, 40, 68, 194),
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500),
-                ),
-              ),
-              const SizedBox(
-                width: 10.0,
-              ),
-              TextButton(
-                onHover: (value) => const Color.fromARGB(249, 40, 68, 194),
-                onPressed: () {
-                  showToast2();
-                },
-                style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.grey.shade300),
-                ))),
-                child: const Text(
-                  '60 days',
-                  style: TextStyle(
-                      color: Color.fromARGB(249, 40, 68, 194),
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500),
-                ),
-              ),
-              const SizedBox(
-                width: 10.0,
-              ),
-              TextButton(
-                onHover: (value) => const Color.fromARGB(249, 40, 68, 194),
-                onPressed: () {
-                  showToast3();
-                },
-                style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.grey.shade300),
-                ))),
-                child: const Text(
-                  '1 year',
-                  style: TextStyle(
-                      color: Color.fromARGB(249, 40, 68, 194),
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500),
-                ),
-              ),
-            ],
-          ),
+            ),
           const SizedBox(
             height: 20.0,
           ),
-          Visibility(
-        //replacement: const SizedBox(height: 50.0,),
-        visible: _isVisible,
-        child: const Days15(),
-      ),
-    
-      Visibility(
-        //replacement: const SizedBox(height: 50.0,),
-        visible: _isVisible1,
-        child: const Days30(),
-      ),
-
-      Visibility(
-        // replacement: const SizedBox(height: 50.0,),
-        visible: _isVisible2,
-        child: const Days60(),
-      ),
-
-      Visibility(
-        //replacement: const SizedBox(height: 50.0,),
-        visible: _isVisible3,
-        child: const Days15(),
-      ),
+          Container(
+            child: data[sharedValue],
+          ),
           const SizedBox(
             height: 200.0,
           ),

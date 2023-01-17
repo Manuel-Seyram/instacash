@@ -36,7 +36,7 @@ class Days30 extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: ' ₵ 5250',
+                      text: ' ₵ 7250',
                       style: GoogleFonts.poppins(
                         textStyle: const TextStyle(
                             color: Colors.green,

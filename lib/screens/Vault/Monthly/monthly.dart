@@ -149,7 +149,7 @@ class _MonthlyState extends State<Monthly> {
                           fontWeight: FontWeight.w400,
                           ),   
                     ),),
-                    const SizedBox(width: 180,),
+                    const SizedBox(width: 160,),
                     Text('Susu', style: 
                    GoogleFonts.poppins(
                       textStyle: const TextStyle(
