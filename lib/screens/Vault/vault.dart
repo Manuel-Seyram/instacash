@@ -29,7 +29,7 @@ class SavingsMethod extends StatelessWidget {
                 child: RichText(
                   text: TextSpan(children: [
                     TextSpan(
-                      text: 'Vault ',
+                      text: 'Savings ',
                       style: GoogleFonts.poppins(
                         textStyle: const TextStyle(
                             color: Colors.white,
@@ -109,7 +109,7 @@ class SavingsMethod extends StatelessWidget {
                                 width: 30.0,
                               ),
                               Text(
-                                'Lump Sum',
+                                'Vault',
                                 style: GoogleFonts.poppins(
                                   textStyle: const TextStyle(
                                       color: Color.fromARGB(249, 40, 68, 194),

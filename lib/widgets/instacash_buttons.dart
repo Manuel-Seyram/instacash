@@ -18,7 +18,6 @@ import 'package:instacash/widgets/bottom_navbar.dart';
 import 'package:instacash/widgets/pop_up_mode_of_payment.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
-
 //HERE YoU WILL FIND THE BUTTONS USED FOR INSTACASH APP
 
 class RegisterButton extends StatelessWidget {
@@ -73,64 +72,6 @@ class ConfirmButton extends StatelessWidget {
   }
 }
 
-class ContinueButton extends StatelessWidget {
-  const ContinueButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialButton(
-        onPressed: () {
-          Navigator.pushNamed(context, '/bankinformation');
-        },
-        color: const Color.fromARGB(249, 40, 68, 194),
-        height: 40.0,
-        minWidth: 300,
-        elevation: 10.0,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        child: Text(
-          'Continue',
-          style: GoogleFonts.poppins(
-            textStyle: const TextStyle(
-                color: Colors.white,
-                fontSize: 18.0,
-                fontWeight: FontWeight.w500),
-          ),
-        ));
-  }
-}
-
-// ignore: must_be_immutable
-class LoginButton extends StatelessWidget {
-  LoginButton({super.key});
-
-  bool phoneFieldEmpty = true;
-
-  bool isLoading = false;
-  bool isButtondisabled = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialButton(
-        enableFeedback: isButtondisabled ? phoneFieldEmpty : !phoneFieldEmpty,
-         onPressed: () => {
-                            Navigator.pushNamed(context, '/navbar')
-                          },
-        color: const Color.fromARGB(249, 40, 68, 194),
-        height: 40.0,
-        minWidth: 300,
-        elevation: 10.0,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        child: Text(
-          'login',
-          style: GoogleFonts.poppins(
-            textStyle: const TextStyle(
-                color: Colors.white,
-                fontSize: 18.0,
-                fontWeight: FontWeight.w500),
-          ),
-        ));
-  }
-}
 
 //FORGOT PASSSWORD BUTTONS
 class Forgotpassword1Button extends StatelessWidget {
@@ -248,10 +189,10 @@ class LoanInformationButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const LoanAmount(),
-                              withNavBar: false,
-                            );
+            context,
+            screen: const LoanAmount(),
+            withNavBar: false,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -278,10 +219,10 @@ class LoanAmountButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const DeliveryMethod(),
-                              withNavBar: false,
-                            );
+            context,
+            screen: const DeliveryMethod(),
+            withNavBar: false,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -386,10 +327,10 @@ class LoanCardContinueButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const CardReceipt(),
-                              withNavBar: false,
-                            );
+            context,
+            screen: const CardReceipt(),
+            withNavBar: false,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -416,10 +357,10 @@ class LoanMomoContinueButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen:const MomoReceipt(),
-                              withNavBar: false,
-                            );
+            context,
+            screen: const MomoReceipt(),
+            withNavBar: false,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -446,10 +387,10 @@ class LoanBankContinueButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen:const BanKReceipt(),
-                              withNavBar: false,
-                            );
+            context,
+            screen: const BanKReceipt(),
+            withNavBar: false,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -476,11 +417,10 @@ class LoanBankReceiptButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-        context,
-        screen:const Navbar(),
-        withNavBar: true,
-    );
-
+            context,
+            screen: const Navbar(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -506,14 +446,14 @@ class LoanCardReceiptButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-         Navigator.of(context).pushAndRemoveUntil(
-        CupertinoPageRoute(
-          builder: (BuildContext context) {
-            return const Navbar();
-          },
-        ),
-        (_) => false,
-      );
+          Navigator.of(context).pushAndRemoveUntil(
+            CupertinoPageRoute(
+              builder: (BuildContext context) {
+                return const Navbar();
+              },
+            ),
+            (_) => false,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -540,10 +480,10 @@ class LoanMomoReceiptButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const Navbar(),
-                              withNavBar: true,
-                            );
+            context,
+            screen: const Navbar(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -626,9 +566,6 @@ class RepayConfirmButton extends StatelessWidget {
   }
 }
 
-
-
-
 //Vault Section Buttons
 class RoundUpAgreeButton extends StatelessWidget {
   const RoundUpAgreeButton({super.key});
@@ -637,11 +574,11 @@ class RoundUpAgreeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const DeliveryMethodDigiSave(),
-                              withNavBar: true,
-                            );
+          PersistentNavBarNavigator.pushNewScreen(
+            context,
+            screen: const DeliveryMethodDigiSave(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
@@ -660,7 +597,6 @@ class RoundUpAgreeButton extends StatelessWidget {
   }
 }
 
-
 class PayCheckAgreeButton extends StatelessWidget {
   const PayCheckAgreeButton({super.key});
 
@@ -668,20 +604,17 @@ class PayCheckAgreeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const Monthly(),
-                              withNavBar: true,
-                            );
-          
+            context,
+            screen: const Monthly(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'I agree to the terms',
           style: GoogleFonts.poppins(
@@ -701,20 +634,17 @@ class LumpSumAgreeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const LumpSumFunding(),
-                              withNavBar: true,
-                            );
-          
+            context,
+            screen: const LumpSumFunding(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'I agree to the terms',
           style: GoogleFonts.poppins(
@@ -734,20 +664,17 @@ class LumpSumContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const DeliveryMethodVault(),
-                              withNavBar: true,
-                            );
-          
+            context,
+            screen: const DeliveryMethodVault(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(
@@ -767,22 +694,17 @@ class LumpSumBankContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const PageSummary(),
-                              withNavBar: true,
-                            );
-          
-        
-          
+            context,
+            screen: const PageSummary(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(
@@ -795,7 +717,6 @@ class LumpSumBankContinueButton extends StatelessWidget {
   }
 }
 
-
 class LumpSumMomoContinueButton extends StatelessWidget {
   const LumpSumMomoContinueButton({super.key});
 
@@ -803,21 +724,17 @@ class LumpSumMomoContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const SummaryMomo(),
-                              withNavBar: true,
-                            );
-          
-          
+            context,
+            screen: const SummaryMomo(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(
@@ -838,17 +755,16 @@ class LumpSumBankConfirmButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const LumpHome(),
-                              withNavBar: true,
-                            );
+            context,
+            screen: const LumpHome(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Confirm',
           style: GoogleFonts.poppins(
@@ -869,17 +785,16 @@ class LumpSumMomoConfirmButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const LumpHome(),
-                              withNavBar: true,
-                            );
+            context,
+            screen: const LumpHome(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Confirm',
           style: GoogleFonts.poppins(
@@ -892,7 +807,6 @@ class LumpSumMomoConfirmButton extends StatelessWidget {
   }
 }
 
-
 class DigiSaveBankContinueButton extends StatelessWidget {
   const DigiSaveBankContinueButton({super.key});
 
@@ -901,17 +815,16 @@ class DigiSaveBankContinueButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const LumpHome(),
-                              withNavBar: true,
-                            );
+            context,
+            screen: const LumpHome(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(
@@ -932,17 +845,16 @@ class DigiSaveMomoContinueButton extends StatelessWidget {
     return MaterialButton(
         onPressed: () {
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const LumpHome(),
-                              withNavBar: true,
-                            );
+            context,
+            screen: const LumpHome(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(
@@ -962,22 +874,17 @@ class MonthlyBankContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const PageSummary(),
-                              withNavBar: true,
-                            );
-          
-        
-          
+            context,
+            screen: const PageSummary(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(
@@ -990,7 +897,6 @@ class MonthlyBankContinueButton extends StatelessWidget {
   }
 }
 
-
 class MonthlyMomoContinueButton extends StatelessWidget {
   const MonthlyMomoContinueButton({super.key});
 
@@ -998,21 +904,17 @@ class MonthlyMomoContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const SummaryMomo(),
-                              withNavBar: true,
-                            );
-          
-          
+            context,
+            screen: const SummaryMomo(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(
@@ -1033,21 +935,17 @@ class SusuContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
         onPressed: () {
-          
           PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: const DeliveryMethodVaultMonth(),
-                              withNavBar: true,
-                            );
-          
-          
+            context,
+            screen: const DeliveryMethodVaultMonth(),
+            withNavBar: true,
+          );
         },
         color: const Color.fromARGB(249, 40, 68, 194),
         height: 40.0,
         minWidth: 350,
         elevation: 10.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-        
         child: Text(
           'Continue',
           style: GoogleFonts.poppins(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:instacash/widgets/instacash_buttons.dart';
 import 'package:instacash/widgets/login_form.dart';
 
 class Login extends StatelessWidget {
@@ -55,25 +54,6 @@ class Login extends StatelessWidget {
               height: 10,
             ),
             LoginFormfield(),
-            Align(
-              alignment: const AlignmentDirectional(0.7, 5.0),
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/forgotpassword1');
-                },
-                child: Text('Forgot Password?',
-                    style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Color.fromARGB(249, 40, 68, 194),
-                          fontSize: 13.0,
-                          fontWeight: FontWeight.w500),
-                    )),
-              ),
-            ),
-            const SizedBox(
-              height: 109.0,
-            ),
-            LoginButton(),
             const SizedBox(
               height: 69.0,
             ),
@@ -97,4 +77,3 @@ class Login extends StatelessWidget {
     );
   }
 }
-

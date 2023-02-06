@@ -39,7 +39,7 @@ class _LumpHomeState extends State<LumpHome> {
               child: RichText(
                 text: TextSpan(children: [
                   TextSpan(
-                    text: 'Vault ',
+                    text: 'Savings ',
                     style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
                           color: Colors.white,
@@ -129,7 +129,7 @@ class _LumpHomeState extends State<LumpHome> {
                 const SizedBox(height: 12.0,),
                 Align(
                   alignment: const AlignmentDirectional(-0.5, 5.0),
-                  child: Text('Lumpsum\nInvestment',
+                  child: Text('Vault\nInvestment',
                   style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
                           color: Colors.white,
@@ -326,7 +326,7 @@ class _LumpHomeState extends State<LumpHome> {
                     const SizedBox(height: 20.0,),
                     Align(
                       alignment: const AlignmentDirectional(-0.1, 5.0),
-                      child: Text('Add new\nfunds to vault',
+                      child: Text('Add new\nfunds to savings',
                       style: GoogleFonts.poppins(
                           textStyle: const TextStyle(
                               color: Colors.blueAccent,

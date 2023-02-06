@@ -43,7 +43,7 @@ class LumpSum extends StatelessWidget {
               child: RichText(
                 text: TextSpan(children: [
                   TextSpan(
-                    text: 'Lump sum ',
+                    text: 'Vault ',
                     style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
                           color: Colors.black,
@@ -97,7 +97,7 @@ class LumpSum extends StatelessWidget {
                               width: 30.0,
                             ),
                             Text(
-                              'Lump Sum',
+                              'Vault',
                               style: GoogleFonts.poppins(
                                 textStyle: const TextStyle(
                                     color: Colors.black54,
