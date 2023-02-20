@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:instacash/API/endpoints.dart';
 
+import '../screens/Customer Onboarding/login/Models/login_model.dart';
 import 'app_exceptions.dart';
 
 class API {
@@ -26,9 +27,9 @@ class API {
   }
 
   //POST LOGIN
-  Future<dynamic> loginUser(dynamic payloadObj) async {
+  Future<dynamic> loginUser({required LoginRequestData requestBody}) async {
     var uri = Uri.parse(Endpoints.baseURL + Endpoints.loginUser);
-    var payload = json.encode(payloadObj);
+    var payload = json.encode(LoginRequestData);
     try {
       var response = await dio
           .post(Endpoints.baseURL + Endpoints.loginUser, data: payload)

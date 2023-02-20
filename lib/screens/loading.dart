@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,28 +12,26 @@ class Loading extends StatefulWidget {
 class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
+    @override
+    // ignore: unused_element
+    void initState() {
+      super.initState();
+    }
 
-     @override
-  // ignore: unused_element
-  void initState() {
-    super.initState();
-    Timer(const Duration(seconds: 3), toNext);
-  }
-
-  
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Center(
-            child:
-           SpinKitFadingCircle(
+            child: SpinKitFadingCircle(
               color: Colors.blue,
               size: 90.0,
               duration: Duration(seconds: 3),
             ),
           ),
-          const SizedBox(height: 30.0,),
+          const SizedBox(
+            height: 30.0,
+          ),
           Text(
             'Please wait...',
             style: GoogleFonts.poppins(
@@ -49,9 +45,4 @@ class _LoadingState extends State<Loading> {
       ),
     );
   }
-  void toNext() async {
-    Navigator.of(context).pushNamed('/homepage');
-  }
 }
-
-

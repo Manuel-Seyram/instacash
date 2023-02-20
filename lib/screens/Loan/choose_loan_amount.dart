@@ -94,7 +94,7 @@ class _LoanAmountState extends State<LoanAmount> {
             ),
             Container(
               color: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
-              height: 400,
+              height: 300,
               width: 400,
               child:
             CupertinoPicker(
@@ -243,8 +243,89 @@ class _LoanAmountState extends State<LoanAmount> {
               },
             ),
             ),
+            const SizedBox(height: 30.0,),
 
-            const SizedBox(height: 100.0,),
+            //Enter Amount Container
+            Container(
+            height: 65.0,
+            width: 350.0,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              color: Colors.white,
+            ),
+            child: 
+             Center(
+              child: 
+           Padding(padding: const EdgeInsets.only(left: 25.0),
+            child:
+            TextField(
+                  keyboardType: TextInputType.number,
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                      fontSize: 16.0, color: Colors.black87,
+                      fontFamily: GoogleFonts.poppins().fontFamily),
+                      
+                  decoration: const InputDecoration.collapsed(
+                    hintText: 'enter amount',
+                  ),
+                ),
+           ),
+          ),
+          ),
+          const SizedBox(height: 15.0,),
+           Row(
+            children:[
+            const SizedBox(width: 32.0,),
+            RichText(text: TextSpan(
+              children: [
+                TextSpan(
+                    text: 'Min: ',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.black54,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'Ghs 10.00',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Color.fromARGB(249, 40, 68, 194),
+                          fontSize: 16.0,
+                          decoration: TextDecoration.underline,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+              ]
+            )),
+            const SizedBox(width:100,),
+            RichText(text: TextSpan(
+              children: [
+                TextSpan(
+                    text: 'Max: ',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Colors.black54,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'Ghs 1000.00',
+                    style: GoogleFonts.poppins(
+                      textStyle: const TextStyle(
+                          color: Color.fromARGB(249, 40, 68, 194),
+                          decoration: TextDecoration.underline,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+              ]
+            )),
+            ],
+           ),
+            const SizedBox(height: 80.0,),
             const LoanAmountButton(),
           ],
         ),

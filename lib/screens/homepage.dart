@@ -36,7 +36,11 @@ class Homepage extends StatelessWidget {
                           width: 10.0,
                         ),
                         Text(
-                          'Welcome back!',
+                         TimeOfDay.now().hour >= 18
+                           ? "Good evening ,"
+                           : TimeOfDay.now().hour >= 12
+                           ? "Good afternoon ,"
+                           : "Good morning ,",
                           style: GoogleFonts.poppins(
                             textStyle: const TextStyle(
                                 color: Colors.white,

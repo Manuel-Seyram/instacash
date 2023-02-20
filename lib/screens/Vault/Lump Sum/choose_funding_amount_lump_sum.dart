@@ -17,17 +17,15 @@ class LumpSumFunding extends StatefulWidget {
 class _LumpSumFundingState extends State<LumpSumFunding> {
 
 final Map<int, Widget> tenor = const <int, Widget>{
-    0: Text('15 days'),
-    1: Text('30 days'),
-    2: Text('60 days'),
-    3: Text('1 year'),
+    0: Text('1 week'),
+    1: Text('2 weeks'),
+    2: Text('1 month'),
   };
 
   final Map<int, Widget> data = const <int, Widget>{
     0: Days15(),
     1: Days30(),
     2: Days60(),
-    3: Days60(),
   };
 
   int? sharedValue;

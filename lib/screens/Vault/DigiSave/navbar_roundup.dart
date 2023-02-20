@@ -72,7 +72,7 @@ class _Navbar2State extends State<Navbar2> {
             PersistentBottomNavBarItem(
               inactiveIcon: const Icon(Icons.savings_outlined) ,
                 icon: const Icon(Icons.savings_rounded),
-                title: ('Vault'),
+                title: ('Savings'),
                 activeColorPrimary: const Color.fromARGB(249, 40, 68, 194),
                 inactiveColorPrimary: Colors.black54,
                 textStyle: TextStyle(fontStyle: GoogleFonts.poppins().fontStyle, fontWeight: FontWeight.w500, fontSize: 12),
