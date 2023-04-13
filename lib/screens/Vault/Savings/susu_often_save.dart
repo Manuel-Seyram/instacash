@@ -15,10 +15,8 @@ class SusuOftenSave extends StatefulWidget {
 class _SusuOftenSaveState extends State<SusuOftenSave> {
   late String _dropdownvalue;
   final List<String> items = [
-    'Weekly',
-    'Bi-weekly',
-    'Monthly',
-    'One-Time',                                            
+    'Daily',
+    'Weekly',                                           
   ];
   @override
   void initState() {
@@ -87,7 +85,7 @@ class _SusuOftenSaveState extends State<SusuOftenSave> {
           ),
           Align(
             alignment: const AlignmentDirectional(-0.6, 5.0),
-            child: Text('Weekly, Bi-weekly, Monthly or One-time', 
+            child: Text('Daily or weekly', 
             style: GoogleFonts.poppins(
                     textStyle: const TextStyle(
                         color: Colors.black45,

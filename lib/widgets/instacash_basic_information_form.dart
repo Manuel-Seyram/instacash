@@ -1,11 +1,19 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/Extras/validations.dart';
 
-class BasicFormfield extends StatelessWidget {
+class BasicFormfield extends StatefulWidget {
+  const BasicFormfield({super.key});
+
+  @override
+  State<BasicFormfield> createState() => _BasicFormfieldState();
+}
+
+class _BasicFormfieldState extends State<BasicFormfield> {
   final GlobalKey<FormState> _formKey = GlobalKey();
-  BasicFormfield({super.key});
+  bool obscurePassword = true;
 
   @override
   Widget build(BuildContext context) {
@@ -134,13 +142,21 @@ class BasicFormfield extends StatelessWidget {
                 color: Colors.black,
                 fontSize: 16.0,
                 fontWeight: FontWeight.w500)),
-        decoration: const InputDecoration(
+        decoration: InputDecoration(
             labelText: 'Password',
-            labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
-            suffixIcon: Icon(
-              Icons.check_circle_rounded,
+            labelStyle: const TextStyle(color: Colors.black54, fontSize: 16.0),
+            suffixIcon: InkWell(
+              onTap: () {
+                setState(() {
+                  obscurePassword = !obscurePassword;
+                });
+              },
+              child: Icon(
+                obscurePassword ? CupertinoIcons.eye : CupertinoIcons.eye_slash,
+                size: 25.0,
+              ),
             )),
-        obscureText: true,
+        obscureText: obscurePassword,
       ),
     );
   }

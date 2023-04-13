@@ -70,7 +70,7 @@ class _BasicInformationState extends State<BasicInformation> {
 
       const SizedBox(height: 50.0,),
 
-       BasicFormfield(),
+       const BasicFormfield(),
             ],
         ),
         )

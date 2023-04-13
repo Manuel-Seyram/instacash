@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:instacash/screens/Customer%20Onboarding/login/login_form.dart';
@@ -59,17 +60,31 @@ class Login extends StatelessWidget {
             ),
             Align(
               alignment: const AlignmentDirectional(-0.1, 5.0),
-              child: TextButton(
-                onPressed: (() =>
-                    {Navigator.pushNamed(context, '/phonefield')}),
-                child: Text('Dont have an account? Sign Up',
-                    style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Color.fromARGB(249, 40, 68, 194),
-                          fontSize: 13.0,
-                          fontWeight: FontWeight.w500),
-                    )),
-              ),
+              child: RichText(
+                  text: TextSpan(
+                      text: 'Dont have an account? ',
+                      style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                            color: Color.fromRGBO(78, 81, 86, 100),
+                            fontSize: 13.0,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Sign Up',
+                          style: GoogleFonts.poppins(
+                              textStyle: const TextStyle(
+                                  color: Color.fromARGB(249, 40, 68, 194),
+                                  fontSize: 13.0,
+                                  fontWeight: FontWeight.w500),
+                              decoration: TextDecoration.underline),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              Navigator.pushNamed(context, '/phonefield');
+                            },
+                        )
+                      ]),
+                )
             ),
           ],
         ),

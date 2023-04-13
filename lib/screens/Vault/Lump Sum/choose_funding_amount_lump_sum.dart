@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:instacash/screens/Vault/widgets/days30.dart';
-import 'package:instacash/screens/Vault/widgets/days60.dart';
-import 'package:instacash/screens/Vault/widgets/days_15.dart';
+import 'package:instacash/screens/Vault/widgets/week2.dart';
+import 'package:instacash/screens/Vault/widgets/month1.dart';
+import 'package:instacash/screens/Vault/widgets/week1.dart';
 import 'package:instacash/widgets/instacash_buttons.dart';
-
 
 class LumpSumFunding extends StatefulWidget {
   const LumpSumFunding({super.key});
@@ -15,17 +14,16 @@ class LumpSumFunding extends StatefulWidget {
 }
 
 class _LumpSumFundingState extends State<LumpSumFunding> {
-
-final Map<int, Widget> tenor = const <int, Widget>{
+  final Map<int, Widget> tenor = const <int, Widget>{
     0: Text('1 week'),
     1: Text('2 weeks'),
     2: Text('1 month'),
   };
 
   final Map<int, Widget> data = const <int, Widget>{
-    0: Days15(),
-    1: Days30(),
-    2: Days60(),
+    0: Week1(),
+    1: Week2(),
+    2: Month1(),
   };
 
   int? sharedValue;
@@ -33,7 +31,8 @@ final Map<int, Widget> tenor = const <int, Widget>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
+      backgroundColor:
+          const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: Column(
         children: [
           const SizedBox(
@@ -90,35 +89,42 @@ final Map<int, Widget> tenor = const <int, Widget>{
           ),
           Row(
             children: [
-              const SizedBox(width: 30.0,),
-              Text('Enter Amount to invest:', style:GoogleFonts.poppins(
-                    textStyle: const TextStyle(
-                        color: Colors.black45,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w500),
-                  ),),
-                  const SizedBox(width: 20.0,),
-                  RichText(
-                    text: TextSpan(
-                      children:[
-                        TextSpan(
-                          text:
-                    'Min: ', style:GoogleFonts.poppins(
+              const SizedBox(
+                width: 30.0,
+              ),
+              Text(
+                'Enter Amount to invest:',
+                style: GoogleFonts.poppins(
+                  textStyle: const TextStyle(
+                      color: Colors.black45,
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w500),
+                ),
+              ),
+              const SizedBox(
+                width: 20.0,
+              ),
+              RichText(
+                  text: TextSpan(children: [
+                TextSpan(
+                  text: 'Min: ',
+                  style: GoogleFonts.poppins(
                     textStyle: const TextStyle(
                         color: Colors.black54,
                         fontSize: 14.0,
                         fontWeight: FontWeight.w500),
-                  ),),
-                  
-                  TextSpan(
-                          text:
-                    'GHS 5,000.00', style:GoogleFonts.poppins(
+                  ),
+                ),
+                TextSpan(
+                  text: 'GHS 5,000.00',
+                  style: GoogleFonts.poppins(
                     textStyle: const TextStyle(
-                        color: Colors.green,
+                        color: Color.fromARGB(249, 40, 68, 194),
                         fontSize: 14.0,
                         fontWeight: FontWeight.w500),
-                  ),),
-                  ])),
+                  ),
+                ),
+              ])),
             ],
           ),
           const SizedBox(
@@ -136,11 +142,10 @@ final Map<int, Widget> tenor = const <int, Widget>{
                   style: TextStyle(
                       fontSize: 40.0, color: Color.fromARGB(249, 40, 68, 194)),
                   decoration: InputDecoration.collapsed(
-                    hintText: '₵ 0.00',
-                    hintStyle: TextStyle(
-                      color: Color.fromARGB(249, 40, 68, 194),
-                    )
-                  ),
+                      hintText: '₵ 0.00',
+                      hintStyle: TextStyle(
+                        color: Color.fromARGB(249, 40, 68, 194),
+                      )),
                 ),
               ),
             ),
@@ -162,19 +167,19 @@ final Map<int, Widget> tenor = const <int, Widget>{
           const SizedBox(
             height: 20.0,
           ),
-            SizedBox(
-              width: 390.0,
-              child: CupertinoSegmentedControl<int>(
-                selectedColor: const Color.fromARGB(249, 40, 68, 194),
-                children: tenor,
-                onValueChanged: (int val) {
-                  setState(() {
-                    sharedValue = val;
-                  });
-                },
-                groupValue: sharedValue,
-              ),
+          SizedBox(
+            width: 390.0,
+            child: CupertinoSegmentedControl<int>(
+              selectedColor: const Color.fromARGB(249, 40, 68, 194),
+              children: tenor,
+              onValueChanged: (int val) {
+                setState(() {
+                  sharedValue = val;
+                });
+              },
+              groupValue: sharedValue,
             ),
+          ),
           const SizedBox(
             height: 20.0,
           ),
@@ -189,5 +194,4 @@ final Map<int, Widget> tenor = const <int, Widget>{
       ),
     );
   }
-
-  }
+}
