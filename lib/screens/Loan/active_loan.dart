@@ -46,7 +46,7 @@ class ActiveLoan extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(right: 40.0),
                             child: Text(
-                              'Repay Amount',
+                              'Loan Amount',
                               style: GoogleFonts.poppins(
                                 textStyle: const TextStyle(
                                     color: Color.fromARGB(249, 40, 68, 194),
@@ -90,7 +90,7 @@ class ActiveLoan extends StatelessWidget {
                         ),
                         Column(children: [
                           Text(
-                            'Tenor',
+                            'Date',
                             style: GoogleFonts.poppins(
                               textStyle: const TextStyle(
                                   color: Color.fromARGB(249, 40, 68, 194),

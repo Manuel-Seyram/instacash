@@ -50,7 +50,7 @@ class PastLoan extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.only(right: 40.0),
                                 child: Text(
-                                  'Repay Amount',
+                                  'Loan Amount',
                                   style: GoogleFonts.poppins(
                                     textStyle: const TextStyle(
                                         color: Color.fromARGB(249, 40, 68, 194),
@@ -94,7 +94,7 @@ class PastLoan extends StatelessWidget {
                             ),
                             Column(children: [
                               Text(
-                                'Tenor',
+                                'Date',
                                 style: GoogleFonts.poppins(
                                   textStyle: const TextStyle(
                                       color: Color.fromARGB(249, 40, 68, 194),
@@ -196,50 +196,41 @@ class PastLoan extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: SizedBox(
-        height: 90,
-        width: 350,
-        child: FloatingActionButton.large(
-          onPressed: () {
-            PersistentNavBarNavigator.pushNewScreen(
-              context,
-              screen: const DeliveryMethod(),
-              withNavBar: false,
-            );
-          },
-          backgroundColor: const Color.fromARGB(249, 40, 68, 194),
-          clipBehavior: Clip.antiAlias,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-          ),
-          hoverElevation: 3.0,
-          child: Row(
-            children: [
-              const SizedBox(
-                width: 5.0,
-              ),
-              Image.asset('assets/GetLoan.png', height: 60, width: 60),
-              Column(
-                children: [
-                  const SizedBox(
-                    height: 20.0,
-                  ),
-                  Text(
-                    ' Your next Loan',
-                    style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.w500),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: SizedBox(
+          height: 90,
+          width: 350,
+          child: FloatingActionButton.large(
+            onPressed: () {
+              PersistentNavBarNavigator.pushNewScreen(
+                context,
+                screen: const DeliveryMethod(),
+                withNavBar: false,
+              );
+            },
+            backgroundColor: const Color.fromARGB(249, 40, 68, 194),
+            clipBehavior: Clip.antiAlias,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            ),
+            hoverElevation: 3.0,
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 10.0,
+                ),
+                Image.asset('assets/getloan2.png', height: 40, width: 40),
+                const SizedBox(
+                  width: 5.0,
+                ),
+                Column(
+                  children: [
+                    const SizedBox(
+                      height: 20.0,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 5.0,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 50.0),
-                    child: Text(
-                      'GHS 800',
+                    Text(
+                      ' Your next Loan',
                       style: GoogleFonts.poppins(
                         textStyle: const TextStyle(
                             color: Colors.white,
@@ -247,32 +238,50 @@ class PastLoan extends StatelessWidget {
                             fontWeight: FontWeight.w500),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                width: 60.0,
-              ),
-              Container(
-                height: 40,
-                width: 90,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10.0),
+                    const SizedBox(
+                      height: 5.0,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 50.0),
+                      child: Text(
+                        'GHS 800',
+                        style: GoogleFonts.poppins(
+                          textStyle: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
+                  ],
                 ),
-                child: Center(
-                  child: Text(
-                    'Get loan',
-                    style: GoogleFonts.poppins(
-                      textStyle: const TextStyle(
-                          color: Color.fromARGB(249, 40, 68, 194),
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w500),
+                const SizedBox(
+                  width: 40.0,
+                ),
+                Container(
+                  height: 40,
+                  width: 110,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Get a loan',
+                      style: GoogleFonts.poppins(
+                        textStyle: const TextStyle(
+                            color: Color.fromARGB(249, 40, 68, 194),
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

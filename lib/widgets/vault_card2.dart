@@ -13,7 +13,7 @@ class CardVault2 extends StatelessWidget {
               //width: 500,
               alignment: Alignment.center,
               child: Image.asset(
-                'assets/cardbg3.png',
+                'assets/cardbg2.png',
                 height: 360,
                 width: double.infinity,
                 fit: BoxFit.cover,

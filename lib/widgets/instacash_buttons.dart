@@ -12,8 +12,8 @@ import 'package:instacash/screens/Vault/Lump%20Sum/choose_funding_amount_lump_su
 import 'package:instacash/screens/Vault/Monthly/monthly_delivery_method.dart';
 import 'package:instacash/screens/Vault/home_vault.dart';
 import 'package:instacash/screens/Vault/Monthly/monthly.dart';
-import 'package:instacash/screens/Vault/widgets/summary_momo.dart';
-import 'package:instacash/screens/Vault/widgets/summary_lumpsum.dart';
+import 'package:instacash/screens/Vault/Lump%20Sum/widgets/summary_momo.dart';
+import 'package:instacash/screens/Vault/Lump%20Sum/widgets/summary_lumpsum.dart';
 import 'package:instacash/widgets/bottom_navbar.dart';
 import 'package:instacash/widgets/pop_up_mode_of_payment.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';

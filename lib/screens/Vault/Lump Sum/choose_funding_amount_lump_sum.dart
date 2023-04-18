@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:instacash/screens/Vault/widgets/week2.dart';
-import 'package:instacash/screens/Vault/widgets/month1.dart';
-import 'package:instacash/screens/Vault/widgets/week1.dart';
+import 'package:instacash/screens/Vault/Lump%20Sum/widgets/week2.dart';
+import 'package:instacash/screens/Vault/Lump%20Sum/widgets/month1.dart';
+import 'package:instacash/screens/Vault/Lump%20Sum/widgets/week1.dart';
 import 'package:instacash/widgets/instacash_buttons.dart';
 
 class LumpSumFunding extends StatefulWidget {

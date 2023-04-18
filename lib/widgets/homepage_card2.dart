@@ -15,8 +15,8 @@ class _CardSlider2State extends State<CardSlider2> {
   int _currentIndex = 0;
 
   List cardList = [
-    const CardVault2(),
-    const CardLoan2(),  
+    const CardLoan2(), 
+    const CardVault2(), 
   ];
 
   List<T> map<T>(List list, Function handler) {

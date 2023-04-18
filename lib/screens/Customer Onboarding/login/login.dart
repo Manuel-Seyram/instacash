@@ -9,7 +9,8 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
+      backgroundColor:
+          const Color.fromRGBO(245, 246, 250, 100).withOpacity(1.0),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -59,8 +60,8 @@ class Login extends StatelessWidget {
               height: 69.0,
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.1, 5.0),
-              child: RichText(
+                alignment: const AlignmentDirectional(-0.1, 5.0),
+                child: RichText(
                   text: TextSpan(
                       text: 'Dont have an account? ',
                       style: GoogleFonts.poppins(
@@ -84,8 +85,7 @@ class Login extends StatelessWidget {
                             },
                         )
                       ]),
-                )
-            ),
+                )),
           ],
         ),
       ),

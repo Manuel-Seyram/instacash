@@ -12,7 +12,7 @@ class CardLoan2 extends StatelessWidget {
             Container(
               alignment: Alignment.center,
               child: Image.asset(
-                'assets/cardbg2.png',
+                'assets/cardbg.png',
                 height: 360,
                 width: double.infinity,
                 fit: BoxFit.cover,

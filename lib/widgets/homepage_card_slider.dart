@@ -15,8 +15,8 @@ class _CardSliderState extends State<CardSlider> {
   int _currentIndex = 0;
 
   List cardList = [
-    const CardVault(),
     const CardLoan(), 
+    const CardVault(),
   ];
 
   List<T> map<T>(List list, Function handler) {
@@ -57,8 +57,8 @@ class _CardSliderState extends State<CardSlider> {
               return Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: SizedBox(
-                    width: size.width * 1.3,
-                    height: size.height * 0.2,
+                    width: size.width * 1.5,
+                    height: size.height,
                     child: card),
               );
             });

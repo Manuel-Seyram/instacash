@@ -5,7 +5,7 @@ import 'package:instacash/screens/Loan/loan_current.dart';
 import 'package:instacash/screens/Profile/profile_home.dart';
 import 'package:instacash/screens/Vault/vault.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:instacash/screens/homepage2.dart';
+import 'package:instacash/screens/home/homepage2.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class Navbar3 extends StatefulWidget {
