@@ -125,6 +125,7 @@ int id normal 0x0
 int id notification_background 0x0
 int id notification_main_column 0x0
 int id notification_main_column_container 0x0
+int id report_drawn 0x0
 int id right_icon 0x0
 int id right_side 0x0
 int id rtl 0x0
@@ -146,6 +147,9 @@ int id text2 0x0
 int id time 0x0
 int id title 0x0
 int id view_tree_lifecycle_owner 0x0
+int id view_tree_on_back_pressed_dispatcher_owner 0x0
+int id view_tree_saved_state_registry_owner 0x0
+int id view_tree_view_model_store_owner 0x0
 int integer status_bar_notification_info_maxnum 0x0
 int layout custom_dialog 0x0
 int layout notification_action 0x0

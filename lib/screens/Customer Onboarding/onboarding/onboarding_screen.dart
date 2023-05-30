@@ -112,7 +112,7 @@ class _LandingState extends State<Landing> {
       builder: (c) => const Navbar3()
     ));
     showDialog(context: context, 
-      builder: (c) =>  AlertDialogBox(content: Stack(),),
+      builder: (c) =>  const AlertDialogBox(content: Stack(),),
     );
   }
 }
